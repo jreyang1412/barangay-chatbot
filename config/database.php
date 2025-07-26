@@ -8,8 +8,8 @@ class Database {
     public $conn;
 
     public function __construct() {
-        // Get environment variables
-        $this->host = $_ENV['DB_HOST'] ?? 'https://jwwfjzccalvcswgdhrtr.supabase.co';
+        // Get environment variables with proper Supabase host format
+        $this->host = $_ENV['DB_HOST'] ?? 'db.jwwfjzccalvcswgdhrtr.supabase.co';
         $this->db_name = $_ENV['DB_NAME'] ?? 'postgres';
         $this->username = $_ENV['DB_USER'] ?? 'postgres';
         $this->password = $_ENV['DB_PASS'] ?? 'wY/?zx_8w3MfU-t';
@@ -20,7 +20,8 @@ class Database {
         $this->conn = null;
         
         try {
-            $dsn = "pgsql:host=" . $this->host . ";port=" . $this->port . ";dbname=" . $this->db_name;
+            // For Supabase PostgreSQL connections, include sslmode=require
+            $dsn = "pgsql:host=" . $this->host . ";port=" . $this->port . ";dbname=" . $this->db_name . ";sslmode=require";
             $this->conn = new PDO($dsn, $this->username, $this->password);
             $this->conn->exec("set names utf8");
             $this->conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
