@@ -9,11 +9,11 @@ class Database {
 
     public function __construct() {
         // Get environment variables with proper Supabase host format
-        $this->host = $_ENV['DB_HOST'] ?? 'db.jwwfjzccalvcswgdhrtr.supabase.co';
-        $this->db_name = $_ENV['DB_NAME'] ?? 'postgres';
-        $this->username = $_ENV['DB_USER'] ?? 'postgres';
-        $this->password = $_ENV['DB_PASS'] ?? 'wY/?zx_8w3MfU-t';
-        $this->port = $_ENV['DB_PORT'] ?? '5432';
+        $this->host = $_ENV['db_host'] ?? 'db.jwwfjzccalvcswgdhrtr.supabase.co';
+        $this->db_name = $_ENV['db_name'] ?? 'postgres';
+        $this->username = $_ENV['db_user'] ?? 'postgres';
+        $this->password = $_ENV['db_pass'] ?? 'wY/?zx_8w3MfU-t';
+        $this->port = $_ENV['db_port'] ?? '5432';
     }
 
     public function getConnection() {
