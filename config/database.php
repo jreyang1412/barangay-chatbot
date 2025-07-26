@@ -9,11 +9,11 @@ class Database {
 
     public function __construct() {
         // Get environment variables
-        $this->host = $_ENV['DB_HOST'] ?? 'localhost';
-        $this->db_name = $_ENV['DB_NAME'] ?? 'barangay_chatbot';
-        $this->username = $_ENV['DB_USER'] ?? 'root';
-        $this->password = $_ENV['DB_PASS'] ?? '';
-        $this->port = $_ENV['DB_PORT'] ?? '3306';
+        $this->host = $_ENV['DB_HOST'] ?? 'https://jwwfjzccalvcswgdhrtr.supabase.co';
+        $this->db_name = $_ENV['DB_NAME'] ?? 'postgres';
+        $this->username = $_ENV['DB_USER'] ?? 'postgres';
+        $this->password = $_ENV['DB_PASS'] ?? 'wY/?zx_8w3MfU-t';
+        $this->port = $_ENV['DB_PORT'] ?? '5432';
     }
 
     public function getConnection() {
