@@ -14,10 +14,11 @@
     }
   ],
   "env": {
-    "DB_HOST": "@db_host",
-    "DB_NAME": "@db_name", 
-    "DB_USER": "@db_user",
-    "DB_PASS": "@db_pass",
-    "DB_PORT": "@db_port"
-  }
+  "DB_HOST": "db.kvqbfffydynntfxqkbxn.supabase.co",
+  "DB_NAME": "postgres",
+  "DB_USER": "postgres",
+  "DB_PASS": "ET3h9k4AabU219lG",
+  "DB_PORT": "6543"
+}
+
 }
