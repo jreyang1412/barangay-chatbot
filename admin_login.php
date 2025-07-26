@@ -1,39 +1,40 @@
 <?php
-error_reporting(E_ALL);
-ini_set('display_errors', 1);
+session_start();
 require_once 'config.php';
 
-$message = '';
-$alertType = '';
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    $username = trim($_POST['username'] ?? '');
+    $password = $_POST['password'] ?? '';
 
-if (isset($_POST['login'])) {
-    $username = trim($_POST['username']);
-    $password = $_POST['password'];
-
-    if (empty($username) || empty($password)) {
-        $message = "Please fill in all fields.";
+    if (!$username || !$password) {
+        $message = "Please enter both username and password.";
         $alertType = "alert-error";
     } else {
-        $stmt = $pdo->prepare("SELECT id, username, password FROM admins WHERE username = ?");
-        $stmt->execute([$username]);
-        $admin = $stmt->fetch(PDO::FETCH_ASSOC);
+        try {
+            // Update this table name to match your actual admin table name
+            $stmt = $pdo->prepare("SELECT id, username, password FROM admins WHERE username = ? LIMIT 1");
+            $stmt->execute([$username]);
+            $admin = $stmt->fetch(PDO::FETCH_ASSOC);
 
-        if ($admin && password_verify($password, $admin['password'])) {
-            $_SESSION['admin_id'] = $admin['id'];
-            $_SESSION['admin_username'] = $admin['username'];
-            $_SESSION['user_type'] = 'admin';
+            if ($admin && password_verify($password, $admin['password'])) {
+                $_SESSION['admin_id'] = $admin['id'];
+                $_SESSION['admin_username'] = $admin['username'];
+                $_SESSION['user_type'] = 'admin';
 
-            header("Location: admin_dashboard.php");
-            exit();
-        } else {
-            $message = "Invalid username or password.";
+                header("Location: admin_dashboard.php");
+                exit();
+            } else {
+                $message = "Invalid username or password.";
+                $alertType = "alert-error";
+            }
+        } catch (PDOException $e) {
+            $message = "Login failed. Please try again.";
             $alertType = "alert-error";
         }
     }
 }
 ?>
 
-<!-- HTML and CSS below stays as you provided -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -41,7 +42,6 @@ if (isset($_POST['login'])) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin Login - Help Desk</title>
     <style>
-        /* [ALL CSS YOU PROVIDED — NO CHANGES MADE] */
         * {
             margin: 0;
             padding: 0;
@@ -257,9 +257,9 @@ if (isset($_POST['login'])) {
         <strong>🔒 Secure Access:</strong> This portal is restricted to authorized barangay administrators only.
     </div>
 
-    <?php if (!empty($message)): ?>
-        <div class="alert <?= $alertType; ?>">
-            <?= htmlspecialchars($message) ?>
+    <?php if (isset($message)): ?>
+        <div class="alert <?php echo $alertType; ?>">
+            <?php echo htmlspecialchars($message); ?>
         </div>
     <?php endif; ?>
 
@@ -267,7 +267,7 @@ if (isset($_POST['login'])) {
         <div class="form-group">
             <label for="username">Admin Username</label>
             <input type="text" id="username" name="username" required 
-                   value="<?= htmlspecialchars($_POST['username'] ?? '') ?>"
+                   value="<?php echo isset($_POST['username']) ? htmlspecialchars($_POST['username']) : ''; ?>"
                    placeholder="Enter your admin username">
         </div>
 
