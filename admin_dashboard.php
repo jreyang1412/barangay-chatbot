@@ -416,6 +416,37 @@ try {
             box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
         }
         
+        .sos-btn {
+            background: linear-gradient(135deg, #ff6b35, #f7931e);
+            color: white;
+            padding: 15px;
+            border: none;
+            border-radius: 12px;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            text-align: center;
+            display: block;
+            font-size: 16px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            box-shadow: 0 4px 15px rgba(255, 107, 53, 0.3);
+            animation: pulse 2s infinite;
+        }
+        
+        .sos-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 30px rgba(255, 107, 53, 0.4);
+            animation: none;
+        }
+        
+        @keyframes pulse {
+            0% { box-shadow: 0 4px 15px rgba(255, 107, 53, 0.3); }
+            50% { box-shadow: 0 4px 25px rgba(255, 107, 53, 0.5); }
+            100% { box-shadow: 0 4px 15px rgba(255, 107, 53, 0.3); }
+        }
+        
         .modal {
             display: none;
             position: fixed;
@@ -723,6 +754,13 @@ try {
                 
                 <div class="section">
                     <h2 class="section-title">⚡ Quick Actions</h2>
+                    
+                    <!-- SOS Button - Prominent placement at top -->
+                    <div style="margin-bottom: 20px;">
+                        <a href="admin.php" class="sos-btn">
+                            🚨 SOS
+                        </a>
+                    </div>
                     
                     <div class="quick-actions">
                         <a href="all_tickets.php" class="quick-action-btn">

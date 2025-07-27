@@ -43,6 +43,27 @@ if (isset($_POST['register'])) {
         }
     }
 }
+
+// Metro Manila cities array
+$metroManilaCities = [
+    'Caloocan',
+    'Las Piñas',
+    'Makati',
+    'Malabon',
+    'Mandaluyong',
+    'Manila',
+    'Marikina',
+    'Muntinlupa',
+    'Navotas',
+    'Parañaque',
+    'Pasay',
+    'Pasig',
+    'Quezon City',
+    'San Juan',
+    'Taguig',
+    'Valenzuela',
+    'Pateros'
+];
 ?>
 
 <!DOCTYPE html>
@@ -89,10 +110,25 @@ if (isset($_POST['register'])) {
             border: 2px solid #ecf0f1;
             border-radius: 10px;
             font-size: 16px;
+            box-sizing: border-box;
         }
-        input:focus {
+        input:focus, select:focus {
             outline: none;
             border-color: #3498db;
+        }
+        .input-container {
+            position: relative;
+        }
+        input[list] {
+            background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6,9 12,15 18,9'%3e%3c/polyline%3e%3c/svg%3e");
+            background-repeat: no-repeat;
+            background-position: right 12px center;
+            background-size: 16px;
+            padding-right: 40px;
+        }
+        select option[disabled] {
+            color: #999;
+            font-style: italic;
         }
         .register-btn {
             width: 100%;
@@ -135,6 +171,42 @@ if (isset($_POST['register'])) {
             font-weight: bold;
         }
     </style>
+    <script>
+        // Add validation for barangay number
+        document.addEventListener('DOMContentLoaded', function() {
+            const barangayInput = document.getElementById('barangay_number');
+            const cityInput = document.getElementById('city');
+            
+            // Validate barangay number input
+            barangayInput.addEventListener('input', function(e) {
+                let value = e.target.value;
+                // Remove non-numeric characters
+                value = value.replace(/[^0-9]/g, '');
+                // Limit to reasonable range
+                if (value && parseInt(value) > 897) {
+                    value = '897';
+                }
+                e.target.value = value;
+            });
+
+            // Add dropdown arrow click functionality
+            function addDropdownBehavior(input) {
+                input.addEventListener('click', function(e) {
+                    // If clicking near the right edge (where arrow would be)
+                    const rect = input.getBoundingClientRect();
+                    const clickX = e.clientX - rect.left;
+                    if (clickX > rect.width - 40) {
+                        input.focus();
+                        // Trigger dropdown by dispatching input event
+                        input.dispatchEvent(new Event('input', { bubbles: true }));
+                    }
+                });
+            }
+            
+            addDropdownBehavior(cityInput);
+            addDropdownBehavior(barangayInput);
+        });
+    </script>
 </head>
 <body>
 
@@ -148,12 +220,32 @@ if (isset($_POST['register'])) {
     <form method="POST" action="">
         <div class="form-group">
             <label for="city">City</label>
-            <input type="text" name="city" id="city" required placeholder="e.g. Manila" value="<?= htmlspecialchars($_POST['city'] ?? '') ?>">
+            <div class="input-container">
+                <input type="text" name="city" id="city" required 
+                       placeholder="Type or select a city" 
+                       value="<?= htmlspecialchars($_POST['city'] ?? '') ?>"
+                       list="city-list" autocomplete="off">
+                <datalist id="city-list">
+                    <?php foreach ($metroManilaCities as $cityName): ?>
+                        <option value="<?= htmlspecialchars($cityName) ?>">
+                    <?php endforeach; ?>
+                </datalist>
+            </div>
         </div>
 
         <div class="form-group">
             <label for="barangay_number">Barangay Number</label>
-            <input type="text" name="barangay_number" id="barangay_number" required placeholder="e.g. 178" value="<?= htmlspecialchars($_POST['barangay_number'] ?? '') ?>">
+            <div class="input-container">
+                <input type="text" name="barangay_number" id="barangay_number" required 
+                       placeholder="Type or select barangay number" 
+                       value="<?= htmlspecialchars($_POST['barangay_number'] ?? '') ?>"
+                       list="barangay-list" autocomplete="off">
+                <datalist id="barangay-list">
+                    <?php for ($i = 1; $i <= 897; $i++): ?>
+                        <option value="<?= $i ?>">
+                    <?php endfor; ?>
+                </datalist>
+            </div>
         </div>
 
         <div class="form-group">
