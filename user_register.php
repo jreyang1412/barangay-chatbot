@@ -1,3 +1,86 @@
+<?php
+require_once 'config.php';
+
+if (isset($_POST['register'])) {
+    $firstName = trim($_POST['first_name']);
+    $middleName = trim($_POST['middle_name']);
+    $lastName = trim($_POST['last_name']);
+    $mobileNumber = trim($_POST['mobile_number']);
+    $city = $_POST['city'];
+    $barangay = trim($_POST['barangay']);
+    $email = trim($_POST['email']);
+    $password = $_POST['password'];
+    $confirmPassword = $_POST['confirm_password'];
+    
+    // Validation
+    if (empty($firstName) || empty($lastName) || empty($mobileNumber) || empty($city) || empty($barangay) || empty($email) || empty($password)) {
+        $message = "Please fill in all required fields.";
+        $alertType = "alert-error";
+    } elseif ($password !== $confirmPassword) {
+        $message = "Passwords do not match.";
+        $alertType = "alert-error";
+    } elseif (strlen($password) < 6) {
+        $message = "Password must be at least 6 characters long.";
+        $alertType = "alert-error";
+    } elseif (!preg_match('/^09[0-9]{9}$/', $mobileNumber)) {
+        $message = "Please enter a valid mobile number (11 digits starting with 09).";
+        $alertType = "alert-error";
+    } elseif (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+        $message = "Please enter a valid email address.";
+        $alertType = "alert-error";
+    } else {
+        try {
+            // Check if email already exists
+            $checkStmt = $pdo->prepare("SELECT id FROM users WHERE email = ?");
+            $checkStmt->execute([$email]);
+            
+            if ($checkStmt->rowCount() > 0) {
+                $message = "An account with this email already exists.";
+                $alertType = "alert-error";
+            } else {
+                // Hash password
+                $hashedPassword = password_hash($password, PASSWORD_DEFAULT);
+                
+                // Insert user with 'basic' status
+                $stmt = $pdo->prepare("
+                    INSERT INTO users (first_name, middle_name, last_name, mobile_number, city, barangay, email, password, is_active, status, created_at, updated_at) 
+                    VALUES (?, ?, ?, ?, ?, ?, ?, ?, 1, 'basic', NOW(), NOW())
+                ");
+                
+                $stmt->execute([
+                    $firstName,
+                    $middleName ?: null,
+                    $lastName,
+                    $mobileNumber,
+                    $city,
+                    $barangay,
+                    $email,
+                    $hashedPassword
+                ]);
+                
+                $message = "Account created successfully! You can now login with basic access.";
+                $alertType = "alert-success";
+                
+                // Clear form data
+                $_POST = array();
+                
+                // Redirect after 2 seconds
+                echo "<script>
+                    setTimeout(function() {
+                        window.location.href = 'user_login.php';
+                    }, 2000);
+                </script>";
+            }
+        } catch (PDOException $e) {
+            $message = "Registration failed. Please try again.";
+            $alertType = "alert-error";
+            // For debugging (remove in production)
+            // error_log("Registration error: " . $e->getMessage());
+        }
+    }
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -179,6 +262,16 @@
             border: 1px solid #f5c6cb;
         }
         
+        .status-info {
+            background: #cce7ff;
+            color: #0066cc;
+            padding: 10px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            font-size: 13px;
+            text-align: center;
+        }
+        
         @media (max-width: 600px) {
             .form-row {
                 flex-direction: column;
@@ -201,6 +294,10 @@
             <div class="logo">👤</div>
             <h1 class="title">User Registration</h1>
             <p class="subtitle">Create your account to access help desk services</p>
+        </div>
+        
+        <div class="status-info">
+            📝 New accounts start with <strong>Basic</strong> access level
         </div>
         
         <?php if (isset($message)): ?>
@@ -314,84 +411,3 @@
     </script>
 </body>
 </html>
-
-<?php
-require_once 'config.php';
-
-if (isset($_POST['register'])) {
-    $firstName = trim($_POST['first_name']);
-    $middleName = trim($_POST['middle_name']);
-    $lastName = trim($_POST['last_name']);
-    $mobileNumber = trim($_POST['mobile_number']);
-    $city = $_POST['city'];
-    $barangay = trim($_POST['barangay']);
-    $email = trim($_POST['email']);
-    $password = $_POST['password'];
-    $confirmPassword = $_POST['confirm_password'];
-    
-    // Validation
-    if (empty($firstName) || empty($lastName) || empty($mobileNumber) || empty($city) || empty($barangay) || empty($email) || empty($password)) {
-        $message = "Please fill in all required fields.";
-        $alertType = "alert-error";
-    } elseif ($password !== $confirmPassword) {
-        $message = "Passwords do not match.";
-        $alertType = "alert-error";
-    } elseif (strlen($password) < 6) {
-        $message = "Password must be at least 6 characters long.";
-        $alertType = "alert-error";
-    } elseif (!preg_match('/^09[0-9]{9}$/', $mobileNumber)) {
-        $message = "Please enter a valid mobile number (11 digits starting with 09).";
-        $alertType = "alert-error";
-    } elseif (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-        $message = "Please enter a valid email address.";
-        $alertType = "alert-error";
-    } else {
-        try {
-            // Check if email already exists
-            $checkStmt = $pdo->prepare("SELECT id FROM users WHERE email = ?");
-            $checkStmt->execute([$email]);
-            
-            if ($checkStmt->rowCount() > 0) {
-                $message = "An account with this email already exists.";
-                $alertType = "alert-error";
-            } else {
-                // Hash password
-                $hashedPassword = password_hash($password, PASSWORD_DEFAULT);
-                
-                // Insert user
-                $stmt = $pdo->prepare("
-                    INSERT INTO users (first_name, middle_name, last_name, mobile_number, city, barangay, email, password, created_at) 
-                    VALUES (?, ?, ?, ?, ?, ?, ?, ?, NOW())
-                ");
-                
-                $stmt->execute([
-                    $firstName,
-                    $middleName ?: null,
-                    $lastName,
-                    $mobileNumber,
-                    $city,
-                    $barangay,
-                    $email,
-                    $hashedPassword
-                ]);
-                
-                $message = "Account created successfully! You can now login.";
-                $alertType = "alert-success";
-                
-                // Clear form data
-                $_POST = array();
-                
-                // Redirect after 2 seconds
-                echo "<script>
-                    setTimeout(function() {
-                        window.location.href = 'user_login.php';
-                    }, 2000);
-                </script>";
-            }
-        } catch (PDOException $e) {
-            $message = "Registration failed. Please try again.";
-            $alertType = "alert-error";
-        }
-    }
-}
-?>

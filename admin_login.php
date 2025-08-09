@@ -11,15 +11,22 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $alertType = "alert-error";
     } else {
         try {
-            // Update this table name to match your actual admin table name
-            $stmt = $pdo->prepare("SELECT id, username, password FROM admins WHERE username = ? LIMIT 1");
+            // Fetch admin details including city and barangay_number
+            $stmt = $pdo->prepare("SELECT id, username, password, city, barangay_number FROM admins WHERE username = ? LIMIT 1");
             $stmt->execute([$username]);
             $admin = $stmt->fetch(PDO::FETCH_ASSOC);
 
             if ($admin && password_verify($password, $admin['password'])) {
+                // Store all necessary session data
                 $_SESSION['admin_id'] = $admin['id'];
                 $_SESSION['admin_username'] = $admin['username'];
+                $_SESSION['admin_city'] = $admin['city'];
+                $_SESSION['admin_barangay'] = $admin['barangay_number'];
                 $_SESSION['user_type'] = 'admin';
+
+                // Update last_login timestamp
+                $update_stmt = $pdo->prepare("UPDATE admins SET last_login = CURRENT_TIMESTAMP WHERE id = ?");
+                $update_stmt->execute([$admin['id']]);
 
                 header("Location: admin_dashboard.php");
                 exit();
@@ -229,6 +236,16 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             font-size: 13px;
             border: 1px solid #ffeaa7;
         }
+        .location-info {
+            background: #e8f5e8;
+            color: #2d5a3d;
+            padding: 10px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            font-size: 12px;
+            text-align: center;
+            border: 1px solid #c3e6cb;
+        }
         @media (max-width: 480px) {
             .login-container {
                 padding: 40px 25px;
@@ -250,11 +267,15 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         <div class="logo">⚙️</div>
         <div class="admin-badge">Administrator Access</div>
         <h1 class="title">Admin Portal</h1>
-        <p class="subtitle">Secure login for help desk administrators</p>
+        <p class="subtitle">Secure login for barangay administrators</p>
     </div>
 
     <div class="security-note">
         <strong>🔒 Secure Access:</strong> This portal is restricted to authorized barangay administrators only.
+    </div>
+
+    <div class="location-info">
+        <strong>📍 Location-Based Access:</strong> You will only have access to requests from your assigned city and barangay.
     </div>
 
     <?php if (isset($message)): ?>

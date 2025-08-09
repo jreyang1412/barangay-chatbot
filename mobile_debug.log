@@ -1,0 +1,1891 @@
+2025-07-27 20:16:03 - Mobile Error: Request received
+Data: {"action":"get_messages","method":"GET","get_data":{"action":"get_messages","user_id":"user_1753661711727","_t":"1753661713382"},"post_data":[],"raw_input":""}
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+IP: 136.158.40.47
+
+2025-07-27 20:16:05 - Mobile Error: Request received
+Data: {"action":"get_messages","method":"GET","get_data":{"action":"get_messages","user_id":"user_1753661711727","_t":"1753661715385"},"post_data":[],"raw_input":""}
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+IP: 136.158.40.47
+
+2025-07-27 20:16:05 - Mobile Error: Request received
+Data: {"action":"start_chat","method":"POST","get_data":{"_t":"1753661715756"},"post_data":{"action":"start_chat","user_id":"user_1753661711727","help_type":"emergency"},"raw_input":"action=start_chat&user_id=user_1753661711727&help_type=emergency"}
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+IP: 136.158.40.47
+
+2025-07-27 20:16:05 - Mobile Error: Database error in start_chat
+Data: {"error":"SQLSTATE[22007]: Invalid datetime format: 1366 Incorrect string value: '\\xF0\\x9F\\x9A\\xA8 E...' for column `if0_38484017_barangay_chatbot`.`messages`.`message` at row 1"}
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+IP: 136.158.40.47
+
+2025-07-27 20:16:07 - Mobile Error: Request received
+Data: {"action":"start_chat","method":"POST","get_data":{"_t":"1753661716983"},"post_data":{"action":"start_chat","user_id":"user_1753661711727","help_type":"emergency"},"raw_input":"action=start_chat&user_id=user_1753661711727&help_type=emergency"}
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+IP: 136.158.40.47
+
+2025-07-27 20:16:07 - Mobile Error: Database error in start_chat
+Data: {"error":"SQLSTATE[22007]: Invalid datetime format: 1366 Incorrect string value: '\\xF0\\x9F\\x9A\\xA8 E...' for column `if0_38484017_barangay_chatbot`.`messages`.`message` at row 1"}
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+IP: 136.158.40.47
+
+2025-07-27 20:16:07 - Mobile Error: Request received
+Data: {"action":"get_messages","method":"GET","get_data":{"action":"get_messages","user_id":"user_1753661711727","_t":"1753661717386"},"post_data":[],"raw_input":""}
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+IP: 136.158.40.47
+
+2025-07-27 20:16:08 - Mobile Error: Request received
+Data: {"action":"send_location","method":"POST","get_data":{"_t":"1753661717894"},"post_data":{"action":"send_location","user_id":"user_1753661711727","lat":"14.6898944","lng":"120.9925632","help_type":"emergency"},"raw_input":"action=send_location&user_id=user_1753661711727&lat=14.6898944&lng=120.9925632&help_type=emergency"}
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+IP: 136.158.40.47
+
+2025-07-27 20:16:08 - Mobile Error: Database error in send_location
+Data: {"error":"SQLSTATE[22007]: Invalid datetime format: 1366 Incorrect string value: '\\xF0\\x9F\\x93\\x8D E...' for column `if0_38484017_barangay_chatbot`.`messages`.`message` at row 1"}
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+IP: 136.158.40.47
+
+2025-07-27 20:16:09 - Mobile Error: Request received
+Data: {"action":"start_chat","method":"POST","get_data":{"_t":"1753661719212"},"post_data":{"action":"start_chat","user_id":"user_1753661711727","help_type":"emergency"},"raw_input":"action=start_chat&user_id=user_1753661711727&help_type=emergency"}
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+IP: 136.158.40.47
+
+2025-07-27 20:16:09 - Mobile Error: Database error in start_chat
+Data: {"error":"SQLSTATE[22007]: Invalid datetime format: 1366 Incorrect string value: '\\xF0\\x9F\\x9A\\xA8 E...' for column `if0_38484017_barangay_chatbot`.`messages`.`message` at row 1"}
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+IP: 136.158.40.47
+
+2025-07-27 20:16:09 - Mobile Error: Request received
+Data: {"action":"send_location","method":"POST","get_data":{"_t":"1753661719268"},"post_data":{"action":"send_location","user_id":"user_1753661711727","lat":"14.6898944","lng":"120.9925632","help_type":"emergency"},"raw_input":"action=send_location&user_id=user_1753661711727&lat=14.6898944&lng=120.9925632&help_type=emergency"}
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+IP: 136.158.40.47
+
+2025-07-27 20:16:09 - Mobile Error: Database error in send_location
+Data: {"error":"SQLSTATE[22007]: Invalid datetime format: 1366 Incorrect string value: '\\xF0\\x9F\\x93\\x8D E...' for column `if0_38484017_barangay_chatbot`.`messages`.`message` at row 1"}
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+IP: 136.158.40.47
+
+2025-07-27 20:16:09 - Mobile Error: Request received
+Data: {"action":"get_messages","method":"GET","get_data":{"action":"get_messages","user_id":"user_1753661711727","_t":"1753661719386"},"post_data":[],"raw_input":""}
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+IP: 136.158.40.47
+
+2025-07-27 20:16:11 - Mobile Error: Request received
+Data: {"action":"start_chat","method":"POST","get_data":{"_t":"1753661721011"},"post_data":{"action":"start_chat","user_id":"user_1753661711727","help_type":"emergency"},"raw_input":"action=start_chat&user_id=user_1753661711727&help_type=emergency"}
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+IP: 136.158.40.47
+
+2025-07-27 20:16:11 - Mobile Error: Database error in start_chat
+Data: {"error":"SQLSTATE[22007]: Invalid datetime format: 1366 Incorrect string value: '\\xF0\\x9F\\x9A\\xA8 E...' for column `if0_38484017_barangay_chatbot`.`messages`.`message` at row 1"}
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+IP: 136.158.40.47
+
+2025-07-27 20:16:11 - Mobile Error: Request received
+Data: {"action":"send_location","method":"POST","get_data":{"_t":"1753661721019"},"post_data":{"action":"send_location","user_id":"user_1753661711727","lat":"14.6898944","lng":"120.9925632","help_type":"emergency"},"raw_input":"action=send_location&user_id=user_1753661711727&lat=14.6898944&lng=120.9925632&help_type=emergency"}
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+IP: 136.158.40.47
+
+2025-07-27 20:16:11 - Mobile Error: Database error in send_location
+Data: {"error":"SQLSTATE[22007]: Invalid datetime format: 1366 Incorrect string value: '\\xF0\\x9F\\x93\\x8D E...' for column `if0_38484017_barangay_chatbot`.`messages`.`message` at row 1"}
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+IP: 136.158.40.47
+
+2025-07-27 20:16:11 - Mobile Error: Request received
+Data: {"action":"get_messages","method":"GET","get_data":{"action":"get_messages","user_id":"user_1753661711727","_t":"1753661721386"},"post_data":[],"raw_input":""}
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+IP: 136.158.40.47
+
+2025-07-27 20:16:11 - Mobile Error: Request received
+Data: {"action":"send_location","method":"POST","get_data":{"_t":"1753661721497"},"post_data":{"action":"send_location","user_id":"user_1753661711727","lat":"14.6898944","lng":"120.9925632","help_type":"emergency"},"raw_input":"action=send_location&user_id=user_1753661711727&lat=14.6898944&lng=120.9925632&help_type=emergency"}
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+IP: 136.158.40.47
+
+2025-07-27 20:16:11 - Mobile Error: Database error in send_location
+Data: {"error":"SQLSTATE[22007]: Invalid datetime format: 1366 Incorrect string value: '\\xF0\\x9F\\x93\\x8D E...' for column `if0_38484017_barangay_chatbot`.`messages`.`message` at row 1"}
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+IP: 136.158.40.47
+
+2025-07-27 20:16:12 - Mobile Error: Request received
+Data: {"action":"start_chat","method":"POST","get_data":{"_t":"1753661722240"},"post_data":{"action":"start_chat","user_id":"user_1753661711727","help_type":"emergency"},"raw_input":"action=start_chat&user_id=user_1753661711727&help_type=emergency"}
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+IP: 136.158.40.47
+
+2025-07-27 20:16:12 - Mobile Error: Database error in start_chat
+Data: {"error":"SQLSTATE[22007]: Invalid datetime format: 1366 Incorrect string value: '\\xF0\\x9F\\x9A\\xA8 E...' for column `if0_38484017_barangay_chatbot`.`messages`.`message` at row 1"}
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+IP: 136.158.40.47
+
+2025-07-27 20:16:12 - Mobile Error: Request received
+Data: {"action":"send_location","method":"POST","get_data":{"_t":"1753661722247"},"post_data":{"action":"send_location","user_id":"user_1753661711727","lat":"14.6898944","lng":"120.9925632","help_type":"emergency"},"raw_input":"action=send_location&user_id=user_1753661711727&lat=14.6898944&lng=120.9925632&help_type=emergency"}
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+IP: 136.158.40.47
+
+2025-07-27 20:16:12 - Mobile Error: Database error in send_location
+Data: {"error":"SQLSTATE[22007]: Invalid datetime format: 1366 Incorrect string value: '\\xF0\\x9F\\x93\\x8D E...' for column `if0_38484017_barangay_chatbot`.`messages`.`message` at row 1"}
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+IP: 136.158.40.47
+
+2025-07-27 20:16:13 - Mobile Error: Request received
+Data: {"action":"get_messages","method":"GET","get_data":{"action":"get_messages","user_id":"user_1753661711727","_t":"1753661723386"},"post_data":[],"raw_input":""}
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+IP: 136.158.40.47
+
+2025-07-27 20:16:13 - Mobile Error: Request received
+Data: {"action":"start_chat","method":"POST","get_data":{"_t":"1753661723441"},"post_data":{"action":"start_chat","user_id":"user_1753661711727","help_type":"emergency"},"raw_input":"action=start_chat&user_id=user_1753661711727&help_type=emergency"}
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+IP: 136.158.40.47
+
+2025-07-27 20:16:13 - Mobile Error: Database error in start_chat
+Data: {"error":"SQLSTATE[22007]: Invalid datetime format: 1366 Incorrect string value: '\\xF0\\x9F\\x9A\\xA8 E...' for column `if0_38484017_barangay_chatbot`.`messages`.`message` at row 1"}
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+IP: 136.158.40.47
+
+2025-07-27 20:16:14 - Mobile Error: Request received
+Data: {"action":"send_location","method":"POST","get_data":{"_t":"1753661724469"},"post_data":{"action":"send_location","user_id":"user_1753661711727","lat":"14.6898944","lng":"120.9925632","help_type":"emergency"},"raw_input":"action=send_location&user_id=user_1753661711727&lat=14.6898944&lng=120.9925632&help_type=emergency"}
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+IP: 136.158.40.47
+
+2025-07-27 20:16:14 - Mobile Error: Database error in send_location
+Data: {"error":"SQLSTATE[22007]: Invalid datetime format: 1366 Incorrect string value: '\\xF0\\x9F\\x93\\x8D E...' for column `if0_38484017_barangay_chatbot`.`messages`.`message` at row 1"}
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+IP: 136.158.40.47
+
+2025-07-27 20:16:14 - Mobile Error: Request received
+Data: {"action":"start_chat","method":"POST","get_data":{"_t":"1753661724469"},"post_data":{"action":"start_chat","user_id":"user_1753661711727","help_type":"emergency"},"raw_input":"action=start_chat&user_id=user_1753661711727&help_type=emergency"}
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+IP: 136.158.40.47
+
+2025-07-27 20:16:14 - Mobile Error: Database error in start_chat
+Data: {"error":"SQLSTATE[22007]: Invalid datetime format: 1366 Incorrect string value: '\\xF0\\x9F\\x9A\\xA8 E...' for column `if0_38484017_barangay_chatbot`.`messages`.`message` at row 1"}
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+IP: 136.158.40.47
+
+2025-07-27 20:16:15 - Mobile Error: Request received
+Data: {"action":"get_messages","method":"GET","get_data":{"action":"get_messages","user_id":"user_1753661711727","_t":"1753661725386"},"post_data":[],"raw_input":""}
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+IP: 136.158.40.47
+
+2025-07-27 20:16:15 - Mobile Error: Request received
+Data: {"action":"send_location","method":"POST","get_data":{"_t":"1753661725726"},"post_data":{"action":"send_location","user_id":"user_1753661711727","lat":"14.6898944","lng":"120.9925632","help_type":"emergency"},"raw_input":"action=send_location&user_id=user_1753661711727&lat=14.6898944&lng=120.9925632&help_type=emergency"}
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+IP: 136.158.40.47
+
+2025-07-27 20:16:15 - Mobile Error: Database error in send_location
+Data: {"error":"SQLSTATE[22007]: Invalid datetime format: 1366 Incorrect string value: '\\xF0\\x9F\\x93\\x8D E...' for column `if0_38484017_barangay_chatbot`.`messages`.`message` at row 1"}
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+IP: 136.158.40.47
+
+2025-07-27 20:16:15 - Mobile Error: Request received
+Data: {"action":"send_message","method":"POST","get_data":{"_t":"1753661725777"},"post_data":{"action":"send_message","user_id":"user_1753661711727","message":"help"},"raw_input":"action=send_message&user_id=user_1753661711727&message=help"}
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+IP: 136.158.40.47
+
+2025-07-27 20:16:16 - Mobile Error: Request received
+Data: {"action":"get_messages","method":"GET","get_data":{"action":"get_messages","user_id":"user_1753661711727","_t":"1753661726508"},"post_data":[],"raw_input":""}
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+IP: 136.158.40.47
+
+2025-07-27 20:16:17 - Mobile Error: Request received
+Data: {"action":"get_messages","method":"GET","get_data":{"action":"get_messages","user_id":"user_1753661711727","_t":"1753661727384"},"post_data":[],"raw_input":""}
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+IP: 136.158.40.47
+
+2025-07-27 20:16:18 - Mobile Error: Request received
+Data: {"action":"start_chat","method":"POST","get_data":{"_t":"1753661728699"},"post_data":{"action":"start_chat","user_id":"user_1753661711727","help_type":"emergency"},"raw_input":"action=start_chat&user_id=user_1753661711727&help_type=emergency"}
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+IP: 136.158.40.47
+
+2025-07-27 20:16:18 - Mobile Error: Database error in start_chat
+Data: {"error":"SQLSTATE[22007]: Invalid datetime format: 1366 Incorrect string value: '\\xF0\\x9F\\x9A\\xA8 E...' for column `if0_38484017_barangay_chatbot`.`messages`.`message` at row 1"}
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+IP: 136.158.40.47
+
+2025-07-27 20:16:18 - Mobile Error: Request received
+Data: {"action":"send_location","method":"POST","get_data":{"_t":"1753661728698"},"post_data":{"action":"send_location","user_id":"user_1753661711727","lat":"14.6898944","lng":"120.9925632","help_type":"emergency"},"raw_input":"action=send_location&user_id=user_1753661711727&lat=14.6898944&lng=120.9925632&help_type=emergency"}
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+IP: 136.158.40.47
+
+2025-07-27 20:16:18 - Mobile Error: Database error in send_location
+Data: {"error":"SQLSTATE[22007]: Invalid datetime format: 1366 Incorrect string value: '\\xF0\\x9F\\x93\\x8D E...' for column `if0_38484017_barangay_chatbot`.`messages`.`message` at row 1"}
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+IP: 136.158.40.47
+
+2025-07-27 20:16:18 - Mobile Error: Request received
+Data: {"action":"start_chat","method":"POST","get_data":{"_t":"1753661728803"},"post_data":{"action":"start_chat","user_id":"user_1753661711727","help_type":"technical"},"raw_input":"action=start_chat&user_id=user_1753661711727&help_type=technical"}
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+IP: 136.158.40.47
+
+2025-07-27 20:16:18 - Mobile Error: Database error in start_chat
+Data: {"error":"SQLSTATE[22007]: Invalid datetime format: 1366 Incorrect string value: '\\xF0\\x9F\\x94\\xA7 T...' for column `if0_38484017_barangay_chatbot`.`messages`.`message` at row 1"}
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+IP: 136.158.40.47
+
+2025-07-27 20:16:19 - Mobile Error: Request received
+Data: {"action":"get_messages","method":"GET","get_data":{"action":"get_messages","user_id":"user_1753661711727","_t":"1753661729384"},"post_data":[],"raw_input":""}
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+IP: 136.158.40.47
+
+2025-07-27 20:16:20 - Mobile Error: Request received
+Data: {"action":"start_chat","method":"POST","get_data":{"_t":"1753661730021"},"post_data":{"action":"start_chat","user_id":"user_1753661711727","help_type":"technical"},"raw_input":"action=start_chat&user_id=user_1753661711727&help_type=technical"}
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+IP: 136.158.40.47
+
+2025-07-27 20:16:20 - Mobile Error: Database error in start_chat
+Data: {"error":"SQLSTATE[22007]: Invalid datetime format: 1366 Incorrect string value: '\\xF0\\x9F\\x94\\xA7 T...' for column `if0_38484017_barangay_chatbot`.`messages`.`message` at row 1"}
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+IP: 136.158.40.47
+
+2025-07-27 20:16:21 - Mobile Error: Request received
+Data: {"action":"get_messages","method":"GET","get_data":{"action":"get_messages","user_id":"user_1753661711727","_t":"1753661731386"},"post_data":[],"raw_input":""}
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+IP: 136.158.40.47
+
+2025-07-27 20:16:21 - Mobile Error: Request received
+Data: {"action":"start_chat","method":"POST","get_data":{"_t":"1753661731494"},"post_data":{"action":"start_chat","user_id":"user_1753661711727","help_type":"general"},"raw_input":"action=start_chat&user_id=user_1753661711727&help_type=general"}
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+IP: 136.158.40.47
+
+2025-07-27 20:16:21 - Mobile Error: Database error in start_chat
+Data: {"error":"SQLSTATE[22007]: Invalid datetime format: 1366 Incorrect string value: '\\xF0\\x9F\\x92\\xAC G...' for column `if0_38484017_barangay_chatbot`.`messages`.`message` at row 1"}
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+IP: 136.158.40.47
+
+2025-07-27 20:16:22 - Mobile Error: Request received
+Data: {"action":"start_chat","method":"POST","get_data":{"_t":"1753661732240"},"post_data":{"action":"start_chat","user_id":"user_1753661711727","help_type":"general"},"raw_input":"action=start_chat&user_id=user_1753661711727&help_type=general"}
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+IP: 136.158.40.47
+
+2025-07-27 20:16:22 - Mobile Error: Database error in start_chat
+Data: {"error":"SQLSTATE[22007]: Invalid datetime format: 1366 Incorrect string value: '\\xF0\\x9F\\x92\\xAC G...' for column `if0_38484017_barangay_chatbot`.`messages`.`message` at row 1"}
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+IP: 136.158.40.47
+
+2025-07-27 20:16:22 - Mobile Error: Request received
+Data: {"action":"start_chat","method":"POST","get_data":{"_t":"1753661732719"},"post_data":{"action":"start_chat","user_id":"user_1753661711727","help_type":"general"},"raw_input":"action=start_chat&user_id=user_1753661711727&help_type=general"}
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+IP: 136.158.40.47
+
+2025-07-27 20:16:22 - Mobile Error: Database error in start_chat
+Data: {"error":"SQLSTATE[22007]: Invalid datetime format: 1366 Incorrect string value: '\\xF0\\x9F\\x92\\xAC G...' for column `if0_38484017_barangay_chatbot`.`messages`.`message` at row 1"}
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+IP: 136.158.40.47
+
+2025-07-27 20:16:23 - Mobile Error: Request received
+Data: {"action":"get_messages","method":"GET","get_data":{"action":"get_messages","user_id":"user_1753661711727","_t":"1753661733384"},"post_data":[],"raw_input":""}
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+IP: 136.158.40.47
+
+2025-07-27 20:16:23 - Mobile Error: Request received
+Data: {"action":"send_location","method":"POST","get_data":{"_t":"1753661733832"},"post_data":{"action":"send_location","user_id":"user_1753661711727","lat":"14.6898944","lng":"120.9925632","help_type":"emergency"},"raw_input":"action=send_location&user_id=user_1753661711727&lat=14.6898944&lng=120.9925632&help_type=emergency"}
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+IP: 136.158.40.47
+
+2025-07-27 20:16:23 - Mobile Error: Database error in send_location
+Data: {"error":"SQLSTATE[22007]: Invalid datetime format: 1366 Incorrect string value: '\\xF0\\x9F\\x93\\x8D E...' for column `if0_38484017_barangay_chatbot`.`messages`.`message` at row 1"}
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+IP: 136.158.40.47
+
+2025-07-27 20:16:23 - Mobile Error: Request received
+Data: {"action":"start_chat","method":"POST","get_data":{"_t":"1753661733829"},"post_data":{"action":"start_chat","user_id":"user_1753661711727","help_type":"emergency"},"raw_input":"action=start_chat&user_id=user_1753661711727&help_type=emergency"}
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+IP: 136.158.40.47
+
+2025-07-27 20:16:23 - Mobile Error: Database error in start_chat
+Data: {"error":"SQLSTATE[22007]: Invalid datetime format: 1366 Incorrect string value: '\\xF0\\x9F\\x9A\\xA8 E...' for column `if0_38484017_barangay_chatbot`.`messages`.`message` at row 1"}
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+IP: 136.158.40.47
+
+2025-07-27 20:16:25 - Mobile Error: Request received
+Data: {"action":"start_chat","method":"POST","get_data":{"_t":"1753661734941"},"post_data":{"action":"start_chat","user_id":"user_1753661711727","help_type":"emergency"},"raw_input":"action=start_chat&user_id=user_1753661711727&help_type=emergency"}
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+IP: 136.158.40.47
+
+2025-07-27 20:16:25 - Mobile Error: Database error in start_chat
+Data: {"error":"SQLSTATE[22007]: Invalid datetime format: 1366 Incorrect string value: '\\xF0\\x9F\\x9A\\xA8 E...' for column `if0_38484017_barangay_chatbot`.`messages`.`message` at row 1"}
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+IP: 136.158.40.47
+
+2025-07-27 20:16:25 - Mobile Error: Request received
+Data: {"action":"send_location","method":"POST","get_data":{"_t":"1753661735052"},"post_data":{"action":"send_location","user_id":"user_1753661711727","lat":"14.6898944","lng":"120.9925632","help_type":"emergency"},"raw_input":"action=send_location&user_id=user_1753661711727&lat=14.6898944&lng=120.9925632&help_type=emergency"}
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+IP: 136.158.40.47
+
+2025-07-27 20:16:25 - Mobile Error: Database error in send_location
+Data: {"error":"SQLSTATE[22007]: Invalid datetime format: 1366 Incorrect string value: '\\xF0\\x9F\\x93\\x8D E...' for column `if0_38484017_barangay_chatbot`.`messages`.`message` at row 1"}
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+IP: 136.158.40.47
+
+2025-07-27 20:16:25 - Mobile Error: Request received
+Data: {"action":"start_chat","method":"POST","get_data":{"_t":"1753661735053"},"post_data":{"action":"start_chat","user_id":"user_1753661711727","help_type":"emergency"},"raw_input":"action=start_chat&user_id=user_1753661711727&help_type=emergency"}
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+IP: 136.158.40.47
+
+2025-07-27 20:16:25 - Mobile Error: Database error in start_chat
+Data: {"error":"SQLSTATE[22007]: Invalid datetime format: 1366 Incorrect string value: '\\xF0\\x9F\\x9A\\xA8 E...' for column `if0_38484017_barangay_chatbot`.`messages`.`message` at row 1"}
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+IP: 136.158.40.47
+
+2025-07-27 20:16:25 - Mobile Error: Request received
+Data: {"action":"get_messages","method":"GET","get_data":{"action":"get_messages","user_id":"user_1753661711727","_t":"1753661735386"},"post_data":[],"raw_input":""}
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+IP: 136.158.40.47
+
+2025-07-27 20:16:26 - Mobile Error: Request received
+Data: {"action":"start_chat","method":"POST","get_data":{"_t":"1753661736462"},"post_data":{"action":"start_chat","user_id":"user_1753661711727","help_type":"emergency"},"raw_input":"action=start_chat&user_id=user_1753661711727&help_type=emergency"}
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+IP: 136.158.40.47
+
+2025-07-27 20:16:26 - Mobile Error: Database error in start_chat
+Data: {"error":"SQLSTATE[22007]: Invalid datetime format: 1366 Incorrect string value: '\\xF0\\x9F\\x9A\\xA8 E...' for column `if0_38484017_barangay_chatbot`.`messages`.`message` at row 1"}
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+IP: 136.158.40.47
+
+2025-07-27 20:16:27 - Mobile Error: Request received
+Data: {"action":"start_chat","method":"POST","get_data":{"_t":"1753661737275"},"post_data":{"action":"start_chat","user_id":"user_1753661711727","help_type":"emergency"},"raw_input":"action=start_chat&user_id=user_1753661711727&help_type=emergency"}
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+IP: 136.158.40.47
+
+2025-07-27 20:16:27 - Mobile Error: Database error in start_chat
+Data: {"error":"SQLSTATE[22007]: Invalid datetime format: 1366 Incorrect string value: '\\xF0\\x9F\\x9A\\xA8 E...' for column `if0_38484017_barangay_chatbot`.`messages`.`message` at row 1"}
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+IP: 136.158.40.47
+
+2025-07-27 20:16:27 - Mobile Error: Request received
+Data: {"action":"send_location","method":"POST","get_data":{"_t":"1753661737274"},"post_data":{"action":"send_location","user_id":"user_1753661711727","lat":"14.6898944","lng":"120.9925632","help_type":"emergency"},"raw_input":"action=send_location&user_id=user_1753661711727&lat=14.6898944&lng=120.9925632&help_type=emergency"}
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+IP: 136.158.40.47
+
+2025-07-27 20:16:27 - Mobile Error: Database error in send_location
+Data: {"error":"SQLSTATE[22007]: Invalid datetime format: 1366 Incorrect string value: '\\xF0\\x9F\\x93\\x8D E...' for column `if0_38484017_barangay_chatbot`.`messages`.`message` at row 1"}
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+IP: 136.158.40.47
+
+2025-07-27 20:16:27 - Mobile Error: Request received
+Data: {"action":"get_messages","method":"GET","get_data":{"action":"get_messages","user_id":"user_1753661711727","_t":"1753661737385"},"post_data":[],"raw_input":""}
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+IP: 136.158.40.47
+
+2025-07-27 20:16:29 - Mobile Error: Request received
+Data: {"action":"start_chat","method":"POST","get_data":{"_t":"1753661739163"},"post_data":{"action":"start_chat","user_id":"user_1753661711727","help_type":"emergency"},"raw_input":"action=start_chat&user_id=user_1753661711727&help_type=emergency"}
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+IP: 136.158.40.47
+
+2025-07-27 20:16:29 - Mobile Error: Database error in start_chat
+Data: {"error":"SQLSTATE[22007]: Invalid datetime format: 1366 Incorrect string value: '\\xF0\\x9F\\x9A\\xA8 E...' for column `if0_38484017_barangay_chatbot`.`messages`.`message` at row 1"}
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+IP: 136.158.40.47
+
+2025-07-27 20:16:29 - Mobile Error: Request received
+Data: {"action":"get_messages","method":"GET","get_data":{"action":"get_messages","user_id":"user_1753661711727","_t":"1753661739384"},"post_data":[],"raw_input":""}
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+IP: 136.158.40.47
+
+2025-07-27 20:16:32 - Mobile Error: Request received
+Data: {"action":"get_messages","method":"GET","get_data":{"action":"get_messages","user_id":"user_1753661711727","_t":"1753661742234"},"post_data":[],"raw_input":""}
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+IP: 136.158.40.47
+
+2025-07-27 20:16:32 - Mobile Error: Request received
+Data: {"action":"send_location","method":"POST","get_data":{"_t":"1753661742234"},"post_data":{"action":"send_location","user_id":"user_1753661711727","lat":"14.6898944","lng":"120.9925632","help_type":"emergency"},"raw_input":"action=send_location&user_id=user_1753661711727&lat=14.6898944&lng=120.9925632&help_type=emergency"}
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+IP: 136.158.40.47
+
+2025-07-27 20:16:32 - Mobile Error: Database error in send_location
+Data: {"error":"SQLSTATE[22007]: Invalid datetime format: 1366 Incorrect string value: '\\xF0\\x9F\\x93\\x8D E...' for column `if0_38484017_barangay_chatbot`.`messages`.`message` at row 1"}
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+IP: 136.158.40.47
+
+2025-07-27 20:16:32 - Mobile Error: Request received
+Data: {"action":"start_chat","method":"POST","get_data":{"_t":"1753661742234"},"post_data":{"action":"start_chat","user_id":"user_1753661711727","help_type":"emergency"},"raw_input":"action=start_chat&user_id=user_1753661711727&help_type=emergency"}
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+IP: 136.158.40.47
+
+2025-07-27 20:16:32 - Mobile Error: Database error in start_chat
+Data: {"error":"SQLSTATE[22007]: Invalid datetime format: 1366 Incorrect string value: '\\xF0\\x9F\\x9A\\xA8 E...' for column `if0_38484017_barangay_chatbot`.`messages`.`message` at row 1"}
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+IP: 136.158.40.47
+
+2025-07-27 20:16:34 - Mobile Error: Request received
+Data: {"action":"get_messages","method":"GET","get_data":{"action":"get_messages","user_id":"user_1753661711727","_t":"1753661744241"},"post_data":[],"raw_input":""}
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+IP: 136.158.40.47
+
+2025-07-27 20:16:36 - Mobile Error: Request received
+Data: {"action":"get_messages","method":"GET","get_data":{"action":"get_messages","user_id":"user_1753661711727","_t":"1753661746238"},"post_data":[],"raw_input":""}
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+IP: 136.158.40.47
+
+2025-07-27 20:16:38 - Mobile Error: Request received
+Data: {"action":"get_messages","method":"GET","get_data":{"action":"get_messages","user_id":"user_1753661711727","_t":"1753661748242"},"post_data":[],"raw_input":""}
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+IP: 136.158.40.47
+
+2025-07-27 20:16:40 - Mobile Error: Request received
+Data: {"action":"get_messages","method":"GET","get_data":{"action":"get_messages","user_id":"user_1753661711727","_t":"1753661750230"},"post_data":[],"raw_input":""}
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+IP: 136.158.40.47
+
+2025-07-27 20:16:42 - Mobile Error: Request received
+Data: {"action":"get_messages","method":"GET","get_data":{"action":"get_messages","user_id":"user_1753661711727","_t":"1753661752233"},"post_data":[],"raw_input":""}
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+IP: 136.158.40.47
+
+2025-07-27 20:16:44 - Mobile Error: Request received
+Data: {"action":"get_messages","method":"GET","get_data":{"action":"get_messages","user_id":"user_1753661711727","_t":"1753661754228"},"post_data":[],"raw_input":""}
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+IP: 136.158.40.47
+
+2025-07-27 20:16:46 - Mobile Error: Request received
+Data: {"action":"get_messages","method":"GET","get_data":{"action":"get_messages","user_id":"user_1753661711727","_t":"1753661756240"},"post_data":[],"raw_input":""}
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+IP: 136.158.40.47
+
+2025-07-27 20:16:48 - Mobile Error: Request received
+Data: {"action":"get_messages","method":"GET","get_data":{"action":"get_messages","user_id":"user_1753661711727","_t":"1753661758234"},"post_data":[],"raw_input":""}
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+IP: 136.158.40.47
+
+2025-07-27 20:16:50 - Mobile Error: Request received
+Data: {"action":"get_messages","method":"GET","get_data":{"action":"get_messages","user_id":"user_1753661711727","_t":"1753661760229"},"post_data":[],"raw_input":""}
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+IP: 136.158.40.47
+
+2025-07-27 20:16:52 - Mobile Error: Request received
+Data: {"action":"get_messages","method":"GET","get_data":{"action":"get_messages","user_id":"user_1753661711727","_t":"1753661762233"},"post_data":[],"raw_input":""}
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+IP: 136.158.40.47
+
+2025-07-27 20:16:54 - Mobile Error: Request received
+Data: {"action":"get_messages","method":"GET","get_data":{"action":"get_messages","user_id":"user_1753661711727","_t":"1753661764228"},"post_data":[],"raw_input":""}
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+IP: 136.158.40.47
+
+2025-07-27 20:16:56 - Mobile Error: Request received
+Data: {"action":"get_messages","method":"GET","get_data":{"action":"get_messages","user_id":"user_1753661711727","_t":"1753661766227"},"post_data":[],"raw_input":""}
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+IP: 136.158.40.47
+
+2025-07-27 20:16:57 - Mobile Error: Request received
+Data: {"action":"get_messages","method":"GET","get_data":{"action":"get_messages","user_id":"user_1753661711727","_t":"1753661767664"},"post_data":[],"raw_input":""}
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+IP: 136.158.40.47
+
+2025-07-27 20:17:00 - Mobile Error: Request received
+Data: {"action":"get_messages","method":"GET","get_data":{"action":"get_messages","user_id":"user_1753661711727","_t":"1753661770237"},"post_data":[],"raw_input":""}
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+IP: 136.158.40.47
+
+2025-07-27 20:17:02 - Mobile Error: Request received
+Data: {"action":"get_messages","method":"GET","get_data":{"action":"get_messages","user_id":"user_1753661711727","_t":"1753661772234"},"post_data":[],"raw_input":""}
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+IP: 136.158.40.47
+
+2025-07-27 20:17:04 - Mobile Error: Request received
+Data: {"action":"get_messages","method":"GET","get_data":{"action":"get_messages","user_id":"user_1753661711727","_t":"1753661774232"},"post_data":[],"raw_input":""}
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+IP: 136.158.40.47
+
+2025-07-27 20:17:06 - Mobile Error: Request received
+Data: {"action":"get_messages","method":"GET","get_data":{"action":"get_messages","user_id":"user_1753661711727","_t":"1753661776227"},"post_data":[],"raw_input":""}
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+IP: 136.158.40.47
+
+2025-07-27 20:17:07 - Mobile Error: Request received
+Data: {"action":"get_messages","method":"GET","get_data":{"action":"get_messages","user_id":"user_1753661711727","_t":"1753661777433"},"post_data":[],"raw_input":""}
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+IP: 136.158.40.47
+
+2025-07-27 20:17:19 - Mobile Error: Request received
+Data: {"action":"get_messages","method":"GET","get_data":{"action":"get_messages","user_id":"user_1753661778498","_t":"1753661789695"},"post_data":[],"raw_input":""}
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+IP: 136.158.40.47
+
+2025-07-27 20:17:21 - Mobile Error: Request received
+Data: {"action":"start_chat","method":"POST","get_data":{"_t":"1753661791425"},"post_data":{"action":"start_chat","user_id":"user_1753661778498","help_type":"emergency"},"raw_input":"action=start_chat&user_id=user_1753661778498&help_type=emergency"}
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+IP: 136.158.40.47
+
+2025-07-27 20:17:21 - Mobile Error: Database error in start_chat
+Data: {"error":"SQLSTATE[22007]: Invalid datetime format: 1366 Incorrect string value: '\\xF0\\x9F\\x9A\\xA8 E...' for column `if0_38484017_barangay_chatbot`.`messages`.`message` at row 1"}
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+IP: 136.158.40.47
+
+2025-07-27 20:17:21 - Mobile Error: Request received
+Data: {"action":"send_location","method":"POST","get_data":{"_t":"1753661791432"},"post_data":{"action":"send_location","user_id":"user_1753661778498","lat":"14.6898944","lng":"120.9925632","help_type":"emergency"},"raw_input":"action=send_location&user_id=user_1753661778498&lat=14.6898944&lng=120.9925632&help_type=emergency"}
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+IP: 136.158.40.47
+
+2025-07-27 20:17:21 - Mobile Error: Database error in send_location
+Data: {"error":"SQLSTATE[22007]: Invalid datetime format: 1366 Incorrect string value: '\\xF0\\x9F\\x93\\x8D E...' for column `if0_38484017_barangay_chatbot`.`messages`.`message` at row 1"}
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+IP: 136.158.40.47
+
+2025-07-27 20:17:21 - Mobile Error: Request received
+Data: {"action":"get_messages","method":"GET","get_data":{"action":"get_messages","user_id":"user_1753661778498","_t":"1753661791700"},"post_data":[],"raw_input":""}
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+IP: 136.158.40.47
+
+2025-07-27 20:17:22 - Mobile Error: Request received
+Data: {"action":"send_location","method":"POST","get_data":{"_t":"1753661792659"},"post_data":{"action":"send_location","user_id":"user_1753661778498","lat":"14.6898944","lng":"120.9925632","help_type":"emergency"},"raw_input":"action=send_location&user_id=user_1753661778498&lat=14.6898944&lng=120.9925632&help_type=emergency"}
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+IP: 136.158.40.47
+
+2025-07-27 20:17:22 - Mobile Error: Database error in send_location
+Data: {"error":"SQLSTATE[22007]: Invalid datetime format: 1366 Incorrect string value: '\\xF0\\x9F\\x93\\x8D E...' for column `if0_38484017_barangay_chatbot`.`messages`.`message` at row 1"}
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+IP: 136.158.40.47
+
+2025-07-27 20:17:22 - Mobile Error: Request received
+Data: {"action":"start_chat","method":"POST","get_data":{"_t":"1753661792659"},"post_data":{"action":"start_chat","user_id":"user_1753661778498","help_type":"emergency"},"raw_input":"action=start_chat&user_id=user_1753661778498&help_type=emergency"}
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+IP: 136.158.40.47
+
+2025-07-27 20:17:22 - Mobile Error: Database error in start_chat
+Data: {"error":"SQLSTATE[22007]: Invalid datetime format: 1366 Incorrect string value: '\\xF0\\x9F\\x9A\\xA8 E...' for column `if0_38484017_barangay_chatbot`.`messages`.`message` at row 1"}
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+IP: 136.158.40.47
+
+2025-07-27 20:17:23 - Mobile Error: Request received
+Data: {"action":"get_messages","method":"GET","get_data":{"action":"get_messages","user_id":"user_1753661778498","_t":"1753661793700"},"post_data":[],"raw_input":""}
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+IP: 136.158.40.47
+
+2025-07-27 20:17:25 - Mobile Error: Request received
+Data: {"action":"start_chat","method":"POST","get_data":{"_t":"1753661794888"},"post_data":{"action":"start_chat","user_id":"user_1753661778498","help_type":"emergency"},"raw_input":"action=start_chat&user_id=user_1753661778498&help_type=emergency"}
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+IP: 136.158.40.47
+
+2025-07-27 20:17:25 - Mobile Error: Database error in start_chat
+Data: {"error":"SQLSTATE[22007]: Invalid datetime format: 1366 Incorrect string value: '\\xF0\\x9F\\x9A\\xA8 E...' for column `if0_38484017_barangay_chatbot`.`messages`.`message` at row 1"}
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+IP: 136.158.40.47
+
+2025-07-27 20:17:25 - Mobile Error: Request received
+Data: {"action":"send_location","method":"POST","get_data":{"_t":"1753661794887"},"post_data":{"action":"send_location","user_id":"user_1753661778498","lat":"14.6898944","lng":"120.9925632","help_type":"emergency"},"raw_input":"action=send_location&user_id=user_1753661778498&lat=14.6898944&lng=120.9925632&help_type=emergency"}
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+IP: 136.158.40.47
+
+2025-07-27 20:17:25 - Mobile Error: Database error in send_location
+Data: {"error":"SQLSTATE[22007]: Invalid datetime format: 1366 Incorrect string value: '\\xF0\\x9F\\x93\\x8D E...' for column `if0_38484017_barangay_chatbot`.`messages`.`message` at row 1"}
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+IP: 136.158.40.47
+
+2025-07-27 20:17:25 - Mobile Error: Request received
+Data: {"action":"get_messages","method":"GET","get_data":{"action":"get_messages","user_id":"user_1753661778498","_t":"1753661795700"},"post_data":[],"raw_input":""}
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+IP: 136.158.40.47
+
+2025-07-27 20:17:27 - Mobile Error: Request received
+Data: {"action":"get_messages","method":"GET","get_data":{"action":"get_messages","user_id":"user_1753661778498","_t":"1753661797700"},"post_data":[],"raw_input":""}
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+IP: 136.158.40.47
+
+2025-07-27 20:17:29 - Mobile Error: Request received
+Data: {"action":"send_location","method":"POST","get_data":{"_t":"1753661799116"},"post_data":{"action":"send_location","user_id":"user_1753661778498","lat":"14.6898944","lng":"120.9925632","help_type":"emergency"},"raw_input":"action=send_location&user_id=user_1753661778498&lat=14.6898944&lng=120.9925632&help_type=emergency"}
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+IP: 136.158.40.47
+
+2025-07-27 20:17:29 - Mobile Error: Database error in send_location
+Data: {"error":"SQLSTATE[22007]: Invalid datetime format: 1366 Incorrect string value: '\\xF0\\x9F\\x93\\x8D E...' for column `if0_38484017_barangay_chatbot`.`messages`.`message` at row 1"}
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+IP: 136.158.40.47
+
+2025-07-27 20:17:29 - Mobile Error: Request received
+Data: {"action":"start_chat","method":"POST","get_data":{"_t":"1753661799115"},"post_data":{"action":"start_chat","user_id":"user_1753661778498","help_type":"emergency"},"raw_input":"action=start_chat&user_id=user_1753661778498&help_type=emergency"}
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+IP: 136.158.40.47
+
+2025-07-27 20:17:29 - Mobile Error: Database error in start_chat
+Data: {"error":"SQLSTATE[22007]: Invalid datetime format: 1366 Incorrect string value: '\\xF0\\x9F\\x9A\\xA8 E...' for column `if0_38484017_barangay_chatbot`.`messages`.`message` at row 1"}
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+IP: 136.158.40.47
+
+2025-07-27 20:17:29 - Mobile Error: Request received
+Data: {"action":"start_chat","method":"POST","get_data":{"_t":"1753661799583"},"post_data":{"action":"start_chat","user_id":"user_1753661778498","help_type":"technical"},"raw_input":"action=start_chat&user_id=user_1753661778498&help_type=technical"}
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+IP: 136.158.40.47
+
+2025-07-27 20:17:29 - Mobile Error: Database error in start_chat
+Data: {"error":"SQLSTATE[22007]: Invalid datetime format: 1366 Incorrect string value: '\\xF0\\x9F\\x94\\xA7 T...' for column `if0_38484017_barangay_chatbot`.`messages`.`message` at row 1"}
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+IP: 136.158.40.47
+
+2025-07-27 20:17:29 - Mobile Error: Request received
+Data: {"action":"get_messages","method":"GET","get_data":{"action":"get_messages","user_id":"user_1753661778498","_t":"1753661799700"},"post_data":[],"raw_input":""}
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+IP: 136.158.40.47
+
+2025-07-27 20:17:30 - Mobile Error: Request received
+Data: {"action":"start_chat","method":"POST","get_data":{"_t":"1753661800809"},"post_data":{"action":"start_chat","user_id":"user_1753661778498","help_type":"technical"},"raw_input":"action=start_chat&user_id=user_1753661778498&help_type=technical"}
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+IP: 136.158.40.47
+
+2025-07-27 20:17:30 - Mobile Error: Database error in start_chat
+Data: {"error":"SQLSTATE[22007]: Invalid datetime format: 1366 Incorrect string value: '\\xF0\\x9F\\x94\\xA7 T...' for column `if0_38484017_barangay_chatbot`.`messages`.`message` at row 1"}
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+IP: 136.158.40.47
+
+2025-07-27 20:17:31 - Mobile Error: Request received
+Data: {"action":"get_messages","method":"GET","get_data":{"action":"get_messages","user_id":"user_1753661778498","_t":"1753661801695"},"post_data":[],"raw_input":""}
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+IP: 136.158.40.47
+
+2025-07-27 20:17:33 - Mobile Error: Request received
+Data: {"action":"start_chat","method":"POST","get_data":{"_t":"1753661803040"},"post_data":{"action":"start_chat","user_id":"user_1753661778498","help_type":"technical"},"raw_input":"action=start_chat&user_id=user_1753661778498&help_type=technical"}
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+IP: 136.158.40.47
+
+2025-07-27 20:17:33 - Mobile Error: Database error in start_chat
+Data: {"error":"SQLSTATE[22007]: Invalid datetime format: 1366 Incorrect string value: '\\xF0\\x9F\\x94\\xA7 T...' for column `if0_38484017_barangay_chatbot`.`messages`.`message` at row 1"}
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+IP: 136.158.40.47
+
+2025-07-27 20:17:33 - Mobile Error: Request received
+Data: {"action":"get_messages","method":"GET","get_data":{"action":"get_messages","user_id":"user_1753661778498","_t":"1753661803695"},"post_data":[],"raw_input":""}
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+IP: 136.158.40.47
+
+2025-07-27 20:17:35 - Mobile Error: Request received
+Data: {"action":"get_messages","method":"GET","get_data":{"action":"get_messages","user_id":"user_1753661778498","_t":"1753661805698"},"post_data":[],"raw_input":""}
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+IP: 136.158.40.47
+
+2025-07-27 20:17:37 - Mobile Error: Request received
+Data: {"action":"send_message","method":"POST","get_data":{"_t":"1753661807071"},"post_data":{"action":"send_message","user_id":"user_1753661778498","message":"hello i need help"},"raw_input":"action=send_message&user_id=user_1753661778498&message=hello%20i%20need%20help"}
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+IP: 136.158.40.47
+
+2025-07-27 20:17:37 - Mobile Error: Request received
+Data: {"action":"start_chat","method":"POST","get_data":{"_t":"1753661807269"},"post_data":{"action":"start_chat","user_id":"user_1753661778498","help_type":"technical"},"raw_input":"action=start_chat&user_id=user_1753661778498&help_type=technical"}
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+IP: 136.158.40.47
+
+2025-07-27 20:17:37 - Mobile Error: Database error in start_chat
+Data: {"error":"SQLSTATE[22007]: Invalid datetime format: 1366 Incorrect string value: '\\xF0\\x9F\\x94\\xA7 T...' for column `if0_38484017_barangay_chatbot`.`messages`.`message` at row 1"}
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+IP: 136.158.40.47
+
+2025-07-27 20:17:37 - Mobile Error: Request received
+Data: {"action":"get_messages","method":"GET","get_data":{"action":"get_messages","user_id":"user_1753661778498","_t":"1753661807699"},"post_data":[],"raw_input":""}
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+IP: 136.158.40.47
+
+2025-07-27 20:17:38 - Mobile Error: Request received
+Data: {"action":"get_messages","method":"GET","get_data":{"action":"get_messages","user_id":"user_1753661778498","_t":"1753661808228"},"post_data":[],"raw_input":""}
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+IP: 136.158.40.47
+
+2025-07-27 20:17:40 - Mobile Error: Request received
+Data: {"action":"get_messages","method":"GET","get_data":{"action":"get_messages","user_id":"user_1753661778498","_t":"1753661810233"},"post_data":[],"raw_input":""}
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+IP: 136.158.40.47
+
+2025-07-27 20:17:42 - Mobile Error: Request received
+Data: {"action":"get_messages","method":"GET","get_data":{"action":"get_messages","user_id":"user_1753661778498","_t":"1753661812233"},"post_data":[],"raw_input":""}
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+IP: 136.158.40.47
+
+2025-07-27 20:17:44 - Mobile Error: Request received
+Data: {"action":"get_messages","method":"GET","get_data":{"action":"get_messages","user_id":"user_1753661778498","_t":"1753661814233"},"post_data":[],"raw_input":""}
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+IP: 136.158.40.47
+
+2025-07-27 20:17:46 - Mobile Error: Request received
+Data: {"action":"get_messages","method":"GET","get_data":{"action":"get_messages","user_id":"user_1753661778498","_t":"1753661816229"},"post_data":[],"raw_input":""}
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+IP: 136.158.40.47
+
+2025-07-27 20:17:48 - Mobile Error: Request received
+Data: {"action":"get_messages","method":"GET","get_data":{"action":"get_messages","user_id":"user_1753661778498","_t":"1753661818055"},"post_data":[],"raw_input":""}
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+IP: 136.158.40.47
+
+2025-07-27 20:17:49 - Mobile Error: Request received
+Data: {"action":"get_messages","method":"GET","get_data":{"action":"get_messages","user_id":"user_1753661778498","_t":"1753661819695"},"post_data":[],"raw_input":""}
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+IP: 136.158.40.47
+
+2025-07-27 20:17:51 - Mobile Error: Request received
+Data: {"action":"get_messages","method":"GET","get_data":{"action":"get_messages","user_id":"user_1753661778498","_t":"1753661821695"},"post_data":[],"raw_input":""}
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+IP: 136.158.40.47
+
+2025-07-27 20:17:52 - Mobile Error: Request received
+Data: {"action":"send_message","method":"POST","get_data":{"_t":"1753661822736"},"post_data":{"action":"send_message","user_id":"user_1753661778498","message":"hello?"},"raw_input":"action=send_message&user_id=user_1753661778498&message=hello%3F"}
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+IP: 136.158.40.47
+
+2025-07-27 20:17:53 - Mobile Error: Request received
+Data: {"action":"get_messages","method":"GET","get_data":{"action":"get_messages","user_id":"user_1753661778498","_t":"1753661823466"},"post_data":[],"raw_input":""}
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+IP: 136.158.40.47
+
+2025-07-27 20:17:53 - Mobile Error: Request received
+Data: {"action":"get_messages","method":"GET","get_data":{"action":"get_messages","user_id":"user_1753661778498","_t":"1753661823695"},"post_data":[],"raw_input":""}
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+IP: 136.158.40.47
+
+2025-07-27 20:17:56 - Mobile Error: Request received
+Data: {"action":"get_messages","method":"GET","get_data":{"action":"get_messages","user_id":"user_1753661778498","_t":"1753661826228"},"post_data":[],"raw_input":""}
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+IP: 136.158.40.47
+
+2025-07-27 20:17:58 - Mobile Error: Request received
+Data: {"action":"get_messages","method":"GET","get_data":{"action":"get_messages","user_id":"user_1753661778498","_t":"1753661828233"},"post_data":[],"raw_input":""}
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+IP: 136.158.40.47
+
+2025-07-27 20:18:00 - Mobile Error: Request received
+Data: {"action":"get_messages","method":"GET","get_data":{"action":"get_messages","user_id":"user_1753661778498","_t":"1753661830239"},"post_data":[],"raw_input":""}
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+IP: 136.158.40.47
+
+2025-07-27 20:18:02 - Mobile Error: Request received
+Data: {"action":"get_messages","method":"GET","get_data":{"action":"get_messages","user_id":"user_1753661778498","_t":"1753661832237"},"post_data":[],"raw_input":""}
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+IP: 136.158.40.47
+
+2025-07-27 20:18:04 - Mobile Error: Request received
+Data: {"action":"get_messages","method":"GET","get_data":{"action":"get_messages","user_id":"user_1753661778498","_t":"1753661834239"},"post_data":[],"raw_input":""}
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+IP: 136.158.40.47
+
+2025-07-27 20:18:06 - Mobile Error: Request received
+Data: {"action":"get_messages","method":"GET","get_data":{"action":"get_messages","user_id":"user_1753661778498","_t":"1753661836242"},"post_data":[],"raw_input":""}
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+IP: 136.158.40.47
+
+2025-07-27 20:18:08 - Mobile Error: Request received
+Data: {"action":"get_messages","method":"GET","get_data":{"action":"get_messages","user_id":"user_1753661778498","_t":"1753661838231"},"post_data":[],"raw_input":""}
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+IP: 136.158.40.47
+
+2025-07-27 20:18:10 - Mobile Error: Request received
+Data: {"action":"get_messages","method":"GET","get_data":{"action":"get_messages","user_id":"user_1753661778498","_t":"1753661840234"},"post_data":[],"raw_input":""}
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+IP: 136.158.40.47
+
+2025-07-27 20:18:12 - Mobile Error: Request received
+Data: {"action":"get_messages","method":"GET","get_data":{"action":"get_messages","user_id":"user_1753661778498","_t":"1753661842238"},"post_data":[],"raw_input":""}
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+IP: 136.158.40.47
+
+2025-07-27 20:18:14 - Mobile Error: Request received
+Data: {"action":"get_messages","method":"GET","get_data":{"action":"get_messages","user_id":"user_1753661778498","_t":"1753661844239"},"post_data":[],"raw_input":""}
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+IP: 136.158.40.47
+
+2025-07-27 20:18:16 - Mobile Error: Request received
+Data: {"action":"get_messages","method":"GET","get_data":{"action":"get_messages","user_id":"user_1753661778498","_t":"1753661846240"},"post_data":[],"raw_input":""}
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+IP: 136.158.40.47
+
+{
+    "timestamp": "2025-07-27 20:18:17",
+    "message": "Mobile request detected",
+    "mobile_info": {
+        "is_mobile": 1,
+        "user_agent": "Mozilla\/5.0 (Linux; Android 10; K) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/138.0.0.0 Mobile Safari\/537.36",
+        "ip_address": "136.158.40.47",
+        "request_method": "GET",
+        "request_uri": "\/user_handler.php?action=get_messages&user_id=user_1753661895526&_t=1753661896400",
+        "browser": "Chrome Mobile"
+    },
+    "session_data": {
+        "session_id": "c72865a5417052072569efabe40435dc",
+        "session_status": 2,
+        "session_data": {
+            "last_regeneration": 1753661897,
+            "admin_id": 5,
+            "admin_username": "danilo",
+            "user_type": "admin"
+        }
+    },
+    "request_data": {
+        "get": {
+            "action": "get_messages",
+            "user_id": "user_1753661895526",
+            "_t": "1753661896400"
+        },
+        "post": [],
+        "files": [],
+        "server": {
+            "HTTP_HOST": "qaresponse-barangay.42web.io",
+            "HTTP_USER_AGENT": "Mozilla\/5.0 (Linux; Android 10; K) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/138.0.0.0 Mobile Safari\/537.36",
+            "REMOTE_ADDR": "136.158.40.47",
+            "REQUEST_METHOD": "GET",
+            "REQUEST_URI": "\/user_handler.php?action=get_messages&user_id=user_1753661895526&_t=1753661896400"
+        }
+    },
+    "additional_data": {
+        "script_name": "\/user_handler.php",
+        "query_string": "action=get_messages&user_id=user_1753661895526&_t=1753661896400"
+    }
+}
+--------------------------------------------------------------------------------
+2025-07-27 20:18:17 - Mobile Error: Request received
+Data: {"action":"get_messages","method":"GET","get_data":{"action":"get_messages","user_id":"user_1753661895526","_t":"1753661896400"},"post_data":[],"raw_input":""}
+User Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36
+IP: 136.158.40.47
+
+2025-07-27 20:18:18 - Mobile Error: Request received
+Data: {"action":"get_messages","method":"GET","get_data":{"action":"get_messages","user_id":"user_1753661778498","_t":"1753661848240"},"post_data":[],"raw_input":""}
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+IP: 136.158.40.47
+
+{
+    "timestamp": "2025-07-27 20:18:20",
+    "message": "Mobile request detected",
+    "mobile_info": {
+        "is_mobile": 1,
+        "user_agent": "Mozilla\/5.0 (Linux; Android 10; K) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/138.0.0.0 Mobile Safari\/537.36",
+        "ip_address": "136.158.40.47",
+        "request_method": "GET",
+        "request_uri": "\/user_handler.php?action=get_messages&user_id=user_1753661895526&_t=1753661899398",
+        "browser": "Chrome Mobile"
+    },
+    "session_data": {
+        "session_id": "c72865a5417052072569efabe40435dc",
+        "session_status": 2,
+        "session_data": {
+            "last_regeneration": 1753661897,
+            "admin_id": 5,
+            "admin_username": "danilo",
+            "user_type": "admin"
+        }
+    },
+    "request_data": {
+        "get": {
+            "action": "get_messages",
+            "user_id": "user_1753661895526",
+            "_t": "1753661899398"
+        },
+        "post": [],
+        "files": [],
+        "server": {
+            "HTTP_HOST": "qaresponse-barangay.42web.io",
+            "HTTP_USER_AGENT": "Mozilla\/5.0 (Linux; Android 10; K) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/138.0.0.0 Mobile Safari\/537.36",
+            "REMOTE_ADDR": "136.158.40.47",
+            "REQUEST_METHOD": "GET",
+            "REQUEST_URI": "\/user_handler.php?action=get_messages&user_id=user_1753661895526&_t=1753661899398"
+        }
+    },
+    "additional_data": {
+        "script_name": "\/user_handler.php",
+        "query_string": "action=get_messages&user_id=user_1753661895526&_t=1753661899398"
+    }
+}
+--------------------------------------------------------------------------------
+2025-07-27 20:18:20 - Mobile Error: Request received
+Data: {"action":"get_messages","method":"GET","get_data":{"action":"get_messages","user_id":"user_1753661895526","_t":"1753661899398"},"post_data":[],"raw_input":""}
+User Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36
+IP: 136.158.40.47
+
+2025-07-27 20:18:20 - Mobile Error: Request received
+Data: {"action":"get_messages","method":"GET","get_data":{"action":"get_messages","user_id":"user_1753661778498","_t":"1753661850241"},"post_data":[],"raw_input":""}
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+IP: 136.158.40.47
+
+2025-07-27 20:18:22 - Mobile Error: Request received
+Data: {"action":"get_messages","method":"GET","get_data":{"action":"get_messages","user_id":"user_1753661778498","_t":"1753661852227"},"post_data":[],"raw_input":""}
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+IP: 136.158.40.47
+
+{
+    "timestamp": "2025-07-27 20:18:23",
+    "message": "Mobile request detected",
+    "mobile_info": {
+        "is_mobile": 1,
+        "user_agent": "Mozilla\/5.0 (Linux; Android 10; K) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/138.0.0.0 Mobile Safari\/537.36",
+        "ip_address": "136.158.40.47",
+        "request_method": "GET",
+        "request_uri": "\/user_handler.php?action=get_messages&user_id=user_1753661895526&_t=1753661902398",
+        "browser": "Chrome Mobile"
+    },
+    "session_data": {
+        "session_id": "c72865a5417052072569efabe40435dc",
+        "session_status": 2,
+        "session_data": {
+            "last_regeneration": 1753661897,
+            "admin_id": 5,
+            "admin_username": "danilo",
+            "user_type": "admin"
+        }
+    },
+    "request_data": {
+        "get": {
+            "action": "get_messages",
+            "user_id": "user_1753661895526",
+            "_t": "1753661902398"
+        },
+        "post": [],
+        "files": [],
+        "server": {
+            "HTTP_HOST": "qaresponse-barangay.42web.io",
+            "HTTP_USER_AGENT": "Mozilla\/5.0 (Linux; Android 10; K) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/138.0.0.0 Mobile Safari\/537.36",
+            "REMOTE_ADDR": "136.158.40.47",
+            "REQUEST_METHOD": "GET",
+            "REQUEST_URI": "\/user_handler.php?action=get_messages&user_id=user_1753661895526&_t=1753661902398"
+        }
+    },
+    "additional_data": {
+        "script_name": "\/user_handler.php",
+        "query_string": "action=get_messages&user_id=user_1753661895526&_t=1753661902398"
+    }
+}
+--------------------------------------------------------------------------------
+2025-07-27 20:18:23 - Mobile Error: Request received
+Data: {"action":"get_messages","method":"GET","get_data":{"action":"get_messages","user_id":"user_1753661895526","_t":"1753661902398"},"post_data":[],"raw_input":""}
+User Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36
+IP: 136.158.40.47
+
+{
+    "timestamp": "2025-07-27 20:18:23",
+    "message": "Mobile request detected",
+    "mobile_info": {
+        "is_mobile": 1,
+        "user_agent": "Mozilla\/5.0 (Linux; Android 10; K) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/138.0.0.0 Mobile Safari\/537.36",
+        "ip_address": "136.158.40.47",
+        "request_method": "POST",
+        "request_uri": "\/user_handler.php?_t=1753661902554",
+        "browser": "Chrome Mobile"
+    },
+    "session_data": {
+        "session_id": "c72865a5417052072569efabe40435dc",
+        "session_status": 2,
+        "session_data": {
+            "last_regeneration": 1753661897,
+            "admin_id": 5,
+            "admin_username": "danilo",
+            "user_type": "admin"
+        }
+    },
+    "request_data": {
+        "get": {
+            "_t": "1753661902554"
+        },
+        "post": {
+            "action": "send_message",
+            "user_id": "user_1753661895526",
+            "message": "Hello"
+        },
+        "files": [],
+        "server": {
+            "HTTP_HOST": "qaresponse-barangay.42web.io",
+            "HTTP_USER_AGENT": "Mozilla\/5.0 (Linux; Android 10; K) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/138.0.0.0 Mobile Safari\/537.36",
+            "REMOTE_ADDR": "136.158.40.47",
+            "REQUEST_METHOD": "POST",
+            "REQUEST_URI": "\/user_handler.php?_t=1753661902554"
+        }
+    },
+    "additional_data": {
+        "script_name": "\/user_handler.php",
+        "query_string": "_t=1753661902554"
+    }
+}
+--------------------------------------------------------------------------------
+2025-07-27 20:18:23 - Mobile Error: Request received
+Data: {"action":"send_message","method":"POST","get_data":{"_t":"1753661902554"},"post_data":{"action":"send_message","user_id":"user_1753661895526","message":"Hello"},"raw_input":"action=send_message&user_id=user_1753661895526&message=Hello"}
+User Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36
+IP: 136.158.40.47
+
+{
+    "timestamp": "2025-07-27 20:18:24",
+    "message": "Mobile request detected",
+    "mobile_info": {
+        "is_mobile": 1,
+        "user_agent": "Mozilla\/5.0 (Linux; Android 10; K) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/138.0.0.0 Mobile Safari\/537.36",
+        "ip_address": "136.158.40.47",
+        "request_method": "GET",
+        "request_uri": "\/user_handler.php?action=get_messages&user_id=user_1753661895526&_t=1753661903352",
+        "browser": "Chrome Mobile"
+    },
+    "session_data": {
+        "session_id": "c72865a5417052072569efabe40435dc",
+        "session_status": 2,
+        "session_data": {
+            "last_regeneration": 1753661897,
+            "admin_id": 5,
+            "admin_username": "danilo",
+            "user_type": "admin"
+        }
+    },
+    "request_data": {
+        "get": {
+            "action": "get_messages",
+            "user_id": "user_1753661895526",
+            "_t": "1753661903352"
+        },
+        "post": [],
+        "files": [],
+        "server": {
+            "HTTP_HOST": "qaresponse-barangay.42web.io",
+            "HTTP_USER_AGENT": "Mozilla\/5.0 (Linux; Android 10; K) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/138.0.0.0 Mobile Safari\/537.36",
+            "REMOTE_ADDR": "136.158.40.47",
+            "REQUEST_METHOD": "GET",
+            "REQUEST_URI": "\/user_handler.php?action=get_messages&user_id=user_1753661895526&_t=1753661903352"
+        }
+    },
+    "additional_data": {
+        "script_name": "\/user_handler.php",
+        "query_string": "action=get_messages&user_id=user_1753661895526&_t=1753661903352"
+    }
+}
+--------------------------------------------------------------------------------
+2025-07-27 20:18:24 - Mobile Error: Request received
+Data: {"action":"get_messages","method":"GET","get_data":{"action":"get_messages","user_id":"user_1753661895526","_t":"1753661903352"},"post_data":[],"raw_input":""}
+User Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36
+IP: 136.158.40.47
+
+2025-07-27 20:18:24 - Mobile Error: Request received
+Data: {"action":"get_messages","method":"GET","get_data":{"action":"get_messages","user_id":"user_1753661778498","_t":"1753661854230"},"post_data":[],"raw_input":""}
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+IP: 136.158.40.47
+
+{
+    "timestamp": "2025-07-27 20:18:26",
+    "message": "Mobile request detected",
+    "mobile_info": {
+        "is_mobile": 1,
+        "user_agent": "Mozilla\/5.0 (Linux; Android 10; K) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/138.0.0.0 Mobile Safari\/537.36",
+        "ip_address": "136.158.40.47",
+        "request_method": "GET",
+        "request_uri": "\/user_handler.php?action=get_messages&user_id=user_1753661895526&_t=1753661905399",
+        "browser": "Chrome Mobile"
+    },
+    "session_data": {
+        "session_id": "c72865a5417052072569efabe40435dc",
+        "session_status": 2,
+        "session_data": {
+            "last_regeneration": 1753661897,
+            "admin_id": 5,
+            "admin_username": "danilo",
+            "user_type": "admin"
+        }
+    },
+    "request_data": {
+        "get": {
+            "action": "get_messages",
+            "user_id": "user_1753661895526",
+            "_t": "1753661905399"
+        },
+        "post": [],
+        "files": [],
+        "server": {
+            "HTTP_HOST": "qaresponse-barangay.42web.io",
+            "HTTP_USER_AGENT": "Mozilla\/5.0 (Linux; Android 10; K) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/138.0.0.0 Mobile Safari\/537.36",
+            "REMOTE_ADDR": "136.158.40.47",
+            "REQUEST_METHOD": "GET",
+            "REQUEST_URI": "\/user_handler.php?action=get_messages&user_id=user_1753661895526&_t=1753661905399"
+        }
+    },
+    "additional_data": {
+        "script_name": "\/user_handler.php",
+        "query_string": "action=get_messages&user_id=user_1753661895526&_t=1753661905399"
+    }
+}
+--------------------------------------------------------------------------------
+2025-07-27 20:18:26 - Mobile Error: Request received
+Data: {"action":"get_messages","method":"GET","get_data":{"action":"get_messages","user_id":"user_1753661895526","_t":"1753661905399"},"post_data":[],"raw_input":""}
+User Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36
+IP: 136.158.40.47
+
+2025-07-27 20:18:26 - Mobile Error: Request received
+Data: {"action":"get_messages","method":"GET","get_data":{"action":"get_messages","user_id":"user_1753661778498","_t":"1753661856234"},"post_data":[],"raw_input":""}
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+IP: 136.158.40.47
+
+{
+    "timestamp": "2025-07-27 20:18:26",
+    "message": "Mobile request detected",
+    "mobile_info": {
+        "is_mobile": 1,
+        "user_agent": "Mozilla\/5.0 (Linux; Android 10; K) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/138.0.0.0 Mobile Safari\/537.36",
+        "ip_address": "136.158.40.47",
+        "request_method": "POST",
+        "request_uri": "\/user_handler.php?_t=1753661905938",
+        "browser": "Chrome Mobile"
+    },
+    "session_data": {
+        "session_id": "c72865a5417052072569efabe40435dc",
+        "session_status": 2,
+        "session_data": {
+            "last_regeneration": 1753661897,
+            "admin_id": 5,
+            "admin_username": "danilo",
+            "user_type": "admin"
+        }
+    },
+    "request_data": {
+        "get": {
+            "_t": "1753661905938"
+        },
+        "post": {
+            "action": "start_chat",
+            "user_id": "user_1753661895526",
+            "help_type": "emergency"
+        },
+        "files": [],
+        "server": {
+            "HTTP_HOST": "qaresponse-barangay.42web.io",
+            "HTTP_USER_AGENT": "Mozilla\/5.0 (Linux; Android 10; K) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/138.0.0.0 Mobile Safari\/537.36",
+            "REMOTE_ADDR": "136.158.40.47",
+            "REQUEST_METHOD": "POST",
+            "REQUEST_URI": "\/user_handler.php?_t=1753661905938"
+        }
+    },
+    "additional_data": {
+        "script_name": "\/user_handler.php",
+        "query_string": "_t=1753661905938"
+    }
+}
+--------------------------------------------------------------------------------
+2025-07-27 20:18:26 - Mobile Error: Request received
+Data: {"action":"start_chat","method":"POST","get_data":{"_t":"1753661905938"},"post_data":{"action":"start_chat","user_id":"user_1753661895526","help_type":"emergency"},"raw_input":"action=start_chat&user_id=user_1753661895526&help_type=emergency"}
+User Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36
+IP: 136.158.40.47
+
+2025-07-27 20:18:26 - Mobile Error: Database error in start_chat
+Data: {"error":"SQLSTATE[22007]: Invalid datetime format: 1366 Incorrect string value: '\\xF0\\x9F\\x9A\\xA8 E...' for column `if0_38484017_barangay_chatbot`.`messages`.`message` at row 1"}
+User Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36
+IP: 136.158.40.47
+
+{
+    "timestamp": "2025-07-27 20:18:27",
+    "message": "Mobile request detected",
+    "mobile_info": {
+        "is_mobile": 1,
+        "user_agent": "Mozilla\/5.0 (Linux; Android 10; K) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/138.0.0.0 Mobile Safari\/537.36",
+        "ip_address": "136.158.40.47",
+        "request_method": "POST",
+        "request_uri": "\/user_handler.php?_t=1753661907183",
+        "browser": "Chrome Mobile"
+    },
+    "session_data": {
+        "session_id": "c72865a5417052072569efabe40435dc",
+        "session_status": 2,
+        "session_data": {
+            "last_regeneration": 1753661897,
+            "admin_id": 5,
+            "admin_username": "danilo",
+            "user_type": "admin"
+        }
+    },
+    "request_data": {
+        "get": {
+            "_t": "1753661907183"
+        },
+        "post": {
+            "action": "start_chat",
+            "user_id": "user_1753661895526",
+            "help_type": "emergency"
+        },
+        "files": [],
+        "server": {
+            "HTTP_HOST": "qaresponse-barangay.42web.io",
+            "HTTP_USER_AGENT": "Mozilla\/5.0 (Linux; Android 10; K) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/138.0.0.0 Mobile Safari\/537.36",
+            "REMOTE_ADDR": "136.158.40.47",
+            "REQUEST_METHOD": "POST",
+            "REQUEST_URI": "\/user_handler.php?_t=1753661907183"
+        }
+    },
+    "additional_data": {
+        "script_name": "\/user_handler.php",
+        "query_string": "_t=1753661907183"
+    }
+}
+--------------------------------------------------------------------------------
+2025-07-27 20:18:27 - Mobile Error: Request received
+Data: {"action":"start_chat","method":"POST","get_data":{"_t":"1753661907183"},"post_data":{"action":"start_chat","user_id":"user_1753661895526","help_type":"emergency"},"raw_input":"action=start_chat&user_id=user_1753661895526&help_type=emergency"}
+User Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36
+IP: 136.158.40.47
+
+2025-07-27 20:18:27 - Mobile Error: Database error in start_chat
+Data: {"error":"SQLSTATE[22007]: Invalid datetime format: 1366 Incorrect string value: '\\xF0\\x9F\\x9A\\xA8 E...' for column `if0_38484017_barangay_chatbot`.`messages`.`message` at row 1"}
+User Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36
+IP: 136.158.40.47
+
+2025-07-27 20:18:28 - Mobile Error: Request received
+Data: {"action":"get_messages","method":"GET","get_data":{"action":"get_messages","user_id":"user_1753661778498","_t":"1753661858238"},"post_data":[],"raw_input":""}
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+IP: 136.158.40.47
+
+{
+    "timestamp": "2025-07-27 20:18:29",
+    "message": "Mobile request detected",
+    "mobile_info": {
+        "is_mobile": 1,
+        "user_agent": "Mozilla\/5.0 (Linux; Android 10; K) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/138.0.0.0 Mobile Safari\/537.36",
+        "ip_address": "136.158.40.47",
+        "request_method": "GET",
+        "request_uri": "\/user_handler.php?action=get_messages&user_id=user_1753661895526&_t=1753661908401",
+        "browser": "Chrome Mobile"
+    },
+    "session_data": {
+        "session_id": "c72865a5417052072569efabe40435dc",
+        "session_status": 2,
+        "session_data": {
+            "last_regeneration": 1753661897,
+            "admin_id": 5,
+            "admin_username": "danilo",
+            "user_type": "admin"
+        }
+    },
+    "request_data": {
+        "get": {
+            "action": "get_messages",
+            "user_id": "user_1753661895526",
+            "_t": "1753661908401"
+        },
+        "post": [],
+        "files": [],
+        "server": {
+            "HTTP_HOST": "qaresponse-barangay.42web.io",
+            "HTTP_USER_AGENT": "Mozilla\/5.0 (Linux; Android 10; K) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/138.0.0.0 Mobile Safari\/537.36",
+            "REMOTE_ADDR": "136.158.40.47",
+            "REQUEST_METHOD": "GET",
+            "REQUEST_URI": "\/user_handler.php?action=get_messages&user_id=user_1753661895526&_t=1753661908401"
+        }
+    },
+    "additional_data": {
+        "script_name": "\/user_handler.php",
+        "query_string": "action=get_messages&user_id=user_1753661895526&_t=1753661908401"
+    }
+}
+--------------------------------------------------------------------------------
+2025-07-27 20:18:29 - Mobile Error: Request received
+Data: {"action":"get_messages","method":"GET","get_data":{"action":"get_messages","user_id":"user_1753661895526","_t":"1753661908401"},"post_data":[],"raw_input":""}
+User Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36
+IP: 136.158.40.47
+
+{
+    "timestamp": "2025-07-27 20:18:29",
+    "message": "Mobile request detected",
+    "mobile_info": {
+        "is_mobile": 1,
+        "user_agent": "Mozilla\/5.0 (Linux; Android 10; K) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/138.0.0.0 Mobile Safari\/537.36",
+        "ip_address": "136.158.40.47",
+        "request_method": "POST",
+        "request_uri": "\/user_handler.php?_t=1753661909033",
+        "browser": "Chrome Mobile"
+    },
+    "session_data": {
+        "session_id": "c72865a5417052072569efabe40435dc",
+        "session_status": 2,
+        "session_data": {
+            "last_regeneration": 1753661897,
+            "admin_id": 5,
+            "admin_username": "danilo",
+            "user_type": "admin"
+        }
+    },
+    "request_data": {
+        "get": {
+            "_t": "1753661909033"
+        },
+        "post": {
+            "action": "send_location",
+            "user_id": "user_1753661895526",
+            "lat": "14.6409553",
+            "lng": "120.9667026",
+            "help_type": "emergency"
+        },
+        "files": [],
+        "server": {
+            "HTTP_HOST": "qaresponse-barangay.42web.io",
+            "HTTP_USER_AGENT": "Mozilla\/5.0 (Linux; Android 10; K) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/138.0.0.0 Mobile Safari\/537.36",
+            "REMOTE_ADDR": "136.158.40.47",
+            "REQUEST_METHOD": "POST",
+            "REQUEST_URI": "\/user_handler.php?_t=1753661909033"
+        }
+    },
+    "additional_data": {
+        "script_name": "\/user_handler.php",
+        "query_string": "_t=1753661909033"
+    }
+}
+--------------------------------------------------------------------------------
+2025-07-27 20:18:29 - Mobile Error: Request received
+Data: {"action":"send_location","method":"POST","get_data":{"_t":"1753661909033"},"post_data":{"action":"send_location","user_id":"user_1753661895526","lat":"14.6409553","lng":"120.9667026","help_type":"emergency"},"raw_input":"action=send_location&user_id=user_1753661895526&lat=14.6409553&lng=120.9667026&help_type=emergency"}
+User Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36
+IP: 136.158.40.47
+
+2025-07-27 20:18:29 - Mobile Error: Database error in send_location
+Data: {"error":"SQLSTATE[22007]: Invalid datetime format: 1366 Incorrect string value: '\\xF0\\x9F\\x93\\x8D E...' for column `if0_38484017_barangay_chatbot`.`messages`.`message` at row 1"}
+User Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36
+IP: 136.158.40.47
+
+{
+    "timestamp": "2025-07-27 20:18:30",
+    "message": "Mobile request detected",
+    "mobile_info": {
+        "is_mobile": 1,
+        "user_agent": "Mozilla\/5.0 (Linux; Android 10; K) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/138.0.0.0 Mobile Safari\/537.36",
+        "ip_address": "136.158.40.47",
+        "request_method": "POST",
+        "request_uri": "\/user_handler.php?_t=1753661909452",
+        "browser": "Chrome Mobile"
+    },
+    "session_data": {
+        "session_id": "c72865a5417052072569efabe40435dc",
+        "session_status": 2,
+        "session_data": {
+            "last_regeneration": 1753661897,
+            "admin_id": 5,
+            "admin_username": "danilo",
+            "user_type": "admin"
+        }
+    },
+    "request_data": {
+        "get": {
+            "_t": "1753661909452"
+        },
+        "post": {
+            "action": "start_chat",
+            "user_id": "user_1753661895526",
+            "help_type": "emergency"
+        },
+        "files": [],
+        "server": {
+            "HTTP_HOST": "qaresponse-barangay.42web.io",
+            "HTTP_USER_AGENT": "Mozilla\/5.0 (Linux; Android 10; K) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/138.0.0.0 Mobile Safari\/537.36",
+            "REMOTE_ADDR": "136.158.40.47",
+            "REQUEST_METHOD": "POST",
+            "REQUEST_URI": "\/user_handler.php?_t=1753661909452"
+        }
+    },
+    "additional_data": {
+        "script_name": "\/user_handler.php",
+        "query_string": "_t=1753661909452"
+    }
+}
+--------------------------------------------------------------------------------
+2025-07-27 20:18:30 - Mobile Error: Request received
+Data: {"action":"start_chat","method":"POST","get_data":{"_t":"1753661909452"},"post_data":{"action":"start_chat","user_id":"user_1753661895526","help_type":"emergency"},"raw_input":"action=start_chat&user_id=user_1753661895526&help_type=emergency"}
+User Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36
+IP: 136.158.40.47
+
+2025-07-27 20:18:30 - Mobile Error: Database error in start_chat
+Data: {"error":"SQLSTATE[22007]: Invalid datetime format: 1366 Incorrect string value: '\\xF0\\x9F\\x9A\\xA8 E...' for column `if0_38484017_barangay_chatbot`.`messages`.`message` at row 1"}
+User Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36
+IP: 136.158.40.47
+
+2025-07-27 20:18:30 - Mobile Error: Request received
+Data: {"action":"get_messages","method":"GET","get_data":{"action":"get_messages","user_id":"user_1753661778498","_t":"1753661860241"},"post_data":[],"raw_input":""}
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+IP: 136.158.40.47
+
+{
+    "timestamp": "2025-07-27 20:18:30",
+    "message": "Mobile request detected",
+    "mobile_info": {
+        "is_mobile": 1,
+        "user_agent": "Mozilla\/5.0 (Linux; Android 10; K) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/138.0.0.0 Mobile Safari\/537.36",
+        "ip_address": "136.158.40.47",
+        "request_method": "POST",
+        "request_uri": "\/user_handler.php?_t=1753661910310",
+        "browser": "Chrome Mobile"
+    },
+    "session_data": {
+        "session_id": "c72865a5417052072569efabe40435dc",
+        "session_status": 2,
+        "session_data": {
+            "last_regeneration": 1753661897,
+            "admin_id": 5,
+            "admin_username": "danilo",
+            "user_type": "admin"
+        }
+    },
+    "request_data": {
+        "get": {
+            "_t": "1753661910310"
+        },
+        "post": {
+            "action": "send_location",
+            "user_id": "user_1753661895526",
+            "lat": "14.6409553",
+            "lng": "120.9667026",
+            "help_type": "emergency"
+        },
+        "files": [],
+        "server": {
+            "HTTP_HOST": "qaresponse-barangay.42web.io",
+            "HTTP_USER_AGENT": "Mozilla\/5.0 (Linux; Android 10; K) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/138.0.0.0 Mobile Safari\/537.36",
+            "REMOTE_ADDR": "136.158.40.47",
+            "REQUEST_METHOD": "POST",
+            "REQUEST_URI": "\/user_handler.php?_t=1753661910310"
+        }
+    },
+    "additional_data": {
+        "script_name": "\/user_handler.php",
+        "query_string": "_t=1753661910310"
+    }
+}
+--------------------------------------------------------------------------------
+2025-07-27 20:18:30 - Mobile Error: Request received
+Data: {"action":"send_location","method":"POST","get_data":{"_t":"1753661910310"},"post_data":{"action":"send_location","user_id":"user_1753661895526","lat":"14.6409553","lng":"120.9667026","help_type":"emergency"},"raw_input":"action=send_location&user_id=user_1753661895526&lat=14.6409553&lng=120.9667026&help_type=emergency"}
+User Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36
+IP: 136.158.40.47
+
+2025-07-27 20:18:30 - Mobile Error: Database error in send_location
+Data: {"error":"SQLSTATE[22007]: Invalid datetime format: 1366 Incorrect string value: '\\xF0\\x9F\\x93\\x8D E...' for column `if0_38484017_barangay_chatbot`.`messages`.`message` at row 1"}
+User Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36
+IP: 136.158.40.47
+
+{
+    "timestamp": "2025-07-27 20:18:32",
+    "message": "Mobile request detected",
+    "mobile_info": {
+        "is_mobile": 1,
+        "user_agent": "Mozilla\/5.0 (Linux; Android 10; K) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/138.0.0.0 Mobile Safari\/537.36",
+        "ip_address": "136.158.40.47",
+        "request_method": "GET",
+        "request_uri": "\/user_handler.php?action=get_messages&user_id=user_1753661895526&_t=1753661911399",
+        "browser": "Chrome Mobile"
+    },
+    "session_data": {
+        "session_id": "c72865a5417052072569efabe40435dc",
+        "session_status": 2,
+        "session_data": {
+            "last_regeneration": 1753661897,
+            "admin_id": 5,
+            "admin_username": "danilo",
+            "user_type": "admin"
+        }
+    },
+    "request_data": {
+        "get": {
+            "action": "get_messages",
+            "user_id": "user_1753661895526",
+            "_t": "1753661911399"
+        },
+        "post": [],
+        "files": [],
+        "server": {
+            "HTTP_HOST": "qaresponse-barangay.42web.io",
+            "HTTP_USER_AGENT": "Mozilla\/5.0 (Linux; Android 10; K) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/138.0.0.0 Mobile Safari\/537.36",
+            "REMOTE_ADDR": "136.158.40.47",
+            "REQUEST_METHOD": "GET",
+            "REQUEST_URI": "\/user_handler.php?action=get_messages&user_id=user_1753661895526&_t=1753661911399"
+        }
+    },
+    "additional_data": {
+        "script_name": "\/user_handler.php",
+        "query_string": "action=get_messages&user_id=user_1753661895526&_t=1753661911399"
+    }
+}
+--------------------------------------------------------------------------------
+2025-07-27 20:18:32 - Mobile Error: Request received
+Data: {"action":"get_messages","method":"GET","get_data":{"action":"get_messages","user_id":"user_1753661895526","_t":"1753661911399"},"post_data":[],"raw_input":""}
+User Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36
+IP: 136.158.40.47
+
+2025-07-27 20:18:32 - Mobile Error: Request received
+Data: {"action":"get_messages","method":"GET","get_data":{"action":"get_messages","user_id":"user_1753661778498","_t":"1753661862229"},"post_data":[],"raw_input":""}
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+IP: 136.158.40.47
+
+{
+    "timestamp": "2025-07-27 20:18:33",
+    "message": "Mobile request detected",
+    "mobile_info": {
+        "is_mobile": 1,
+        "user_agent": "Mozilla\/5.0 (Linux; Android 10; K) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/138.0.0.0 Mobile Safari\/537.36",
+        "ip_address": "136.158.40.47",
+        "request_method": "POST",
+        "request_uri": "\/user_handler.php?_t=1753661912642",
+        "browser": "Chrome Mobile"
+    },
+    "session_data": {
+        "session_id": "c72865a5417052072569efabe40435dc",
+        "session_status": 2,
+        "session_data": {
+            "last_regeneration": 1753661897,
+            "admin_id": 5,
+            "admin_username": "danilo",
+            "user_type": "admin"
+        }
+    },
+    "request_data": {
+        "get": {
+            "_t": "1753661912642"
+        },
+        "post": {
+            "action": "send_location",
+            "user_id": "user_1753661895526",
+            "lat": "14.6409553",
+            "lng": "120.9667026",
+            "help_type": "emergency"
+        },
+        "files": [],
+        "server": {
+            "HTTP_HOST": "qaresponse-barangay.42web.io",
+            "HTTP_USER_AGENT": "Mozilla\/5.0 (Linux; Android 10; K) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/138.0.0.0 Mobile Safari\/537.36",
+            "REMOTE_ADDR": "136.158.40.47",
+            "REQUEST_METHOD": "POST",
+            "REQUEST_URI": "\/user_handler.php?_t=1753661912642"
+        }
+    },
+    "additional_data": {
+        "script_name": "\/user_handler.php",
+        "query_string": "_t=1753661912642"
+    }
+}
+--------------------------------------------------------------------------------
+2025-07-27 20:18:33 - Mobile Error: Request received
+Data: {"action":"send_location","method":"POST","get_data":{"_t":"1753661912642"},"post_data":{"action":"send_location","user_id":"user_1753661895526","lat":"14.6409553","lng":"120.9667026","help_type":"emergency"},"raw_input":"action=send_location&user_id=user_1753661895526&lat=14.6409553&lng=120.9667026&help_type=emergency"}
+User Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36
+IP: 136.158.40.47
+
+2025-07-27 20:18:33 - Mobile Error: Database error in send_location
+Data: {"error":"SQLSTATE[22007]: Invalid datetime format: 1366 Incorrect string value: '\\xF0\\x9F\\x93\\x8D E...' for column `if0_38484017_barangay_chatbot`.`messages`.`message` at row 1"}
+User Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36
+IP: 136.158.40.47
+
+2025-07-27 20:18:34 - Mobile Error: Request received
+Data: {"action":"get_messages","method":"GET","get_data":{"action":"get_messages","user_id":"user_1753661778498","_t":"1753661864233"},"post_data":[],"raw_input":""}
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+IP: 136.158.40.47
+
+{
+    "timestamp": "2025-07-27 20:18:34",
+    "message": "Mobile request detected",
+    "mobile_info": {
+        "is_mobile": 1,
+        "user_agent": "Mozilla\/5.0 (Linux; Android 10; K) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/138.0.0.0 Mobile Safari\/537.36",
+        "ip_address": "136.158.40.47",
+        "request_method": "POST",
+        "request_uri": "\/user_handler.php?_t=1753661913824",
+        "browser": "Chrome Mobile"
+    },
+    "session_data": {
+        "session_id": "c72865a5417052072569efabe40435dc",
+        "session_status": 2,
+        "session_data": {
+            "last_regeneration": 1753661897,
+            "admin_id": 5,
+            "admin_username": "danilo",
+            "user_type": "admin"
+        }
+    },
+    "request_data": {
+        "get": {
+            "_t": "1753661913824"
+        },
+        "post": {
+            "action": "start_chat",
+            "user_id": "user_1753661895526",
+            "help_type": "emergency"
+        },
+        "files": [],
+        "server": {
+            "HTTP_HOST": "qaresponse-barangay.42web.io",
+            "HTTP_USER_AGENT": "Mozilla\/5.0 (Linux; Android 10; K) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/138.0.0.0 Mobile Safari\/537.36",
+            "REMOTE_ADDR": "136.158.40.47",
+            "REQUEST_METHOD": "POST",
+            "REQUEST_URI": "\/user_handler.php?_t=1753661913824"
+        }
+    },
+    "additional_data": {
+        "script_name": "\/user_handler.php",
+        "query_string": "_t=1753661913824"
+    }
+}
+--------------------------------------------------------------------------------
+2025-07-27 20:18:34 - Mobile Error: Request received
+Data: {"action":"start_chat","method":"POST","get_data":{"_t":"1753661913824"},"post_data":{"action":"start_chat","user_id":"user_1753661895526","help_type":"emergency"},"raw_input":"action=start_chat&user_id=user_1753661895526&help_type=emergency"}
+User Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36
+IP: 136.158.40.47
+
+2025-07-27 20:18:34 - Mobile Error: Database error in start_chat
+Data: {"error":"SQLSTATE[22007]: Invalid datetime format: 1366 Incorrect string value: '\\xF0\\x9F\\x9A\\xA8 E...' for column `if0_38484017_barangay_chatbot`.`messages`.`message` at row 1"}
+User Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36
+IP: 136.158.40.47
+
+{
+    "timestamp": "2025-07-27 20:18:35",
+    "message": "Mobile request detected",
+    "mobile_info": {
+        "is_mobile": 1,
+        "user_agent": "Mozilla\/5.0 (Linux; Android 10; K) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/138.0.0.0 Mobile Safari\/537.36",
+        "ip_address": "136.158.40.47",
+        "request_method": "GET",
+        "request_uri": "\/user_handler.php?action=get_messages&user_id=user_1753661895526&_t=1753661914398",
+        "browser": "Chrome Mobile"
+    },
+    "session_data": {
+        "session_id": "c72865a5417052072569efabe40435dc",
+        "session_status": 2,
+        "session_data": {
+            "last_regeneration": 1753661897,
+            "admin_id": 5,
+            "admin_username": "danilo",
+            "user_type": "admin"
+        }
+    },
+    "request_data": {
+        "get": {
+            "action": "get_messages",
+            "user_id": "user_1753661895526",
+            "_t": "1753661914398"
+        },
+        "post": [],
+        "files": [],
+        "server": {
+            "HTTP_HOST": "qaresponse-barangay.42web.io",
+            "HTTP_USER_AGENT": "Mozilla\/5.0 (Linux; Android 10; K) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/138.0.0.0 Mobile Safari\/537.36",
+            "REMOTE_ADDR": "136.158.40.47",
+            "REQUEST_METHOD": "GET",
+            "REQUEST_URI": "\/user_handler.php?action=get_messages&user_id=user_1753661895526&_t=1753661914398"
+        }
+    },
+    "additional_data": {
+        "script_name": "\/user_handler.php",
+        "query_string": "action=get_messages&user_id=user_1753661895526&_t=1753661914398"
+    }
+}
+--------------------------------------------------------------------------------
+2025-07-27 20:18:35 - Mobile Error: Request received
+Data: {"action":"get_messages","method":"GET","get_data":{"action":"get_messages","user_id":"user_1753661895526","_t":"1753661914398"},"post_data":[],"raw_input":""}
+User Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36
+IP: 136.158.40.47
+
+2025-07-27 20:18:36 - Mobile Error: Request received
+Data: {"action":"get_messages","method":"GET","get_data":{"action":"get_messages","user_id":"user_1753661778498","_t":"1753661866236"},"post_data":[],"raw_input":""}
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+IP: 136.158.40.47
+
+{
+    "timestamp": "2025-07-27 20:18:37",
+    "message": "Mobile request detected",
+    "mobile_info": {
+        "is_mobile": 1,
+        "user_agent": "Mozilla\/5.0 (Linux; Android 10; K) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/138.0.0.0 Mobile Safari\/537.36",
+        "ip_address": "136.158.40.47",
+        "request_method": "POST",
+        "request_uri": "\/user_handler.php?_t=1753661916995",
+        "browser": "Chrome Mobile"
+    },
+    "session_data": {
+        "session_id": "c72865a5417052072569efabe40435dc",
+        "session_status": 2,
+        "session_data": {
+            "last_regeneration": 1753661897,
+            "admin_id": 5,
+            "admin_username": "danilo",
+            "user_type": "admin"
+        }
+    },
+    "request_data": {
+        "get": {
+            "_t": "1753661916995"
+        },
+        "post": {
+            "action": "send_location",
+            "user_id": "user_1753661895526",
+            "lat": "14.6409553",
+            "lng": "120.9667026",
+            "help_type": "emergency"
+        },
+        "files": [],
+        "server": {
+            "HTTP_HOST": "qaresponse-barangay.42web.io",
+            "HTTP_USER_AGENT": "Mozilla\/5.0 (Linux; Android 10; K) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/138.0.0.0 Mobile Safari\/537.36",
+            "REMOTE_ADDR": "136.158.40.47",
+            "REQUEST_METHOD": "POST",
+            "REQUEST_URI": "\/user_handler.php?_t=1753661916995"
+        }
+    },
+    "additional_data": {
+        "script_name": "\/user_handler.php",
+        "query_string": "_t=1753661916995"
+    }
+}
+--------------------------------------------------------------------------------
+2025-07-27 20:18:37 - Mobile Error: Request received
+Data: {"action":"send_location","method":"POST","get_data":{"_t":"1753661916995"},"post_data":{"action":"send_location","user_id":"user_1753661895526","lat":"14.6409553","lng":"120.9667026","help_type":"emergency"},"raw_input":"action=send_location&user_id=user_1753661895526&lat=14.6409553&lng=120.9667026&help_type=emergency"}
+User Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36
+IP: 136.158.40.47
+
+2025-07-27 20:18:37 - Mobile Error: Database error in send_location
+Data: {"error":"SQLSTATE[22007]: Invalid datetime format: 1366 Incorrect string value: '\\xF0\\x9F\\x93\\x8D E...' for column `if0_38484017_barangay_chatbot`.`messages`.`message` at row 1"}
+User Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36
+IP: 136.158.40.47
+
+2025-07-27 20:18:38 - Mobile Error: Request received
+Data: {"action":"get_messages","method":"GET","get_data":{"action":"get_messages","user_id":"user_1753661778498","_t":"1753661868230"},"post_data":[],"raw_input":""}
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+IP: 136.158.40.47
+
+{
+    "timestamp": "2025-07-27 20:18:38",
+    "message": "Mobile request detected",
+    "mobile_info": {
+        "is_mobile": 1,
+        "user_agent": "Mozilla\/5.0 (Linux; Android 10; K) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/138.0.0.0 Mobile Safari\/537.36",
+        "ip_address": "136.158.40.47",
+        "request_method": "GET",
+        "request_uri": "\/user_handler.php?action=get_messages&user_id=user_1753661895526&_t=1753661918049",
+        "browser": "Chrome Mobile"
+    },
+    "session_data": {
+        "session_id": "c72865a5417052072569efabe40435dc",
+        "session_status": 2,
+        "session_data": {
+            "last_regeneration": 1753661897,
+            "admin_id": 5,
+            "admin_username": "danilo",
+            "user_type": "admin"
+        }
+    },
+    "request_data": {
+        "get": {
+            "action": "get_messages",
+            "user_id": "user_1753661895526",
+            "_t": "1753661918049"
+        },
+        "post": [],
+        "files": [],
+        "server": {
+            "HTTP_HOST": "qaresponse-barangay.42web.io",
+            "HTTP_USER_AGENT": "Mozilla\/5.0 (Linux; Android 10; K) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/138.0.0.0 Mobile Safari\/537.36",
+            "REMOTE_ADDR": "136.158.40.47",
+            "REQUEST_METHOD": "GET",
+            "REQUEST_URI": "\/user_handler.php?action=get_messages&user_id=user_1753661895526&_t=1753661918049"
+        }
+    },
+    "additional_data": {
+        "script_name": "\/user_handler.php",
+        "query_string": "action=get_messages&user_id=user_1753661895526&_t=1753661918049"
+    }
+}
+--------------------------------------------------------------------------------
+2025-07-27 20:18:38 - Mobile Error: Request received
+Data: {"action":"get_messages","method":"GET","get_data":{"action":"get_messages","user_id":"user_1753661895526","_t":"1753661918049"},"post_data":[],"raw_input":""}
+User Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36
+IP: 136.158.40.47
+
+2025-07-27 20:18:40 - Mobile Error: Request received
+Data: {"action":"get_messages","method":"GET","get_data":{"action":"get_messages","user_id":"user_1753661778498","_t":"1753661870228"},"post_data":[],"raw_input":""}
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+IP: 136.158.40.47
+
+2025-07-27 20:18:42 - Mobile Error: Request received
+Data: {"action":"get_messages","method":"GET","get_data":{"action":"get_messages","user_id":"user_1753661778498","_t":"1753661872238"},"post_data":[],"raw_input":""}
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+IP: 136.158.40.47
+
+2025-07-27 20:18:44 - Mobile Error: Request received
+Data: {"action":"get_messages","method":"GET","get_data":{"action":"get_messages","user_id":"user_1753661778498","_t":"1753661874237"},"post_data":[],"raw_input":""}
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+IP: 136.158.40.47
+
+2025-07-27 20:18:46 - Mobile Error: Request received
+Data: {"action":"get_messages","method":"GET","get_data":{"action":"get_messages","user_id":"user_1753661778498","_t":"1753661876229"},"post_data":[],"raw_input":""}
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+IP: 136.158.40.47
+
+2025-07-27 20:18:48 - Mobile Error: Request received
+Data: {"action":"get_messages","method":"GET","get_data":{"action":"get_messages","user_id":"user_1753661778498","_t":"1753661878239"},"post_data":[],"raw_input":""}
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+IP: 136.158.40.47
+
+2025-07-27 20:18:50 - Mobile Error: Request received
+Data: {"action":"get_messages","method":"GET","get_data":{"action":"get_messages","user_id":"user_1753661778498","_t":"1753661880234"},"post_data":[],"raw_input":""}
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+IP: 136.158.40.47
+
+2025-07-27 20:18:52 - Mobile Error: Request received
+Data: {"action":"get_messages","method":"GET","get_data":{"action":"get_messages","user_id":"user_1753661778498","_t":"1753661882228"},"post_data":[],"raw_input":""}
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+IP: 136.158.40.47
+
+{
+    "timestamp": "2025-07-27 20:19:06",
+    "message": "Mobile request detected",
+    "mobile_info": {
+        "is_mobile": 1,
+        "user_agent": "Mozilla\/5.0 (Linux; Android 10; K) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/138.0.0.0 Mobile Safari\/537.36",
+        "ip_address": "136.158.40.47",
+        "request_method": "GET",
+        "request_uri": "\/user_handler.php?action=get_messages&user_id=user_1753661895526&_t=1753661946134",
+        "browser": "Chrome Mobile"
+    },
+    "session_data": {
+        "session_id": "c72865a5417052072569efabe40435dc",
+        "session_status": 2,
+        "session_data": {
+            "last_regeneration": 1753661897,
+            "admin_id": 5,
+            "admin_username": "danilo",
+            "user_type": "admin"
+        }
+    },
+    "request_data": {
+        "get": {
+            "action": "get_messages",
+            "user_id": "user_1753661895526",
+            "_t": "1753661946134"
+        },
+        "post": [],
+        "files": [],
+        "server": {
+            "HTTP_HOST": "qaresponse-barangay.42web.io",
+            "HTTP_USER_AGENT": "Mozilla\/5.0 (Linux; Android 10; K) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/138.0.0.0 Mobile Safari\/537.36",
+            "REMOTE_ADDR": "136.158.40.47",
+            "REQUEST_METHOD": "GET",
+            "REQUEST_URI": "\/user_handler.php?action=get_messages&user_id=user_1753661895526&_t=1753661946134"
+        }
+    },
+    "additional_data": {
+        "script_name": "\/user_handler.php",
+        "query_string": "action=get_messages&user_id=user_1753661895526&_t=1753661946134"
+    }
+}
+--------------------------------------------------------------------------------
+2025-07-27 20:19:06 - Mobile Error: Request received
+Data: {"action":"get_messages","method":"GET","get_data":{"action":"get_messages","user_id":"user_1753661895526","_t":"1753661946134"},"post_data":[],"raw_input":""}
+User Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36
+IP: 136.158.40.47
+
+{
+    "timestamp": "2025-07-27 20:19:56",
+    "message": "Mobile request detected",
+    "mobile_info": {
+        "is_mobile": 1,
+        "user_agent": "Mozilla\/5.0 (Linux; Android 10; K) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/138.0.0.0 Mobile Safari\/537.36",
+        "ip_address": "136.158.40.47",
+        "request_method": "GET",
+        "request_uri": "\/user_handler.php?action=get_messages&user_id=user_1753661895526&_t=1753661996164",
+        "browser": "Chrome Mobile"
+    },
+    "session_data": {
+        "session_id": "c72865a5417052072569efabe40435dc",
+        "session_status": 2,
+        "session_data": {
+            "last_regeneration": 1753661897,
+            "admin_id": 5,
+            "admin_username": "danilo",
+            "user_type": "admin"
+        }
+    },
+    "request_data": {
+        "get": {
+            "action": "get_messages",
+            "user_id": "user_1753661895526",
+            "_t": "1753661996164"
+        },
+        "post": [],
+        "files": [],
+        "server": {
+            "HTTP_HOST": "qaresponse-barangay.42web.io",
+            "HTTP_USER_AGENT": "Mozilla\/5.0 (Linux; Android 10; K) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/138.0.0.0 Mobile Safari\/537.36",
+            "REMOTE_ADDR": "136.158.40.47",
+            "REQUEST_METHOD": "GET",
+            "REQUEST_URI": "\/user_handler.php?action=get_messages&user_id=user_1753661895526&_t=1753661996164"
+        }
+    },
+    "additional_data": {
+        "script_name": "\/user_handler.php",
+        "query_string": "action=get_messages&user_id=user_1753661895526&_t=1753661996164"
+    }
+}
+--------------------------------------------------------------------------------
