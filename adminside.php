@@ -3,7 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Admin Portal - Help Desk Chat System</title>
+    <title>Admin Portal - Help Desk System</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    <!-- Bootstrap Icons -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+
     <style>
         * {
             margin: 0;
@@ -11,499 +15,607 @@
             box-sizing: border-box;
         }
         
+        :root {
+            --primary-orange: #FF6B35;
+            --dark-orange: #E85A2C;
+            --light-orange: #FFE5DB;
+            --white: #FFFFFF;
+            --gray: #6B7280;
+            --light-gray: #F3F4F6;
+            --success: #10B981;
+            --error: #EF4444;
+        }
+        
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            background: linear-gradient(135deg, var(--light-orange) 0%, var(--white) 100%);
             min-height: 100vh;
-            overflow-x: hidden;
             display: flex;
             align-items: center;
             justify-content: center;
-            padding: 20px;
+            padding: 16px;
+            line-height: 1.6;
         }
         
-        .floating-shapes {
-            position: fixed;
-            top: 0;
-            left: 0;
+        .container {
+            background: var(--white);
+            border-radius: 24px;
+            box-shadow: 0 4px 24px rgba(255, 107, 53, 0.08);
+            padding: 32px;
+            max-width: 1000px;
             width: 100%;
-            height: 100%;
-            overflow: hidden;
-            z-index: -1;
+            animation: fadeIn 0.6s ease;
+        }
+        
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        
+        .logo {
+            width: 64px;
+            height: 64px;
+            background: linear-gradient(135deg, var(--primary-orange), var(--dark-orange));
+            border-radius: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 24px;
+            font-size: 28px;
+            color: var(--white);
+        }
+        
+        h1 {
+            font-size: 32px;
+            font-weight: 700;
+            color: #1F2937;
+            margin-bottom: 8px;
+        }
+        
+        .subtitle {
+            color: var(--gray);
+            font-size: 16px;
+            max-width: 400px;
+            margin: 0 auto;
+        }
+        
+        .auth-section {
+            background: var(--light-gray);
+            border-radius: 16px;
+            padding: 32px;
+            margin-bottom: 32px;
+            text-align: center;
+        }
+        
+        .auth-title {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            color: var(--primary-orange);
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+        
+        .auth-description {
+            color: var(--gray);
+            font-size: 14px;
+            margin-bottom: 24px;
+            line-height: 1.5;
+        }
+        
+        .input-group {
+            position: relative;
+            max-width: 320px;
+            margin: 0 auto;
+        }
+        
+        .password-input {
+            width: 100%;
+            padding: 12px 48px 12px 16px;
+            border: 2px solid transparent;
+            border-radius: 12px;
+            font-size: 16px;
+            background: var(--white);
+            transition: all 0.3s ease;
+            outline: none;
+        }
+        
+        .password-input:focus {
+            border-color: var(--primary-orange);
+            box-shadow: 0 0 0 4px rgba(255, 107, 53, 0.1);
+        }
+        
+        .toggle-password {
+            position: absolute;
+            right: 12px;
+            top: 50%;
+            transform: translateY(-50%);
+            background: none;
+            border: none;
+            color: var(--gray);
+            cursor: pointer;
+            padding: 4px;
+            font-size: 18px;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 32px;
+            height: 32px;
+            border-radius: 6px;
+        }
+        
+        .toggle-password i {
             pointer-events: none;
         }
         
-        .shape {
-            position: absolute;
-            background: rgba(255, 255, 255, 0.1);
-            border-radius: 50%;
-            animation: float 6s ease-in-out infinite;
+        .toggle-password:hover {
+            background: var(--light-gray);
+            color: var(--primary-orange);
         }
         
-        .shape:nth-child(1) {
-            width: 80px;
-            height: 80px;
-            top: 20%;
-            left: 10%;
-            animation-delay: 0s;
+        .toggle-password:active {
+            transform: translateY(-50%) scale(0.95);
         }
         
-        .shape:nth-child(2) {
-            width: 120px;
-            height: 120px;
-            top: 60%;
-            right: 10%;
-            animation-delay: 2s;
+        .btn {
+            background: linear-gradient(135deg, var(--primary-orange), var(--dark-orange));
+            color: var(--white);
+            border: none;
+            padding: 12px 32px;
+            border-radius: 12px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            margin-top: 16px;
+            min-width: 160px;
         }
         
-        .shape:nth-child(3) {
-            width: 60px;
-            height: 60px;
-            bottom: 20%;
-            left: 20%;
-            animation-delay: 4s;
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 24px rgba(255, 107, 53, 0.25);
         }
         
-        .shape:nth-child(4) {
-            width: 100px;
-            height: 100px;
-            top: 10%;
-            right: 30%;
-            animation-delay: 1s;
+        .btn:active {
+            transform: translateY(0);
         }
         
-        @keyframes float {
-            0%, 100% { transform: translateY(0px) rotate(0deg); }
-            50% { transform: translateY(-20px) rotate(180deg); }
+        .message {
+            margin-top: 16px;
+            padding: 12px;
+            border-radius: 8px;
+            font-size: 14px;
+            font-weight: 500;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
         }
         
-        .main-container {
-            background: rgba(44, 62, 80, 0.95);
-            backdrop-filter: blur(20px);
-            border-radius: 20px;
-            box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
-            padding: clamp(20px, 5vw, 60px);
-            text-align: center;
-            max-width: 1200px;
-            width: 100%;
+        .error-message {
+            color: var(--error);
+            background: #FEE2E2;
+        }
+        
+        .success-message {
+            color: var(--success);
+            background: #D1FAE5;
+        }
+        
+        .cards-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 24px;
+            margin-bottom: 40px;
+        }
+        
+        .card {
+            background: var(--white);
+            border: 2px solid var(--light-gray);
+            border-radius: 16px;
+            padding: 24px;
+            text-decoration: none;
+            transition: all 0.3s ease;
             position: relative;
             overflow: hidden;
-            color: #ecf0f1;
         }
         
-        .main-container::before {
+        .card::before {
             content: '';
             position: absolute;
             top: 0;
             left: 0;
             right: 0;
             height: 4px;
-            background: linear-gradient(90deg, #e74c3c, #c0392b, #f39c12, #d35400);
-            background-size: 400% 400%;
-            animation: gradientShift 3s ease infinite;
+            background: linear-gradient(90deg, var(--primary-orange), var(--dark-orange));
         }
         
-        @keyframes gradientShift {
-            0%, 100% { background-position: 0% 50%; }
-            50% { background-position: 100% 50%; }
+        .card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 32px rgba(255, 107, 53, 0.12);
+            border-color: var(--primary-orange);
         }
         
-        .logo {
-            font-size: clamp(2.5rem, 8vw, 4rem);
-            margin-bottom: clamp(15px, 3vw, 20px);
+        .card-icon {
+            width: 48px;
+            height: 48px;
+            background: var(--light-orange);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            margin-bottom: 16px;
+        }
+        
+        .card-title {
+            font-size: 20px;
+            font-weight: 600;
+            color: #1F2937;
+            margin-bottom: 8px;
+        }
+        
+        .card-description {
+            color: var(--gray);
+            font-size: 14px;
+            margin-bottom: 20px;
+        }
+        
+        .features {
+            list-style: none;
+        }
+        
+        .features li {
+            color: var(--gray);
+            font-size: 13px;
+            padding: 6px 0;
+            padding-left: 24px;
+            position: relative;
+        }
+        
+        .features li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: var(--primary-orange);
+            font-weight: bold;
+        }
+        
+        .status {
+            position: absolute;
+            top: 16px;
+            right: 16px;
+            width: 8px;
+            height: 8px;
+            background: var(--success);
+            border-radius: 50%;
             animation: pulse 2s ease-in-out infinite;
         }
         
         @keyframes pulse {
-            0%, 100% { transform: scale(1); }
-            50% { transform: scale(1.05); }
+            0%, 100% {
+                opacity: 1;
+                transform: scale(1);
+            }
+            50% {
+                opacity: 0.6;
+                transform: scale(1.2);
+            }
         }
         
-        .main-title {
-            font-size: clamp(1.8rem, 6vw, 2.5rem);
-            color: #ecf0f1;
-            margin-bottom: clamp(10px, 2vw, 15px);
-            font-weight: 700;
-            background: linear-gradient(135deg, #e74c3c, #c0392b);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-            line-height: 1.2;
-        }
-        
-        .subtitle {
-            font-size: clamp(1rem, 3vw, 1.2rem);
-            color: #bdc3c7;
-            margin-bottom: clamp(30px, 5vw, 40px);
-            line-height: 1.6;
-            max-width: 600px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-        
-        .password-protection {
-            background: rgba(231, 76, 60, 0.1);
-            border: 2px solid #e74c3c;
-            border-radius: 15px;
-            padding: 30px;
-            margin-bottom: 30px;
-            backdrop-filter: blur(10px);
-        }
-        
-        .password-input {
-            width: 100%;
-            max-width: 300px;
-            padding: 15px;
-            border: 2px solid #e74c3c;
-            border-radius: 10px;
-            font-size: 16px;
-            margin: 15px 0;
-            background: rgba(255, 255, 255, 0.9);
-            color: #2c3e50;
+        .footer {
             text-align: center;
+            padding-top: 24px;
+            border-top: 1px solid var(--light-gray);
         }
         
-        .password-input:focus {
-            outline: none;
-            border-color: #c0392b;
-            box-shadow: 0 0 10px rgba(231, 76, 60, 0.3);
-        }
-        
-        .unlock-btn {
-            background: linear-gradient(135deg, #e74c3c, #c0392b);
-            color: white;
-            border: none;
-            padding: 15px 30px;
-            border-radius: 10px;
-            font-size: 16px;
-            font-weight: 600;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            margin: 10px;
-        }
-        
-        .unlock-btn:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 5px 15px rgba(231, 76, 60, 0.4);
-        }
-        
-        .portal-buttons {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: clamp(20px, 4vw, 30px);
-            justify-content: center;
-            margin-bottom: clamp(30px, 5vw, 40px);
-        }
-        
-        .portal-card {
-            background: rgba(52, 73, 94, 0.8);
-            border-radius: 15px;
-            padding: clamp(25px, 5vw, 40px) clamp(20px, 4vw, 30px);
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-            cursor: pointer;
-            position: relative;
-            overflow: hidden;
-            text-decoration: none;
-            color: #ecf0f1;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            min-height: 300px;
-            border-top: 4px solid #e74c3c;
-        }
-        
-        .portal-card::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: -100%;
-            width: 100%;
-            height: 100%;
-            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
-            transition: left 0.5s;
-        }
-        
-        .portal-card:hover::before {
-            left: 100%;
-        }
-        
-        .portal-card:hover {
-            transform: translateY(-10px) scale(1.02);
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
-        }
-        
-        .portal-card:active {
-            transform: translateY(-5px) scale(1.01);
-        }
-        
-        .portal-icon {
-            font-size: clamp(2rem, 6vw, 3rem);
-            margin-bottom: clamp(15px, 3vw, 20px);
-            display: block;
-            color: #e74c3c;
-        }
-        
-        .portal-title {
-            font-size: clamp(1.3rem, 4vw, 1.5rem);
-            font-weight: 600;
-            margin-bottom: clamp(8px, 2vw, 10px);
-            color: #ecf0f1;
-        }
-        
-        .portal-description {
-            color: #bdc3c7;
-            font-size: clamp(0.9rem, 2.5vw, 0.95rem);
-            line-height: 1.5;
-            margin-bottom: 15px;
-        }
-        
-        .features-list {
-            margin-top: 15px;
-            text-align: left;
-            flex-grow: 1;
-        }
-        
-        .features-list li {
-            color: #95a5a6;
-            font-size: clamp(0.8rem, 2vw, 0.85rem);
-            margin: 8px 0;
-            list-style: none;
-            position: relative;
-            padding-left: 20px;
-            line-height: 1.4;
-        }
-        
-        .features-list li::before {
-            content: '✓';
-            position: absolute;
-            left: 0;
-            color: #27ae60;
-            font-weight: bold;
-        }
-        
-        .hidden {
-            display: none;
-        }
-        
-        .error-message {
-            color: #e74c3c;
+        .footer-text {
+            color: var(--gray);
             font-size: 14px;
-            margin-top: 10px;
-            font-weight: 500;
+            margin-bottom: 16px;
         }
         
-        .success-message {
-            color: #27ae60;
-            font-size: 14px;
-            margin-top: 10px;
-            font-weight: 500;
-        }
-        
-        .footer-info {
-            margin-top: clamp(30px, 5vw, 40px);
-            padding-top: clamp(15px, 3vw, 20px);
-            border-top: 1px solid #34495e;
-            color: #bdc3c7;
-            font-size: clamp(0.85rem, 2vw, 0.9rem);
-        }
-        
-        .tech-stack {
+        .tags {
             display: flex;
             justify-content: center;
-            gap: clamp(8px, 2vw, 15px);
-            margin-top: 15px;
+            gap: 8px;
             flex-wrap: wrap;
         }
         
-        .tech-badge {
-            background: linear-gradient(135deg, #e74c3c, #c0392b);
-            color: white;
-            padding: clamp(4px, 1vw, 5px) clamp(8px, 2vw, 12px);
-            border-radius: 15px;
-            font-size: clamp(0.7rem, 1.8vw, 0.75rem);
+        .tag {
+            background: var(--light-orange);
+            color: var(--primary-orange);
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 12px;
             font-weight: 500;
-            white-space: nowrap;
         }
         
-        .status-indicator {
-            position: absolute;
-            top: 15px;
-            right: 15px;
-            width: clamp(10px, 2vw, 12px);
-            height: clamp(10px, 2vw, 12px);
-            background: #27ae60;
-            border-radius: 50%;
-            animation: statusBlink 2s ease-in-out infinite;
+        .hidden {
+            display: none !important;
         }
         
-        @keyframes statusBlink {
-            0%, 100% { opacity: 1; }
-            50% { opacity: 0.3; }
+        .back-button {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            color: var(--gray);
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 500;
+            padding: 8px 16px;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+            margin-bottom: 24px;
+        }
+        
+        .back-button:hover {
+            background: var(--light-gray);
+            color: var(--primary-orange);
+            transform: translateX(-4px);
+        }
+        
+        .back-button span:first-child {
+            font-size: 18px;
+            transition: transform 0.3s ease;
+        }
+        
+        .back-button:hover span:first-child {
+            transform: translateX(-4px);
         }
         
         /* Mobile Responsive */
-        @media only screen and (max-width: 768px) {
+        @media (max-width: 640px) {
             body {
-                padding: 10px;
+                padding: 12px;
             }
             
-            .main-container {
-                border-radius: 15px;
+            .container {
+                padding: 24px 16px;
+                border-radius: 20px;
+            }
+            
+            h1 {
+                font-size: 24px;
+            }
+            
+            .subtitle {
+                font-size: 14px;
+            }
+            
+            .auth-section {
+                padding: 24px 16px;
+            }
+            
+            .cards-grid {
+                grid-template-columns: 1fr;
+                gap: 16px;
+            }
+            
+            .card {
                 padding: 20px;
             }
             
-            .portal-buttons {
-                grid-template-columns: 1fr;
-                gap: 20px;
-            }
-            
-            .portal-card {
-                min-height: 250px;
+            .btn {
+                width: 100%;
+                padding: 14px;
             }
             
             .password-input {
-                max-width: 250px;
+                font-size: 16px;
+                padding: 14px 16px;
+            }
+            
+            .back-button {
+                padding: 6px 12px;
+                font-size: 13px;
+            }
+        }
+        
+        /* Tablet */
+        @media (min-width: 641px) and (max-width: 1024px) {
+            .cards-grid {
+                grid-template-columns: 1fr;
+                max-width: 500px;
+                margin: 0 auto 40px;
             }
         }
         
         /* Reduced motion */
         @media (prefers-reduced-motion: reduce) {
-            .shape,
-            .logo,
-            .status-indicator {
-                animation: none;
+            * {
+                animation: none !important;
+                transition: none !important;
+            }
+        }
+        
+        /* Dark mode support */
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --white: #1F2937;
+                --light-gray: #374151;
+                --gray: #9CA3AF;
             }
             
-            .portal-card {
-                transition: none;
+            body {
+                background: linear-gradient(135deg, #1F2937 0%, #111827 100%);
             }
             
-            .main-container::before {
-                animation: none;
+            .container {
+                background: #111827;
+                box-shadow: 0 4px 24px rgba(0, 0, 0, 0.3);
+            }
+            
+            h1 {
+                color: #F3F4F6;
+            }
+            
+            .auth-section {
+                background: #1F2937;
+            }
+            
+            .password-input {
+                background: #374151;
+                color: #F3F4F6;
+            }
+            
+            .toggle-password {
+                color: #9CA3AF;
+            }
+            
+            .toggle-password:hover {
+                background: #374151;
+                color: var(--primary-orange);
+            }
+            
+            .card {
+                background: #1F2937;
+                border-color: #374151;
+            }
+            
+            .card-title {
+                color: #F3F4F6;
+            }
+            
+            .card-icon {
+                background: rgba(255, 107, 53, 0.1);
             }
         }
     </style>
 </head>
 <body>
-    <div class="floating-shapes">
-        <div class="shape"></div>
-        <div class="shape"></div>
-        <div class="shape"></div>
-        <div class="shape"></div>
-    </div>
-    
-    <div class="main-container">
-        <div class="logo">⚙️</div>
-        <h1 class="main-title">Admin Portal</h1>
-        <p class="subtitle">Administrative access for barangay officials and support staff</p>
+    <div class="container">
+        <a href="index.php" class="back-button">
+            <span>←</span>
+            <span>Back to Home</span>
+        </a>
         
-        <div class="password-protection" id="passwordProtection">
-            <h3 style="color: #e74c3c; margin-bottom: 15px;">🔒 Restricted Access</h3>
-            <p style="color: #c0392b; margin-bottom: 20px;">
-                This section is restricted to authorized barangay officials only.<br>
-                Please enter the official access code to continue.
+        <div class="header">
+            <div class="logo">⚙️</div>
+            <h1>Admin Portal</h1>
+            <p class="subtitle">Administrative access for barangay officials</p>
+        </div>
+        
+        <div class="auth-section" id="passwordProtection">
+            <h3 class="auth-title">
+                <span>🔒</span>
+                <span>Restricted Access</span>
+            </h3>
+            <p class="auth-description">
+                This section is restricted to authorized officials only.<br>
+                Please enter your access code to continue.
             </p>
-            <input type="password" 
-                   class="password-input" 
-                   id="adminPassword" 
-                   placeholder="Enter access code"
-                   maxlength="20">
-            <br>
-            <button class="unlock-btn" onclick="checkPassword()">Unlock Admin Panel</button>
+            <div class="input-group">
+                <input type="password" 
+                       class="password-input" 
+                       id="adminPassword" 
+                       placeholder="Enter access code"
+                       maxlength="20"
+                       autocomplete="off">
+                <button type="button" class="toggle-password" id="togglePassword" onclick="togglePasswordVisibility()">
+                    <i class="bi bi-eye" id="eyeIcon"></i>
+                </button>
+            </div>
+            <button class="btn" onclick="checkPassword()">Unlock Admin Portal</button>
             <div id="passwordMessage"></div>
         </div>
         
-        <div class="portal-buttons hidden" id="adminButtons">
-            <a href="admin_login.php" class="portal-card">
-                <div class="status-indicator"></div>
-                <div>
-                    <div class="portal-icon">🔐</div>
-                    <h3 class="portal-title">Admin Login</h3>
-                    <p class="portal-description">Sign in to administrative dashboard</p>
-                </div>
-                <ul class="features-list">
-                    <li>Conversation management</li>
-                    <li>User support dashboard</li>
-                    <li>Emergency alerts</li>
-                    <li>System monitoring</li>
-                    <li>Report generation</li>
-                </ul>
+        <div class="cards-grid hidden" id="adminButtons">
+            <a href="admin_login.php" class="card">
+                <div class="status"></div>
+                <div class="card-icon">🔐</div>
+                <h3 class="card-title">Admin Login</h3>
+                <p class="card-description">Access administrative dashboard</p>
             </a>
             
-            <a href="admin_register.php" class="portal-card">
-                <div class="status-indicator"></div>
-                <div>
-                    <div class="portal-icon">👨‍💼</div>
-                    <h3 class="portal-title">Admin Register</h3>
-                    <p class="portal-description">Create new administrative account</p>
-                </div>
-                <ul class="features-list">
-                    <li>Official account creation</li>
-                    <li>Role-based permissions</li>
-                    <li>Secure verification</li>
-                    <li>Department assignment</li>
-                    <li>Access level configuration</li>
-                </ul>
+            <a href="admin_register.php" class="card">
+                <div class="status"></div>
+                <div class="card-icon">👨‍💼</div>
+                <h3 class="card-title">Admin Register</h3>
+                <p class="card-description">Create administrative account</p>
             </a>
         </div>
         
-        <div class="footer-info">
-            <p><strong>Official • Secure • Monitored</strong></p>
-            <p>Administrative tools for barangay operations</p>
-            <div class="tech-stack">
-                <span class="tech-badge">Admin Panel</span>
-                <span class="tech-badge">Role Management</span>
-                <span class="tech-badge">Audit Logs</span>
-                <span class="tech-badge">Security</span>
+        <div class="footer">
+            <p class="footer-text"><strong>Official • Secure • Monitored</strong></p>
+            <div class="tags">
+                <span class="tag">Admin Panel</span>
+                <span class="tag">Role Management</span>
+                <span class="tag">Audit Logs</span>
+                <span class="tag">Security</span>
             </div>
         </div>
     </div>
     
     <script>
-        // Password check function
+        function togglePasswordVisibility() {
+            const passwordInput = document.getElementById('adminPassword');
+            const eyeIcon = document.getElementById('eyeIcon');
+            
+            if (passwordInput.type === 'password') {
+                passwordInput.type = 'text';
+                eyeIcon.className = 'bi bi-eye-slash';
+            } else {
+                passwordInput.type = 'password';
+                eyeIcon.className = 'bi bi-eye';
+            }
+        }
+        
         function checkPassword() {
             const password = document.getElementById('adminPassword').value;
             const messageDiv = document.getElementById('passwordMessage');
             const passwordProtection = document.getElementById('passwordProtection');
             const adminButtons = document.getElementById('adminButtons');
             
-            // In a real application, this should be validated server-side
             if (password === 'barangayofficials') {
-                messageDiv.innerHTML = '<div class="success-message">✅ Access granted! Welcome, official.</div>';
+                messageDiv.innerHTML = '<div class="message success-message">✅ Access granted</div>';
                 
                 setTimeout(() => {
-                    passwordProtection.style.transition = 'all 0.5s ease';
+                    passwordProtection.style.transition = 'all 0.4s ease';
                     passwordProtection.style.opacity = '0';
-                    passwordProtection.style.transform = 'translateY(-20px)';
+                    passwordProtection.style.transform = 'scale(0.95)';
                     
                     setTimeout(() => {
                         passwordProtection.classList.add('hidden');
                         adminButtons.classList.remove('hidden');
                         adminButtons.style.opacity = '0';
-                        adminButtons.style.transform = 'translateY(20px)';
                         
                         setTimeout(() => {
-                            adminButtons.style.transition = 'all 0.5s ease';
+                            adminButtons.style.transition = 'all 0.4s ease';
                             adminButtons.style.opacity = '1';
-                            adminButtons.style.transform = 'translateY(0)';
                         }, 50);
-                    }, 500);
+                    }, 400);
                 }, 1000);
             } else {
-                messageDiv.innerHTML = '<div class="error-message">❌ Invalid access code. Contact your administrator.</div>';
+                messageDiv.innerHTML = '<div class="message error-message">❌ Invalid access code</div>';
                 document.getElementById('adminPassword').value = '';
                 
-                // Add shake animation to password input
+                // Reset password visibility to hidden
                 const passwordInput = document.getElementById('adminPassword');
-                passwordInput.style.animation = 'shake 0.5s';
+                passwordInput.type = 'password';
+                document.getElementById('eyeIcon').className = 'bi bi-eye';
+                
+                passwordInput.style.animation = 'shake 0.4s';
                 setTimeout(() => {
                     passwordInput.style.animation = '';
-                }, 500);
+                }, 400);
             }
         }
         
-        // Allow Enter key to submit password
         document.getElementById('adminPassword').addEventListener('keypress', function(e) {
             if (e.key === 'Enter') {
                 checkPassword();
@@ -515,78 +627,37 @@
         style.textContent = `
             @keyframes shake {
                 0%, 100% { transform: translateX(0); }
-                25% { transform: translateX(-5px); }
-                75% { transform: translateX(5px); }
-            }
-            
-            @keyframes ripple {
-                to {
-                    transform: scale(4);
-                    opacity: 0;
-                }
+                25% { transform: translateX(-4px); }
+                75% { transform: translateX(4px); }
             }
         `;
         document.head.appendChild(style);
         
-        // Card animations and effects
-        document.addEventListener('DOMContentLoaded', function() {
-            // Add click ripple effect to cards when they become visible
-            const cards = document.querySelectorAll('.portal-card');
-            cards.forEach(card => {
-                card.addEventListener('click', function(e) {
-                    const ripple = document.createElement('div');
-                    const rect = this.getBoundingClientRect();
-                    const size = Math.max(rect.width, rect.height);
-                    const x = e.clientX - rect.left - size / 2;
-                    const y = e.clientY - rect.top - size / 2;
-                    
-                    ripple.style.cssText = `
-                        position: absolute;
-                        left: ${x}px;
-                        top: ${y}px;
-                        width: ${size}px;
-                        height: ${size}px;
-                        background: rgba(255, 255, 255, 0.5);
-                        border-radius: 50%;
-                        transform: scale(0);
-                        animation: ripple 0.6s linear;
-                        pointer-events: none;
-                        z-index: 10;
-                    `;
-                    
-                    this.appendChild(ripple);
-                    
-                    setTimeout(() => {
-                        ripple.remove();
-                    }, 600);
-                });
+        // Touch feedback for mobile
+        document.querySelectorAll('.card, .btn').forEach(element => {
+            element.addEventListener('touchstart', function() {
+                this.style.transform = 'scale(0.98)';
+            });
+            
+            element.addEventListener('touchend', function() {
+                this.style.transform = '';
             });
         });
         
-        // Check system status
-        function checkSystemStatus() {
-            const indicators = document.querySelectorAll('.status-indicator');
-            indicators.forEach(indicator => {
-                indicator.style.background = '#27ae60';
-                indicator.title = 'System Online';
-            });
-        }
-        
-        checkSystemStatus();
-        setInterval(checkSystemStatus, 30000);
-        
-        // Handle orientation and resize
-        window.addEventListener('orientationchange', function() {
-            setTimeout(() => {
-                checkSystemStatus();
-            }, 500);
+        // Auto-focus password input on load
+        window.addEventListener('load', function() {
+            document.getElementById('adminPassword').focus();
         });
         
-        let resizeTimer;
-        window.addEventListener('resize', function() {
-            clearTimeout(resizeTimer);
-            resizeTimer = setTimeout(checkSystemStatus, 250);
-        });
+        // Prevent zoom on double tap (mobile)
+        let lastTouchEnd = 0;
+        document.addEventListener('touchend', function(e) {
+            const now = Date.now();
+            if (now - lastTouchEnd <= 300) {
+                e.preventDefault();
+            }
+            lastTouchEnd = now;
+        }, false);
     </script>
 </body>
 </html>

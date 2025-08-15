@@ -102,7 +102,7 @@ $admin_info = $admin_stmt->fetch(PDO::FETCH_ASSOC);
         
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: linear-gradient(135deg, #ff7f32 0%, #764ba2 100%);
             min-height: 100vh;
             color: #2c3e50;
         }
@@ -129,7 +129,7 @@ $admin_info = $admin_stmt->fetch(PDO::FETCH_ASSOC);
         .logo {
             font-size: 1.5rem;
             font-weight: 700;
-            background: linear-gradient(135deg, #667eea, #764ba2);
+            background: linear-gradient(135deg, #ff944d, #ff7f32);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
@@ -163,11 +163,11 @@ $admin_info = $admin_stmt->fetch(PDO::FETCH_ASSOC);
         }
         
         .back-btn {
-            background: #28a745;
+            background: rgb(255, 165, 0);;
         }
         
         .back-btn:hover {
-            background: #218838;
+            background: #cc8400;
             transform: translateY(-2px);
         }
         
@@ -195,7 +195,7 @@ $admin_info = $admin_stmt->fetch(PDO::FETCH_ASSOC);
         .header h1 {
             font-size: 2rem;
             margin-bottom: 10px;
-            background: linear-gradient(135deg, #667eea, #764ba2);
+            background: linear-gradient(135deg, #ff944d, #ff7f32);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
@@ -223,7 +223,7 @@ $admin_info = $admin_stmt->fetch(PDO::FETCH_ASSOC);
         .stat-number {
             font-size: 1.8rem;
             font-weight: 700;
-            color: #667eea;
+            color: #ff944d;
             margin-bottom: 5px;
         }
         
@@ -267,7 +267,7 @@ $admin_info = $admin_stmt->fetch(PDO::FETCH_ASSOC);
         
         .filter-input:focus {
             outline: none;
-            border-color: #667eea;
+            border-color: #ff944d;
             box-shadow: 0 0 0 2px rgba(102, 126, 234, 0.2);
         }
         
@@ -391,7 +391,7 @@ $admin_info = $admin_stmt->fetch(PDO::FETCH_ASSOC);
         }
         
         .view-btn {
-            background: #667eea;
+            background: #ff944d;
             color: white;
         }
         
@@ -431,9 +431,9 @@ $admin_info = $admin_stmt->fetch(PDO::FETCH_ASSOC);
         }
         
         .pagination button:hover:not(:disabled) {
-            background: #667eea;
+            background: #ff944d;
             color: white;
-            border-color: #667eea;
+            border-color: #ff944d;
         }
         
         .pagination button:disabled {
@@ -442,9 +442,9 @@ $admin_info = $admin_stmt->fetch(PDO::FETCH_ASSOC);
         }
         
         .pagination .active {
-            background: #667eea;
+            background: #ff944d;
             color: white;
-            border-color: #667eea;
+            border-color: #ff944d;
         }
         
         .toast {
@@ -572,7 +572,7 @@ $admin_info = $admin_stmt->fetch(PDO::FETCH_ASSOC);
         .loading-spinner {
             width: 50px;
             height: 50px;
-            border: 4px solid #667eea;
+            border: 4px solid #ff944d;
             border-radius: 50%;
             border-top-color: transparent;
             animation: spin 1s linear infinite;
@@ -617,7 +617,7 @@ $admin_info = $admin_stmt->fetch(PDO::FETCH_ASSOC);
             justify-content: space-between;
             align-items: center;
             padding: 25px;
-            background: linear-gradient(135deg, #667eea, #764ba2);
+            background: linear-gradient(135deg, #ff944d, #764ba2);
             color: white;
         }
 
@@ -753,7 +753,7 @@ $admin_info = $admin_stmt->fetch(PDO::FETCH_ASSOC);
             padding: 10px;
             background: #f8f9fa;
             border-radius: 6px;
-            border-left: 3px solid #667eea;
+            border-left: 3px solid #ff944d;
         }
 
         .verification-field-label {

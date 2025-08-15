@@ -76,7 +76,6 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 }
 ?>
 
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -92,19 +91,20 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: linear-gradient(135deg, #ff7f00 0%, #ff9500 25%, #ffb347 50%, #ffd700 100%);
             min-height: 100vh;
             color: #2c3e50;
         }
         
         .navbar {
-            background: rgba(255, 255, 255, 0.95);
+            background: rgba(255, 255, 255, 0.98);
             backdrop-filter: blur(20px);
             padding: 15px 0;
-            box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 4px 20px rgba(255, 127, 0, 0.15);
             position: sticky;
             top: 0;
             z-index: 1000;
+            border-bottom: 3px solid #ff7f00;
         }
         
         .nav-container {
@@ -119,7 +119,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         .logo {
             font-size: 1.5rem;
             font-weight: 700;
-            background: linear-gradient(135deg, #667eea, #764ba2);
+            background: linear-gradient(135deg, #ff7f00, #ff5722);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
@@ -132,7 +132,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         }
         
         .back-btn {
-            background: #6c757d;
+            background: #ff7f00;
             color: white;
             padding: 8px 16px;
             border: none;
@@ -140,11 +140,13 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
             text-decoration: none;
             font-weight: 600;
             transition: all 0.3s ease;
+            box-shadow: 0 2px 8px rgba(255, 127, 0, 0.3);
         }
         
         .back-btn:hover {
-            background: #5a6268;
+            background: #e65100;
             transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(255, 127, 0, 0.4);
         }
         
         .user-info {
@@ -156,13 +158,14 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         .user-avatar {
             width: 40px;
             height: 40px;
-            background: linear-gradient(135deg, #667eea, #764ba2);
+            background: linear-gradient(135deg, #ff7f00, #ff5722);
             color: white;
             border-radius: 50%;
             display: flex;
             align-items: center;
             justify-content: center;
             font-weight: 600;
+            box-shadow: 0 2px 8px rgba(255, 127, 0, 0.3);
         }
         
         .user-status {
@@ -171,12 +174,13 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
             font-size: 11px;
             font-weight: 600;
             text-transform: uppercase;
-            background: #fff3cd;
-            color: #856404;
+            background: linear-gradient(135deg, #fff3e0, #ffe0b2);
+            color: #e65100;
+            border: 1px solid #ffcc80;
         }
         
         .logout-btn {
-            background: #e74c3c;
+            background: #ff5722;
             color: white;
             padding: 8px 16px;
             border: none;
@@ -184,11 +188,13 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
             text-decoration: none;
             font-weight: 600;
             transition: all 0.3s ease;
+            box-shadow: 0 2px 8px rgba(255, 87, 34, 0.3);
         }
         
         .logout-btn:hover {
-            background: #c0392b;
+            background: #d84315;
             transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(255, 87, 34, 0.4);
         }
         
         .container {
@@ -198,19 +204,20 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         }
         
         .verification-card {
-            background: rgba(255, 255, 255, 0.95);
+            background: rgba(255, 255, 255, 0.98);
             backdrop-filter: blur(20px);
             border-radius: 20px;
             padding: 40px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 10px 30px rgba(255, 127, 0, 0.1);
             text-align: center;
             margin-bottom: 30px;
+            border: 1px solid rgba(255, 127, 0, 0.1);
         }
         
         .verification-title {
             font-size: 2.5rem;
             margin-bottom: 15px;
-            background: linear-gradient(135deg, #667eea, #764ba2);
+            background: linear-gradient(135deg, #ff7f00, #ff5722);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
@@ -227,34 +234,36 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
             border-radius: 10px;
             margin-bottom: 20px;
             font-weight: 500;
+            border: 1px solid;
         }
         
         .alert-success {
-            background: #d4edda;
-            color: #155724;
-            border: 1px solid #c3e6cb;
+            background: linear-gradient(135deg, #e8f5e8, #f1f8e9);
+            color: #2e7d32;
+            border-color: #81c784;
         }
         
         .alert-error {
-            background: #f8d7da;
-            color: #721c24;
-            border: 1px solid #f5c6cb;
+            background: linear-gradient(135deg, #ffebee, #fce4ec);
+            color: #c62828;
+            border-color: #ef5350;
         }
         
         .alert-info {
-            background: #e3f2fd;
-            color: #1565c0;
-            border: 1px solid #90caf9;
+            background: linear-gradient(135deg, #fff3e0, #ffe0b2);
+            color: #e65100;
+            border-color: #ffcc80;
             text-align: left;
         }
         
         .verification-form {
-            background: rgba(255, 255, 255, 0.95);
+            background: rgba(255, 255, 255, 0.98);
             backdrop-filter: blur(20px);
             border-radius: 20px;
             padding: 40px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 10px 30px rgba(255, 127, 0, 0.1);
             margin-bottom: 30px;
+            border: 1px solid rgba(255, 127, 0, 0.1);
         }
         
         .form-header {
@@ -266,6 +275,10 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
             font-size: 1.8rem;
             color: #2c3e50;
             margin-bottom: 10px;
+            background: linear-gradient(135deg, #ff7f00, #ff5722);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
         }
         
         .form-group {
@@ -281,22 +294,24 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         }
         
         .required {
-            color: #e74c3c;
+            color: #ff5722;
         }
         
         input[type="text"], input[type="date"] {
             width: 100%;
             padding: 12px 15px;
-            border: 2px solid #ecf0f1;
+            border: 2px solid #ffe0b2;
             border-radius: 10px;
             font-size: 14px;
             transition: all 0.3s ease;
+            background: rgba(255, 255, 255, 0.9);
         }
         
         input:focus {
             outline: none;
-            border-color: #667eea;
-            box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+            border-color: #ff7f00;
+            box-shadow: 0 0 0 3px rgba(255, 127, 0, 0.1);
+            background: white;
         }
         
         .file-upload-section {
@@ -304,16 +319,16 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         }
         
         .attachment-group {
-            border: 1px solid #e9ecef;
+            border: 1px solid #ffe0b2;
             border-radius: 15px;
             padding: 20px;
             margin-bottom: 20px;
-            background: #f8f9fa;
+            background: linear-gradient(135deg, #fff8f0, #fffaf5);
         }
         
         .attachment-header {
             font-weight: 600;
-            color: #495057;
+            color: #e65100;
             margin-bottom: 15px;
             display: flex;
             align-items: center;
@@ -321,7 +336,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         }
         
         .attachment-required {
-            color: #e74c3c;
+            color: #ff5722;
             font-size: 12px;
             font-weight: 500;
         }
@@ -337,7 +352,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         }
         
         .file-upload-area {
-            border: 2px dashed #ddd;
+            border: 2px dashed #ffcc80;
             border-radius: 15px;
             padding: 25px;
             text-align: center;
@@ -345,16 +360,20 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
             margin-bottom: 15px;
             cursor: pointer;
             position: relative;
+            background: rgba(255, 255, 255, 0.5);
         }
         
         .file-upload-area:hover {
-            border-color: #667eea;
-            background: #f8f9ff;
+            border-color: #ff7f00;
+            background: rgba(255, 248, 240, 0.8);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(255, 127, 0, 0.1);
         }
         
         .file-upload-area.dragover {
-            border-color: #667eea;
-            background: #f0f4ff;
+            border-color: #ff7f00;
+            background: rgba(255, 242, 230, 0.9);
+            transform: scale(1.02);
         }
         
         .file-input {
@@ -374,24 +393,25 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         .upload-icon {
             font-size: 2.5rem;
             margin-bottom: 10px;
-            color: #667eea;
+            color: #ff7f00;
+            filter: drop-shadow(0 2px 4px rgba(255, 127, 0, 0.3));
         }
         
         .upload-text {
             font-size: 16px;
             font-weight: 600;
-            color: #2c3e50;
+            color: #e65100;
             margin-bottom: 5px;
         }
         
         .upload-subtext {
             font-size: 12px;
-            color: #7f8c8d;
+            color: #ff8a50;
         }
         
         .file-info {
-            background: #e8f5e8;
-            border: 1px solid #c3e6cb;
+            background: linear-gradient(135deg, #e8f5e8, #f1f8e9);
+            border: 1px solid #81c784;
             border-radius: 8px;
             padding: 12px;
             margin-top: 10px;
@@ -404,7 +424,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         
         .file-name {
             font-weight: 600;
-            color: #155724;
+            color: #2e7d32;
             margin-bottom: 5px;
         }
         
@@ -414,7 +434,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         }
         
         .remove-file-btn {
-            background: #dc3545;
+            background: #ff5722;
             color: white;
             border: none;
             padding: 4px 10px;
@@ -426,11 +446,12 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         }
         
         .remove-file-btn:hover {
-            background: #c82333;
+            background: #d84315;
+            transform: translateY(-1px);
         }
         
         .btn {
-            background: linear-gradient(135deg, #667eea, #764ba2);
+            background: linear-gradient(135deg, #ff7f00, #ff5722);
             color: white;
             padding: 15px 30px;
             border: none;
@@ -441,49 +462,58 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
             width: 100%;
             font-size: 16px;
             margin-top: 20px;
+            box-shadow: 0 4px 15px rgba(255, 127, 0, 0.3);
         }
         
         .btn:hover {
             transform: translateY(-2px);
-            box-shadow: 0 15px 30px rgba(102, 126, 234, 0.3);
+            box-shadow: 0 8px 25px rgba(255, 127, 0, 0.4);
+            background: linear-gradient(135deg, #e65100, #d84315);
         }
         
         .btn:disabled {
-            background: #6c757d;
+            background: #bdbdbd;
             cursor: not-allowed;
             transform: none;
+            box-shadow: none;
         }
         
         .status-card {
-            background: rgba(255, 255, 255, 0.95);
+            background: rgba(255, 255, 255, 0.98);
             backdrop-filter: blur(20px);
             border-radius: 20px;
             padding: 30px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 10px 30px rgba(255, 127, 0, 0.1);
             text-align: center;
+            border: 1px solid rgba(255, 127, 0, 0.1);
         }
         
         .status-pending {
-            border-left: 5px solid #007bff;
-            background: #cce7ff;
-            color: #0066cc;
+            border-left: 5px solid #ff9800;
+            background: linear-gradient(135deg, #fff3e0, #ffe0b2);
+            color: #e65100;
         }
         
         .status-rejected {
-            border-left: 5px solid #dc3545;
-            background: #ffe6e6;
-            color: #cc0000;
+            border-left: 5px solid #ff5722;
+            background: linear-gradient(135deg, #ffebee, #fce4ec);
+            color: #d32f2f;
         }
         
         .status-icon {
             font-size: 3rem;
             margin-bottom: 15px;
+            filter: drop-shadow(0 2px 4px rgba(255, 127, 0, 0.3));
         }
         
         .status-title {
             font-size: 1.5rem;
             font-weight: 700;
             margin-bottom: 10px;
+            background: linear-gradient(135deg, #ff7f00, #ff5722);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
         }
         
         .status-message {
@@ -497,7 +527,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         }
         
         .new-request-btn {
-            background: linear-gradient(135deg, #28a745, #20c997);
+            background: linear-gradient(135deg, #4caf50, #66bb6a);
             color: white;
             padding: 12px 25px;
             border: none;
@@ -508,20 +538,66 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
             display: inline-block;
             margin-top: 15px;
             transition: all 0.3s ease;
+            box-shadow: 0 3px 10px rgba(76, 175, 80, 0.3);
         }
         
         .new-request-btn:hover {
             transform: translateY(-2px);
-            box-shadow: 0 8px 15px rgba(40, 167, 69, 0.3);
+            box-shadow: 0 6px 15px rgba(76, 175, 80, 0.4);
+            background: linear-gradient(135deg, #388e3c, #4caf50);
         }
         
         .rejection-reason {
-            background: #fff3cd;
-            color: #856404;
+            background: linear-gradient(135deg, #fff3e0, #ffe0b2);
+            color: #e65100;
             padding: 15px;
             border-radius: 8px;
             margin-top: 15px;
-            border-left: 4px solid #ffc107;
+            border-left: 4px solid #ff9800;
+        }
+        
+        /* Enhanced animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        @keyframes pulse {
+            0%, 100% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.05);
+            }
+        }
+        
+        .verification-card,
+        .verification-form,
+        .status-card {
+            animation: fadeInUp 0.6s ease-out;
+        }
+        
+        .upload-icon:hover {
+            animation: pulse 1s infinite;
+        }
+        
+        /* Comprehensive Mobile Responsive Design */
+        @media (max-width: 1024px) {
+            .container {
+                max-width: 95%;
+                padding: 20px 15px;
+            }
+            
+            .verification-card,
+            .verification-form {
+                padding: 30px 25px;
+            }
         }
         
         @media (max-width: 768px) {
@@ -529,24 +605,233 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
                 flex-direction: column;
                 gap: 15px;
                 text-align: center;
+                padding: 0 15px;
+            }
+            
+            .nav-links {
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 10px;
+            }
+            
+            .user-info {
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 10px;
+            }
+            
+            .logo {
+                font-size: 1.3rem;
+                margin-bottom: 10px;
             }
             
             .container {
-                padding: 20px 15px;
+                padding: 15px 10px;
             }
             
             .verification-card,
             .verification-form,
             .status-card {
                 padding: 25px 20px;
+                margin-bottom: 20px;
             }
             
             .verification-title {
                 font-size: 2rem;
+                line-height: 1.2;
             }
             
             .form-title {
                 font-size: 1.5rem;
+            }
+            
+            .verification-subtitle {
+                font-size: 1rem;
+            }
+            
+            .attachment-group {
+                padding: 15px;
+            }
+            
+            .file-upload-area {
+                padding: 20px 15px;
+            }
+            
+            .upload-icon {
+                font-size: 2rem;
+            }
+            
+            .upload-text {
+                font-size: 14px;
+            }
+            
+            .upload-subtext {
+                font-size: 11px;
+            }
+            
+            .btn {
+                padding: 12px 20px;
+                font-size: 14px;
+            }
+            
+            .attachment-header {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 5px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .navbar {
+                padding: 10px 0;
+            }
+            
+            .nav-container {
+                padding: 0 10px;
+            }
+            
+            .logo {
+                font-size: 1.1rem;
+            }
+            
+            .back-btn,
+            .logout-btn {
+                padding: 6px 12px;
+                font-size: 12px;
+            }
+            
+            .user-avatar {
+                width: 35px;
+                height: 35px;
+            }
+            
+            .user-status {
+                padding: 3px 8px;
+                font-size: 10px;
+            }
+            
+            .container {
+                padding: 10px 5px;
+            }
+            
+            .verification-card,
+            .verification-form,
+            .status-card {
+                padding: 20px 15px;
+                border-radius: 15px;
+            }
+            
+            .verification-title {
+                font-size: 1.7rem;
+            }
+            
+            .form-title {
+                font-size: 1.3rem;
+            }
+            
+            .verification-subtitle {
+                font-size: 0.95rem;
+            }
+            
+            .attachment-group {
+                padding: 12px;
+                margin-bottom: 15px;
+            }
+            
+            .file-upload-area {
+                padding: 15px 10px;
+            }
+            
+            .upload-icon {
+                font-size: 1.8rem;
+                margin-bottom: 8px;
+            }
+            
+            .upload-text {
+                font-size: 13px;
+            }
+            
+            .upload-subtext {
+                font-size: 10px;
+            }
+            
+            input[type="text"], 
+            input[type="date"] {
+                padding: 10px 12px;
+                font-size: 13px;
+            }
+            
+            .btn {
+                padding: 10px 15px;
+                font-size: 13px;
+            }
+            
+            .alert {
+                padding: 12px;
+                font-size: 13px;
+            }
+            
+            .status-icon {
+                font-size: 2.5rem;
+            }
+            
+            .status-title {
+                font-size: 1.3rem;
+            }
+            
+            .status-message {
+                font-size: 0.9rem;
+            }
+        }
+        
+        /* Additional responsive utilities */
+        .form-group:focus-within label {
+            color: #ff7f00;
+            transition: color 0.3s ease;
+        }
+        
+        .attachment-group:hover {
+            border-color: #ff7f00;
+            transform: translateY(-2px);
+            transition: all 0.3s ease;
+        }
+        
+        /* Touch-friendly buttons for mobile */
+        @media (max-width: 768px) {
+            .back-btn,
+            .logout-btn,
+            .new-request-btn,
+            .remove-file-btn {
+                min-height: 44px;
+                min-width: 44px;
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+            }
+            
+            .file-upload-area {
+                min-height: 120px;
+            }
+        }
+        
+        /* Improved text legibility on small screens */
+        @media (max-width: 480px) {
+            body {
+                font-size: 14px;
+                line-height: 1.5;
+            }
+            
+            label {
+                font-size: 13px;
+            }
+            
+            .attachment-header {
+                font-size: 14px;
+            }
+            
+            .file-name {
+                font-size: 12px;
+                word-break: break-word;
             }
         }
     </style>
@@ -775,8 +1060,8 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
                 <p><strong>4. Access Services:</strong> You can then request barangay clearances, certificates, and other official documents online.</p>
             </div>
             
-            <div style="margin-top: 30px; padding: 20px; background: #f8f9fa; border-radius: 10px;">
-                <h4 style="color: #495057; margin-bottom: 15px;">📞 Need Help?</h4>
+            <div style="margin-top: 30px; padding: 20px; background: linear-gradient(135deg, #fff8f0, #fffaf5); border-radius: 10px; border: 1px solid #ffe0b2;">
+                <h4 style="color: #e65100; margin-bottom: 15px;">📞 Need Help?</h4>
                 <p style="margin-bottom: 10px;"><strong>Barangay Office:</strong> (02) 123-4567</p>
                 <p style="margin-bottom: 10px;"><strong>Email:</strong> verification@barangay.gov.ph</p>
                 <p style="margin-bottom: 10px;"><strong>Office Hours:</strong> Monday - Friday, 8:00 AM - 5:00 PM</p>
@@ -868,10 +1153,10 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
             
             // If file is uploaded but no ID number, show warning
             if (fileInput.files[0] && !idInput.value.trim() && attachmentNumber <= 2) {
-                idInput.style.borderColor = '#ffc107';
+                idInput.style.borderColor = '#ff9800';
                 idInput.placeholder = 'ID number is required when uploading this document';
             } else {
-                idInput.style.borderColor = '#ecf0f1';
+                idInput.style.borderColor = '#ffe0b2';
             }
         }
         

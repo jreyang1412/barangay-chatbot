@@ -7,7 +7,7 @@ if (isset($_POST['register'])) {
     $lastName = trim($_POST['last_name']);
     $mobileNumber = trim($_POST['mobile_number']);
     $city = $_POST['city'];
-    $barangay = trim($_POST['barangay']);
+    $barangay = $_POST['barangay'];
     $email = trim($_POST['email']);
     $password = $_POST['password'];
     $confirmPassword = $_POST['confirm_password'];
@@ -88,204 +88,234 @@ if (isset($_POST['register'])) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>User Registration - Help Desk</title>
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            min-height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding: 20px;
-        }
-        
-        .register-container {
-            background: rgba(255, 255, 255, 0.95);
-            backdrop-filter: blur(20px);
-            border-radius: 20px;
-            box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
-            padding: 40px;
-            width: 100%;
-            max-width: 500px;
-            position: relative;
-            overflow: hidden;
-        }
-        
-        .register-container::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            height: 4px;
-            background: linear-gradient(90deg, #667eea, #764ba2, #f093fb, #f5576c);
-            background-size: 400% 400%;
-            animation: gradientShift 3s ease infinite;
-        }
-        
-        @keyframes gradientShift {
-            0%, 100% { background-position: 0% 50%; }
-            50% { background-position: 100% 50%; }
-        }
-        
-        .header {
-            text-align: center;
-            margin-bottom: 30px;
-        }
-        
-        .logo {
-            font-size: 3rem;
-            margin-bottom: 10px;
-        }
-        
-        .title {
-            font-size: 2rem;
-            color: #2c3e50;
-            margin-bottom: 10px;
-            font-weight: 700;
-            background: linear-gradient(135deg, #667eea, #764ba2);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-        }
-        
-        .subtitle {
-            color: #7f8c8d;
-            font-size: 1rem;
-        }
-        
-        .form-group {
-            margin-bottom: 20px;
-        }
-        
-        .form-row {
-            display: flex;
-            gap: 15px;
-        }
-        
-        .form-row .form-group {
-            flex: 1;
-        }
-        
-        label {
-            display: block;
-            margin-bottom: 8px;
-            font-weight: 600;
-            color: #2c3e50;
-            font-size: 14px;
-        }
-        
-        .required::after {
-            content: ' *';
-            color: #e74c3c;
-        }
-        
-        input, select {
-            width: 100%;
-            padding: 12px 15px;
-            border: 2px solid #ecf0f1;
-            border-radius: 10px;
-            font-size: 14px;
-            transition: all 0.3s ease;
-            background: white;
-        }
-        
-        input:focus, select:focus {
-            outline: none;
-            border-color: #667eea;
-            box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
-        }
-        
-        .register-btn {
-            width: 100%;
-            padding: 15px;
-            background: linear-gradient(135deg, #667eea, #764ba2);
-            color: white;
-            border: none;
-            border-radius: 10px;
-            font-size: 16px;
-            font-weight: 600;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            margin-top: 10px;
-        }
-        
-        .register-btn:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-        }
-        
-        .register-btn:disabled {
-            opacity: 0.6;
-            cursor: not-allowed;
-            transform: none;
-        }
-        
-        .login-link {
-            text-align: center;
-            margin-top: 20px;
-            padding-top: 20px;
-            border-top: 1px solid #ecf0f1;
-        }
-        
-        .login-link a {
-            color: #667eea;
-            text-decoration: none;
-            font-weight: 600;
-        }
-        
-        .login-link a:hover {
-            text-decoration: underline;
-        }
-        
-        .alert {
-            padding: 12px;
-            border-radius: 8px;
-            margin-bottom: 20px;
-            font-size: 14px;
-        }
-        
-        .alert-success {
-            background: #d4edda;
-            color: #155724;
-            border: 1px solid #c3e6cb;
-        }
-        
-        .alert-error {
-            background: #f8d7da;
-            color: #721c24;
-            border: 1px solid #f5c6cb;
-        }
-        
-        .status-info {
-            background: #cce7ff;
-            color: #0066cc;
-            padding: 10px;
-            border-radius: 8px;
-            margin-bottom: 20px;
-            font-size: 13px;
-            text-align: center;
-        }
-        
-        @media (max-width: 600px) {
-            .form-row {
-                flex-direction: column;
-                gap: 0;
-            }
-            
-            .register-container {
-                padding: 30px 20px;
-            }
-            
-            .title {
-                font-size: 1.5rem;
-            }
-        }
+       * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #ff914d 0%, #ff5e00 100%);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.register-container {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(20px);
+    border-radius: 20px;
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
+    padding: 40px;
+    width: 100%;
+    max-width: 500px;
+    position: relative;
+    overflow: hidden;
+}
+
+.register-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, #ff914d, #ff5e00, #ffb347, #ff7f50);
+    background-size: 400% 400%;
+    animation: gradientShift 3s ease infinite;
+}
+
+@keyframes gradientShift {
+    0%, 100% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.logo {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    color: #ff5e00;
+}
+
+.title {
+    font-size: 2rem;
+    color: #ff5e00;
+    margin-bottom: 10px;
+    font-weight: 700;
+    background: linear-gradient(135deg, #ff914d, #ff5e00);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.subtitle {
+    color: #7f8c8d;
+    font-size: 1rem;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-row {
+    display: flex;
+    gap: 15px;
+}
+
+.form-row .form-group {
+    flex: 1;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #2c3e50;
+    font-size: 14px;
+}
+
+.required::after {
+    content: ' *';
+    color: #e74c3c;
+}
+
+input, select {
+    width: 100%;
+    padding: 12px 15px;
+    border: 2px solid #ecf0f1;
+    border-radius: 10px;
+    font-size: 14px;
+    transition: all 0.3s ease;
+    background: white;
+}
+
+input:focus, select:focus {
+    outline: none;
+    border-color: #ff914d;
+    box-shadow: 0 0 0 3px rgba(255, 145, 77, 0.2);
+}
+
+.password-container {
+    position: relative;
+}
+
+.password-toggle {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #7f8c8d;
+    font-size: 16px;
+    padding: 4px;
+    transition: color 0.3s ease;
+    z-index: 10;
+}
+
+.password-toggle:hover {
+    color: #ff914d;
+}
+
+.register-btn {
+    width: 100%;
+    padding: 15px;
+    background: linear-gradient(135deg, #ff914d, #ff5e00);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 10px;
+}
+
+.register-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.register-btn:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+    transform: none;
+}
+
+.login-link {
+    text-align: center;
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid #ecf0f1;
+}
+
+.login-link a {
+    color: #ff5e00;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.login-link a:hover {
+    text-decoration: underline;
+}
+
+.alert {
+    padding: 12px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+.alert-success {
+    background: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+.alert-error {
+    background: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
+
+.status-info {
+    background: #ffe0b2;
+    color: #e65100;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    font-size: 13px;
+    text-align: center;
+}
+
+select:disabled {
+    background-color: #f8f9fa;
+    color: #6c757d;
+    cursor: not-allowed;
+}
+
+@media (max-width: 600px) {
+    .form-row {
+        flex-direction: column;
+        gap: 0;
+    }
+    
+    .register-container {
+        padding: 30px 20px;
+    }
+    
+    .title {
+        font-size: 1.5rem;
+    }
+}
+
     </style>
 </head>
 <body>
@@ -353,7 +383,9 @@ if (isset($_POST['register'])) {
                 </div>
                 <div class="form-group">
                     <label for="barangay" class="required">Barangay</label>
-                    <input type="text" id="barangay" name="barangay" required placeholder="e.g. Barangay 1" value="<?php echo isset($_POST['barangay']) ? htmlspecialchars($_POST['barangay']) : ''; ?>">
+                    <select id="barangay" name="barangay" required disabled>
+                        <option value="">Select City First</option>
+                    </select>
                 </div>
             </div>
             
@@ -364,12 +396,20 @@ if (isset($_POST['register'])) {
             
             <div class="form-group">
                 <label for="password" class="required">Password</label>
-                <input type="password" id="password" name="password" required minlength="6">
+                <div class="password-container">
+                    <input type="password" id="password" name="password" required minlength="6">
+                    <button type="button" class="password-toggle" onclick="togglePassword('password')">Show
+                    </button>
+                </div>
             </div>
             
             <div class="form-group">
                 <label for="confirm_password" class="required">Confirm Password</label>
-                <input type="password" id="confirm_password" name="confirm_password" required minlength="6">
+                <div class="password-container">
+                    <input type="password" id="confirm_password" name="confirm_password" required minlength="6">
+                    <button type="button" class="password-toggle" onclick="togglePassword('confirm_password')">Show
+                    </button>
+                </div>
             </div>
             
             <button type="submit" name="register" class="register-btn">Create Account</button>
@@ -381,6 +421,183 @@ if (isset($_POST['register'])) {
     </div>
     
     <script>
+        // Barangay data for Metro Manila cities
+        const barangayData = {
+            "Caloocan": [
+                "Barangay 1", "Barangay 2", "Barangay 3", "Barangay 4", "Barangay 5", "Barangay 6", "Barangay 7", "Barangay 8",
+                "Barangay 9", "Barangay 10", "Bagbaguin", "Bagong Silang", "Bagumbong North", "Bagumbong South", 
+                "Bankers Village", "Barrio Maypajo", "Bignay", "Bonifacio", "Camarin", "Deparo", "Grace Park East",
+                "Grace Park West", "Kaybiga", "Kaunlaran", "Llano", "Maypajo", "Morning Breeze", "Novaliches North",
+                "Novaliches South", "Sangandaan", "Tala", "Talipapa", "Tandang Sora", "Tex Ville"
+            ],
+            "Las Piñas": [
+                "Almanza Dos", "Almanza Uno", "B.F. International Village", "Daniel Fajardo", "Elias Aldana",
+                "Ilaya", "Manuyo Dos", "Manuyo Uno", "Pamplona Dos", "Pamplona Tres", "Pamplona Uno",
+                "Pilar", "Pulang Lupa Dos", "Pulang Lupa Uno", "Talon Dos", "Talon Kuatro", "Talon Singko",
+                "Talon Tres", "Talon Uno", "Zapote"
+            ],
+            "Makati": [
+                "Bangkal", "Bel-Air", "Carmona", "Cembo", "Comembo", "Dasmariñas", "East Rembo", "Forbes Park", 
+                "Guadalupe Nuevo", "Guadalupe Viejo", "Kasilawan", "La Paz", "Magallanes", "Olympia", "Palanan", 
+                "Pembo", "Pinagkaisahan", "Pio del Pilar", "Pitogo", "Poblacion", "Post Proper Northside",
+                "Post Proper Southside", "Rizal", "San Antonio", "San Isidro", "San Lorenzo", "Santa Cruz", 
+                "Singkamas", "South Cembo", "Tejeros", "Urdaneta", "Valenzuela", "West Rembo"
+            ],
+            "Malabon": [
+                "Acacia", "Baritan", "Bayan-bayanan", "Catmon", "Concepcion", "Dampalit", "Flores",
+                "Hulong Duhat", "Ibaba", "Longos", "Maysilo", "Muzon", "Niugan", "Panghulo",
+                "Potrero", "San Agustin", "Santolan", "Tañong", "Tinajeros", "Tonsuya", "Tugatog"
+            ],
+            "Mandaluyong": [
+                "Addition Hills", "Bagong Silang", "Barangka Drive", "Barangka Ibaba", "Barangka Ilaya",
+                "Barangka Itaas", "Buayang Bato", "Burol", "Daang Bakal", "Hagdang Bato Itaas",
+                "Hagdang Bato Libis", "Harapin Ang Bukas", "Highway Hills", "Hulo", "Mabini-J. Rizal",
+                "Malamig", "Mauway", "Namayan", "New Zañiga", "Old Zañiga", "Plainview", "Pleasant Hills",
+                "Poblacion", "San Jose", "Vergara", "Wack-Wack Greenhills"
+            ],
+            "Manila": [
+                "Barangay 1", "Barangay 2", "Barangay 3", "Barangay 4", "Barangay 5", "Barangay 6",
+                "Barangay 7", "Barangay 8", "Barangay 9", "Barangay 10", "Binondo", "Ermita", "Intramuros",
+                "Malate", "Paco", "Pandacan", "Port Area", "Quiapo", "Sampaloc", "San Andres", "San Miguel",
+                "San Nicolas", "Santa Ana", "Santa Cruz", "Santa Mesa", "Tondo"
+            ],
+            "Marikina": [
+                "Barangka", "Calumpang", "Concepcion Dos", "Concepcion Uno", "Fortune", "Industrial Valley Complex",
+                "Jesus Dela Peña", "Malanday", "Marikina Heights", "Nangka", "Parang", "San Roque",
+                "Santa Elena", "Santo Niño", "Tañong", "Tumana"
+            ],
+            "Muntinlupa": [
+                "Alabang", "Ayala Alabang", "Buli", "Cupang", "Filinvest Corporate City", "New Alabang Village",
+                "Poblacion", "Putatan", "Sucat", "Tunasan"
+            ],
+            "Navotas": [
+                "Bagumbayan North", "Bagumbayan South", "Bangculasi", "Daanghari", "Navotas East",
+                "Navotas West", "North Bay Boulevard North", "North Bay Boulevard South", "San Jose",
+                "San Rafael Village", "San Roque", "Sipac-Almacen", "Tangos North", "Tangos South", "Tanza"
+            ],
+            "Parañaque": [
+                "Baclaran", "B.F. Homes", "Don Bosco", "Don Galo", "La Huerta", "Marcelo Green Village",
+                "Merville", "Moonwalk", "San Antonio", "San Dionisio", "San Isidro", "San Martin de Porres",
+                "Santo Niño", "Sun Valley", "Tambo", "Vitalez"
+            ],
+            "Pasay": [
+                "Barangay 1", "Barangay 2", "Barangay 3", "Barangay 4", "Barangay 5", "Barangay 6",
+                "Barangay 7", "Barangay 8", "Barangay 9", "Barangay 10", "Barangay 76", "Barangay 183",
+                "Barangay 201", "Malibay", "Maricaban", "San Isidro", "San Rafael", "San Roque", "Villamor"
+            ],
+            "Pasig": [
+                "Bagong Ilog", "Bagong Katipunan", "Bambang", "Buting", "Caniogan", "Dela Paz",
+                "Kalawaan", "Kapasigan", "Kapitolyo", "Malinao", "Manggahan", "Maybunga", "Oranbo",
+                "Palatiw", "Pinagbuhatan", "Rosario", "Sagad", "San Antonio", "San Joaquin",
+                "San Jose", "San Miguel", "San Nicolas", "Santa Cruz", "Santa Lucia", "Santa Rosa",
+                "Santo Tomas", "Santolan", "Sumilang", "Ugong", "Wawa"
+            ],
+            "Quezon City": [
+                "Alicia", "Amihan", "Apolonio Samson", "Aurora", "Baesa", "Bagbag", "Bagong Lipunan ng Crame",
+                "Bagong Pag-asa", "Bagong Silangan", "Bagumbayan", "Bagumbuhay", "Balingasa", "Balintawak",
+                "Batasan Hills", "Bayanihan", "Blue Ridge A", "Blue Ridge B", "Botocan", "Bungad",
+                "Camp Aguinaldo", "Central", "Claro", "Commonwealth", "Culiat", "Damar", "Dawn",
+                "Diliman", "Doña Aurora", "Doña Imelda", "Doña Josefa", "Don Manuel", "Duyan-Duyan",
+                "East Kamias", "East Triangle", "Escopa", "Fairview", "Greater Lagro", "Gulod",
+                "Holy Spirit", "Horseshoe", "Kaligayahan", "Kalusugan", "Kamuning", "Katipunan",
+                "Kaunlaran", "Kristong Hari", "Krus na Ligas", "Laging Handa", "La Loma",
+                "Libis", "Lourdes", "Loyola Heights", "Luzon Avenue", "Maharlika", "Malaya",
+                "Mariana", "Mariblo", "Masambong", "Matandang Balara", "Milagrosa", "N.S. Amoranto",
+                "Nayong Kanluran", "New Era", "North Fairview", "Novaliches Proper", "Old Balara",
+                "Obrero", "Paang Bundok", "Pagkakaisa", "Paligsahan", "Paltok", "Pansol",
+                "Paraiso", "Pasong Putik Proper", "Pasong Tamo", "Payatas", "Phil-Am", "Pinagkaisahan",
+                "Pinyahan", "Project 6", "Project 7", "Project 8", "Quirino 2-A", "Quirino 2-B",
+                "Quirino 2-C", "Quirino 3-A", "Ramón Magsaysay", "Roxas", "Sacred Heart",
+                "Saint Ignatius", "Saint Peter", "Salvacion", "San Agustin", "San Antonio",
+                "San Bartolome", "Sangandaan", "San Isidro Labrador", "San Jose", "San Martin de Porres",
+                "San Roque", "Santa Cruz", "Santa Lucia", "Santa Monica", "Santa Teresita",
+                "Santo Cristo", "Santo Domingo", "Santo Niño", "Santol", "Sienna",
+                "Silangan", "South Triangle", "Tagumpay", "Talayan", "Tatalon", "Teachers Village East",
+                "Teachers Village West", "Ugong Norte", "Unang Sigaw", "UP Campus", "UP Village",
+                "Veterans Village", "Villa Maria Clara", "West Kamias", "West Triangle", "White Plains"
+            ],
+            "San Juan": [
+                "Addition Hills", "Balong-Bato", "Batis", "Corazon de Jesus", "Ermitaño", "Greenhills",
+                "Halo-Halo", "Isabelita", "Kabayanan", "Little Baguio", "Maytunas", "Onse",
+                "Pedro Cruz", "Progreso", "Rivera", "Salapan", "San Perfecto", "Santa Lucia",
+                "Tibagan", "West Crame"
+            ],
+            "Taguig": [
+                "Bagumbayan", "Bambang", "Calzada", "Central Bicutan", "Central Signal Village",
+                "Fort Bonifacio", "Hagonoy", "Ibayo-Tipas", "Ligid-Tipas", "Lower Bicutan",
+                "Maharlika Village", "Napindan", "New Lower Bicutan", "North Daang Hari",
+                "North Signal Village", "Palingon", "Pinagsama", "San Miguel", "Santa Ana",
+                "South Daang Hari", "South Signal Village", "Tanyag", "Tuktukan", "Upper Bicutan",
+                "Ususan", "Wawa", "Western Bicutan"
+            ],
+            "Valenzuela": [
+                "Arkong Bato", "Bagbaguin", "Bignay", "Bisig", "Canumay East", "Canumay West",
+                "Coloong", "Dalandanan", "Gen. T. de Leon", "Hen. T. de Leon", "Isla", "Karuhatan",
+                "Lawang Bato", "Lingunan", "Mabolo", "Malanday", "Malinta", "Mapulang Lupa",
+                "Marulas", "Maysan", "Palasan", "Parada", "Pariancillo Villa", "Paso de Blas",
+                "Pasolo", "Poblacion", "Polo", "Punturin", "Rincon", "Tagalag", "Ugong", "Viente Reales"
+            ]
+        };
+
+        // Password toggle functionality
+        function togglePassword(fieldId) {
+            const field = document.getElementById(fieldId);
+            const toggle = field.nextElementSibling;
+            
+            if (field.type === 'password') {
+                field.type = 'text';
+                toggle.textContent = 'Hide';
+            } else {
+                field.type = 'password';
+                toggle.textContent = 'Show';
+            }
+        }
+
+        // City change handler
+        document.getElementById('city').addEventListener('change', function() {
+            const selectedCity = this.value;
+            const barangaySelect = document.getElementById('barangay');
+            
+            // Clear existing options
+            barangaySelect.innerHTML = '<option value="">Select Barangay</option>';
+            
+            if (selectedCity && barangayData[selectedCity]) {
+                // Enable barangay dropdown
+                barangaySelect.disabled = false;
+                
+                // Add barangay options for selected city
+                barangayData[selectedCity].forEach(function(barangay) {
+                    const option = document.createElement('option');
+                    option.value = barangay;
+                    option.textContent = barangay;
+                    barangaySelect.appendChild(option);
+                });
+            } else {
+                // Disable barangay dropdown if no city selected
+                barangaySelect.disabled = true;
+                barangaySelect.innerHTML = '<option value="">Select City First</option>';
+            }
+        });
+
+        // Trigger city change on page load to restore barangay selection (for form persistence)
+        document.addEventListener('DOMContentLoaded', function() {
+            const citySelect = document.getElementById('city');
+            const selectedCity = citySelect.value;
+            
+            if (selectedCity) {
+                // Trigger the change event to populate barangays
+                citySelect.dispatchEvent(new Event('change'));
+                
+                // If there's a previously selected barangay, select it
+                <?php if (isset($_POST['barangay']) && !empty($_POST['barangay'])): ?>
+                setTimeout(function() {
+                    const barangaySelect = document.getElementById('barangay');
+                    barangaySelect.value = '<?php echo htmlspecialchars($_POST['barangay']); ?>';
+                }, 100);
+                <?php endif; ?>
+            }
+        });
+
         // Form validation
         document.querySelector('form').addEventListener('submit', function(e) {
             const password = document.getElementById('password').value;
@@ -396,6 +613,21 @@ if (isset($_POST['register'])) {
             if (!/^09[0-9]{9}$/.test(mobileNumber)) {
                 e.preventDefault();
                 alert('Please enter a valid mobile number (11 digits starting with 09)');
+                return false;
+            }
+            
+            const city = document.getElementById('city').value;
+            const barangay = document.getElementById('barangay').value;
+            
+            if (!city) {
+                e.preventDefault();
+                alert('Please select a city');
+                return false;
+            }
+            
+            if (!barangay) {
+                e.preventDefault();
+                alert('Please select a barangay');
                 return false;
             }
         });

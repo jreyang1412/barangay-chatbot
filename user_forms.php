@@ -9,9 +9,13 @@ if (!isset($_SESSION['user_id'])) {
 
 require_once 'config.php';
 
-// Get user status from database
+// Get user status and barangay from database
 try {
-    $stmt = $pdo->prepare("SELECT status, is_active FROM users WHERE id = ?");
+    $stmt = $pdo->prepare("
+        SELECT status, is_active, barangay, first_name, last_name, profile_picture
+        FROM users
+        WHERE id = ?
+    ");
     $stmt->execute([$_SESSION['user_id']]);
     $user_data = $stmt->fetch(PDO::FETCH_ASSOC);
     
@@ -23,6 +27,10 @@ try {
     
     $user_status = $user_data['status'];
     $is_active = $user_data['is_active'];
+    $user_barangay = $user_data['barangay'];
+    $first_name = $user_data['first_name'];
+    $last_name = $user_data['last_name'];
+    $profile_picture = $user_data['profile_picture'];
     
     // Check if user account is active
     if (!$is_active) {
@@ -138,7 +146,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['submit_request'])) {
     }
 }
 
-// Function to get required file fields for each service
+// Function to get required file fields for each service - MOVED TO LOCAL FUNCTION TO AVOID CONFLICTS
 function getRequiredFileFields($service_type) {
     $file_requirements = [
         'certificate_of_residency' => [
@@ -221,36 +229,6 @@ function getRequiredFileFields($service_type) {
     return isset($file_requirements[$service_type]) ? $file_requirements[$service_type] : [];
 }
 
-// Function to validate uploaded files
-function validateUploadedFile($file, $allowed_types, $max_size) {
-    // Check file size
-    if ($file['size'] > $max_size) {
-        return false;
-    }
-    
-    // Check file type
-    $file_extension = strtolower(pathinfo($file['name'], PATHINFO_EXTENSION));
-    if (!in_array($file_extension, $allowed_types)) {
-        return false;
-    }
-    
-    // Check if file is actually an image (for image files)
-    if (in_array($file_extension, ['jpg', 'jpeg', 'png'])) {
-        $check = getimagesize($file['tmp_name']);
-        if ($check === false) {
-            return false;
-        }
-    }
-    
-    return true;
-}
-
-// Function to get file validation message
-function getFileValidationMessage($field_info) {
-    $max_size_mb = $field_info['max_size'] / (1024 * 1024);
-    return "Allowed types: " . implode(', ', $field_info['allowed_types']) . ". Max size: {$max_size_mb}MB.";
-}
-
 // Barangay services data
 $barangay_services = [
     'barangay_clearance' => [
@@ -318,11 +296,12 @@ $barangay_services = [
         
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: linear-gradient(135deg, #ff914d 0%, #ff5e00 100%);
             min-height: 100vh;
             color: #2c3e50;
         }
         
+        /* NAVBAR */
         .navbar {
             background: rgba(255, 255, 255, 0.95);
             backdrop-filter: blur(20px);
@@ -358,24 +337,25 @@ $barangay_services = [
         }
         
         .nav-link:hover {
-            background: rgba(102, 126, 234, 0.1);
-            color: #667eea;
+            background: rgba(255, 145, 77, 0.1);
+            color: #ff914d;
         }
         
         .nav-link.active {
-            background: linear-gradient(135deg, #667eea, #764ba2);
+            background: linear-gradient(135deg, #ff914d, #ff5e00);
             color: white;
         }
         
         .logo {
             font-size: 1.5rem;
             font-weight: 700;
-            background: linear-gradient(135deg, #667eea, #764ba2);
+            background: linear-gradient(135deg, #ff914d, #ff5e00);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
         }
         
+        /* USER INFO */
         .user-info {
             display: flex;
             align-items: center;
@@ -385,13 +365,59 @@ $barangay_services = [
         .user-avatar {
             width: 40px;
             height: 40px;
-            background: linear-gradient(135deg, #667eea, #764ba2);
+            background: linear-gradient(135deg, #ff914d, #ff5e00);
             color: white;
             border-radius: 50%;
             display: flex;
             align-items: center;
             justify-content: center;
             font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            position: relative;
+            overflow: hidden;
+            border: 2px solid white;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+        
+        .user-avatar img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+        
+        .user-avatar-initial {
+            font-size: 16px;
+            font-weight: 600;
+        }
+        
+        .user-avatar:hover {
+            transform: scale(1.1);
+            box-shadow: 0 4px 15px rgba(255, 145, 77, 0.4);
+        }
+        
+        .user-avatar::after {
+            content: "✏️";
+            position: absolute;
+            bottom: -2px;
+            right: -2px;
+            font-size: 12px;
+            background: white;
+            border-radius: 50%;
+            width: 16px;
+            height: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            transition: all 0.3s ease;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+        
+        .user-avatar:hover::after {
+            opacity: 1;
         }
         
         .user-status {
@@ -439,7 +465,7 @@ $barangay_services = [
         .page-title {
             font-size: 2rem;
             margin-bottom: 10px;
-            background: linear-gradient(135deg, #667eea, #764ba2);
+            background: linear-gradient(135deg, #ff914d, #ff5e00);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
@@ -466,12 +492,13 @@ $barangay_services = [
         .service-card:hover {
             transform: translateY(-5px);
             box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
-            border-color: #667eea;
+            border-color: #ff914d;
         }
         
         .service-icon {
             font-size: 2.5rem;
             margin-bottom: 15px;
+            color: #ff5e00;
         }
         
         .service-name {
@@ -589,8 +616,8 @@ $barangay_services = [
         
         input:focus, select:focus, textarea:focus {
             outline: none;
-            border-color: #667eea;
-            box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+            border-color: #ff914d;
+            box-shadow: 0 0 0 3px rgba(255, 145, 77, 0.1);
         }
         
         textarea {
@@ -624,8 +651,8 @@ $barangay_services = [
         }
         
         .file-input-label:hover {
-            border-color: #667eea;
-            background: rgba(102, 126, 234, 0.05);
+            border-color: #ff914d;
+            background: rgba(255, 145, 77, 0.05);
         }
         
         .file-input-label.has-file {
@@ -642,7 +669,7 @@ $barangay_services = [
         }
         
         .btn {
-            background: linear-gradient(135deg, #667eea, #764ba2);
+            background: linear-gradient(135deg, #ff914d, #ff5e00);
             color: white;
             padding: 12px 24px;
             border: none;
@@ -754,30 +781,36 @@ $barangay_services = [
 <body>
     <nav class="navbar">
         <div class="nav-container">
-            <div class="logo">🏛️ Barangay Help Desk</div>
+            <div class="logo">🛡️ Barangay <?php echo htmlspecialchars($user_barangay); ?></div>
             <div class="nav-links">
                 <a href="user_dashboard.php" class="nav-link">Dashboard</a>
                 <a href="user_forms.php" class="nav-link active">Request Forms</a>
-                <a href="#" class="nav-link">My Requests</a>
-                <a href="#" class="nav-link">Contact</a>
+                <a href="user_requests.php" class="nav-link">My Requests</a>
+                <a href="user.php" class="nav-link">💬 Chat Support</a>
             </div>
             <div class="user-info">
-                <div class="user-avatar"><?php echo strtoupper(substr($_SESSION['user_name'], 0, 1)); ?></div>
+                <a href="user_edit.php" class="user-avatar" title="Edit Profile">
+                    <?php if (!empty($profile_picture) && file_exists($profile_picture)): ?>
+                        <img src="<?php echo htmlspecialchars($profile_picture); ?>" alt="Profile Picture">
+                    <?php else: ?>
+                        <span class="user-avatar-initial"><?php echo strtoupper($first_name[0]); ?></span>
+                    <?php endif; ?>
+                </a>
                 <div>
                     <div style="font-weight: 600;"><?php echo htmlspecialchars($_SESSION['user_name']); ?></div>
                     <div style="font-size: 12px; color: #7f8c8d;">
-                        <?php echo htmlspecialchars($_SESSION['user_email']); ?>
+                        <?php echo $first_name . " " . $last_name; ?>
                     </div>
                 </div>
-                <div class="user-status">Verified</div>
-                <a href="logout.php" class="logout-btn">Logout</a>
+                <div class="user-status">
+                    <?php echo ucfirst($user_status); ?>
+                </div>
+                <a href="logout.php" class="logout-btn" onclick="return confirm('Are you sure you want to logout?')">Logout</a>
             </div>
         </div>
     </nav>
 
     <div class="container">
-        <a href="user_dashboard.php" class="back-btn">← Back to Dashboard</a>
-        
         <div class="header-section">
             <h1 class="page-title">Request Barangay Forms</h1>
             <p>Select a service below to submit your request. All forms will be processed within 3-5 business days.</p>
@@ -825,19 +858,19 @@ $barangay_services = [
                     </div>
                     
                     <div class="form-group">
-    <label>Full Name <span class="required">*</span></label>
-    <div class="form-row">
-        <div>
-            <input type="text" name="surname" placeholder="Surname/Last Name" required>
-        </div>
-        <div>
-            <input type="text" name="given_name" placeholder="Given/First Name" required>
-        </div>
-        <div>
-            <input type="text" name="middle_name" placeholder="Middle Name">
-        </div>
-    </div>
-</div>
+                        <label>Full Name <span class="required">*</span></label>
+                        <div class="form-row">
+                            <div>
+                                <input type="text" name="surname" placeholder="Surname/Last Name" required>
+                            </div>
+                            <div>
+                                <input type="text" name="given_name" placeholder="Given/First Name" required>
+                            </div>
+                            <div>
+                                <input type="text" name="middle_name" placeholder="Middle Name">
+                            </div>
+                        </div>
+                    </div>
                     
                     <div class="form-group">
                         <label for="birthdate">Birthdate <span class="required">*</span></label>
@@ -1077,15 +1110,20 @@ $barangay_services = [
         }
         
         // Auto-format contact number
-        document.getElementById('contact_number').addEventListener('input', function(e) {
-            let value = e.target.value.replace(/\D/g, '');
-            if (value.length > 11) {
-                value = value.substring(0, 11);
+        document.addEventListener('DOMContentLoaded', function() {
+            const contactInput = document.getElementById('contact_number');
+            if (contactInput) {
+                contactInput.addEventListener('input', function(e) {
+                    let value = e.target.value.replace(/\D/g, '');
+                    if (value.length > 11) {
+                        value = value.substring(0, 11);
+                    }
+                    if (value.length > 2 && !value.startsWith('09')) {
+                        value = '09' + value.substring(2);
+                    }
+                    e.target.value = value;
+                });
             }
-            if (value.length > 2 && !value.startsWith('09')) {
-                value = '09' + value.substring(2);
-            }
-            e.target.value = value;
         });
         
         // Set max date for birthdate (18 years ago)
@@ -1134,4 +1172,4 @@ $barangay_services = [
         });
     </script>
 </body>
-</html
+</html>

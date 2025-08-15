@@ -41,7 +41,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     }
 }
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -54,26 +53,65 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             padding: 0;
             box-sizing: border-box;
         }
+        
+        :root {
+            --primary-orange: #FF6B35;
+            --dark-orange: #E85A2C;
+            --light-orange: #FFE5DB;
+            --white: #FFFFFF;
+            --gray: #6B7280;
+            --light-gray: #F3F4F6;
+            --success: #10B981;
+            --error: #EF4444;
+        }
+        
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%);
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            background: linear-gradient(135deg, var(--light-orange) 0%, var(--white) 100%);
             min-height: 100vh;
             display: flex;
             align-items: center;
             justify-content: center;
             padding: 20px;
         }
+        
+        .back-button {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            color: var(--gray);
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 500;
+            padding: 8px 16px;
+            background: var(--white);
+            border-radius: 8px;
+            transition: all 0.3s ease;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            z-index: 100;
+        }
+        
+        .back-button:hover {
+            background: var(--light-gray);
+            color: var(--primary-orange);
+            transform: translateX(-4px);
+            box-shadow: 0 4px 12px rgba(255, 107, 53, 0.2);
+        }
+        
         .login-container {
-            background: rgba(255, 255, 255, 0.95);
-            backdrop-filter: blur(20px);
-            border-radius: 20px;
-            box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
-            padding: 50px 40px;
+            background: var(--white);
+            border-radius: 24px;
+            box-shadow: 0 4px 24px rgba(255, 107, 53, 0.08);
+            padding: 40px;
             width: 100%;
             max-width: 420px;
             position: relative;
             overflow: hidden;
         }
+        
         .login-container::before {
             content: '';
             position: absolute;
@@ -81,70 +119,148 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             left: 0;
             right: 0;
             height: 4px;
-            background: linear-gradient(90deg, #e74c3c, #c0392b, #e67e22, #f39c12);
-            background-size: 400% 400%;
-            animation: gradientShift 3s ease infinite;
+            background: linear-gradient(90deg, var(--primary-orange), var(--dark-orange));
         }
-        @keyframes gradientShift {
-            0%, 100% { background-position: 0% 50%; }
-            50% { background-position: 100% 50%; }
-        }
+        
         .header {
             text-align: center;
-            margin-bottom: 40px;
+            margin-bottom: 32px;
         }
+        
         .logo {
-            font-size: 4rem;
-            margin-bottom: 15px;
-            animation: pulse 2s ease-in-out infinite;
+            width: 64px;
+            height: 64px;
+            background: linear-gradient(135deg, var(--primary-orange), var(--dark-orange));
+            border-radius: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px;
+            font-size: 32px;
+            color: var(--white);
         }
-        @keyframes pulse {
-            0%, 100% { transform: scale(1); }
-            50% { transform: scale(1.05); }
+        
+        .admin-badge {
+            background: var(--light-orange);
+            color: var(--primary-orange);
+            padding: 6px 16px;
+            border-radius: 20px;
+            font-size: 11px;
+            font-weight: 600;
+            display: inline-block;
+            margin-bottom: 16px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
         }
+        
         .title {
-            font-size: 2.2rem;
-            color: #2c3e50;
-            margin-bottom: 10px;
+            font-size: 28px;
+            color: #1F2937;
+            margin-bottom: 8px;
             font-weight: 700;
-            background: linear-gradient(135deg, #e74c3c, #c0392b);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
         }
+        
         .subtitle {
-            color: #7f8c8d;
-            font-size: 1rem;
+            color: var(--gray);
+            font-size: 14px;
         }
+        
+        .security-note {
+            background: var(--light-gray);
+            color: var(--gray);
+            padding: 12px;
+            border-radius: 12px;
+            margin-bottom: 20px;
+            font-size: 13px;
+            border-left: 3px solid var(--primary-orange);
+        }
+        
+        .location-info {
+            background: rgba(255, 107, 53, 0.05);
+            color: var(--dark-orange);
+            padding: 10px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            font-size: 12px;
+            text-align: center;
+        }
+        
         .form-group {
-            margin-bottom: 25px;
+            margin-bottom: 20px;
         }
+        
         label {
             display: block;
             margin-bottom: 8px;
             font-weight: 600;
-            color: #2c3e50;
+            color: #1F2937;
             font-size: 14px;
         }
-        input {
+        
+        input[type="text"],
+        input[type="password"] {
             width: 100%;
-            padding: 15px;
-            border: 2px solid #ecf0f1;
+            padding: 12px 16px;
+            border: 2px solid transparent;
+            background: var(--light-gray);
             border-radius: 12px;
             font-size: 16px;
             transition: all 0.3s ease;
-            background: white;
-        }
-        input:focus {
             outline: none;
-            border-color: #e74c3c;
-            box-shadow: 0 0 0 3px rgba(231, 76, 60, 0.1);
-            transform: translateY(-2px);
         }
+        
+        input:focus {
+            border-color: var(--primary-orange);
+            background: var(--white);
+            box-shadow: 0 0 0 4px rgba(255, 107, 53, 0.1);
+        }
+        
+        /* Password field with toggle */
+        .password-wrapper {
+            position: relative;
+            width: 100%;
+        }
+        
+        .password-wrapper input {
+            width: 100%;
+            padding-right: 70px;
+        }
+        
+        .password-toggle {
+            position: absolute;
+            right: 2px;
+            top: 2px;
+            bottom: 2px;
+            background: var(--primary-orange);
+            border: none;
+            color: white;
+            cursor: pointer;
+            padding: 8px 12px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 12px;
+            font-weight: 700;
+            border-radius: 10px;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            min-width: 55px;
+            user-select: none;
+        }
+        
+        .password-toggle:hover {
+            background: var(--dark-orange);
+        }
+        
+        .password-toggle:active {
+            transform: scale(0.95);
+        }
+        
         .login-btn {
             width: 100%;
-            padding: 16px;
-            background: linear-gradient(135deg, #e74c3c, #c0392b);
+            padding: 14px;
+            background: linear-gradient(135deg, var(--primary-orange), var(--dark-orange));
             color: white;
             border: none;
             border-radius: 12px;
@@ -154,190 +270,257 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             transition: all 0.3s ease;
             margin-top: 10px;
         }
+        
         .login-btn:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 24px rgba(255, 107, 53, 0.25);
         }
+        
         .login-btn:active {
-            transform: translateY(-1px);
+            transform: translateY(0);
         }
+        
         .login-btn:disabled {
             opacity: 0.6;
             cursor: not-allowed;
             transform: none;
         }
+        
         .register-link {
             text-align: center;
-            margin-top: 25px;
-            padding-top: 25px;
-            border-top: 1px solid #ecf0f1;
+            margin-top: 24px;
+            padding-top: 24px;
+            border-top: 1px solid var(--light-gray);
         }
+        
         .register-link a {
-            color: #e74c3c;
+            color: var(--primary-orange);
             text-decoration: none;
             font-weight: 600;
             transition: all 0.3s ease;
         }
+        
         .register-link a:hover {
             text-decoration: underline;
-            color: #c0392b;
+            color: var(--dark-orange);
         }
+        
         .alert {
-            padding: 15px;
+            padding: 12px;
             border-radius: 10px;
-            margin-bottom: 25px;
+            margin-bottom: 20px;
             font-size: 14px;
             font-weight: 500;
-        }
-        .alert-success {
-            background: #d4edda;
-            color: #155724;
-            border: 1px solid #c3e6cb;
-        }
-        .alert-error {
-            background: #f8d7da;
-            color: #721c24;
-            border: 1px solid #f5c6cb;
-        }
-        .back-link {
-            position: absolute;
-            top: 20px;
-            left: 20px;
-            color: #e74c3c;
-            text-decoration: none;
-            font-weight: 600;
             display: flex;
             align-items: center;
-            gap: 5px;
-            font-size: 14px;
-            transition: all 0.3s ease;
+            gap: 8px;
         }
-        .back-link:hover {
-            color: #c0392b;
+        
+        .alert-success {
+            background: #D1FAE5;
+            color: var(--success);
         }
-        .admin-badge {
-            background: linear-gradient(135deg, #e74c3c, #c0392b);
-            color: white;
-            padding: 8px 16px;
-            border-radius: 20px;
-            font-size: 12px;
-            font-weight: 600;
-            display: inline-block;
-            margin-bottom: 20px;
-            text-transform: uppercase;
-            letter-spacing: 1px;
+        
+        .alert-error {
+            background: #FEE2E2;
+            color: var(--error);
         }
-        .security-note {
-            background: #fff3cd;
-            color: #856404;
-            padding: 12px;
-            border-radius: 8px;
-            margin-bottom: 25px;
-            font-size: 13px;
-            border: 1px solid #ffeaa7;
-        }
-        .location-info {
-            background: #e8f5e8;
-            color: #2d5a3d;
-            padding: 10px;
-            border-radius: 8px;
-            margin-bottom: 20px;
-            font-size: 12px;
-            text-align: center;
-            border: 1px solid #c3e6cb;
-        }
-        @media (max-width: 480px) {
+        
+        @media (max-width: 640px) {
+            .back-button {
+                top: 10px;
+                left: 10px;
+                padding: 6px 12px;
+                font-size: 13px;
+            }
+            
             .login-container {
-                padding: 40px 25px;
+                padding: 32px 24px;
+                border-radius: 20px;
             }
+            
             .title {
-                font-size: 1.8rem;
+                font-size: 24px;
             }
+            
             .logo {
-                font-size: 3rem;
+                width: 56px;
+                height: 56px;
+                font-size: 28px;
             }
         }
     </style>
 </head>
 <body>
-<a href="index.php" class="back-link">← Back to Home</a>
-
-<div class="login-container">
-    <div class="header">
-        <div class="logo">⚙️</div>
-        <div class="admin-badge">Administrator Access</div>
-        <h1 class="title">Admin Portal</h1>
-        <p class="subtitle">Secure login for barangay administrators</p>
-    </div>
-
-    <div class="security-note">
-        <strong>🔒 Secure Access:</strong> This portal is restricted to authorized barangay administrators only.
-    </div>
-
-    <div class="location-info">
-        <strong>📍 Location-Based Access:</strong> You will only have access to requests from your assigned city and barangay.
-    </div>
-
-    <?php if (isset($message)): ?>
-        <div class="alert <?php echo $alertType; ?>">
-            <?php echo htmlspecialchars($message); ?>
-        </div>
-    <?php endif; ?>
-
-    <form method="POST" action="">
-        <div class="form-group">
-            <label for="username">Admin Username</label>
-            <input type="text" id="username" name="username" required 
-                   value="<?php echo isset($_POST['username']) ? htmlspecialchars($_POST['username']) : ''; ?>"
-                   placeholder="Enter your admin username">
+    <div class="login-container">
+        <a href="adminside.php" class="back-button">
+            <span>←</span>
+            <span>Back to Admin</span>
+        </a>
+        <div class="header">
+            <div class="logo">⚙️</div>
+            <div class="admin-badge">Administrator Access</div>
+            <h1 class="title">Admin Portal</h1>
+            <p class="subtitle">Secure login for barangay administrators</p>
         </div>
 
-        <div class="form-group">
-            <label for="password">Password</label>
-            <input type="password" id="password" name="password" required 
-                   placeholder="Enter your password">
+        <div class="security-note">
+            <strong>🔒 Secure Access:</strong> This portal is restricted to authorized barangay administrators only.
         </div>
 
-        <button type="submit" name="login" class="login-btn">Access Admin Panel</button>
-    </form>
+        <div class="location-info">
+            <strong>📍 Location-Based Access:</strong> You will only have access to requests from your assigned city and barangay.
+        </div>
 
-    <div class="register-link">
-        <p>Need an admin account? <a href="admin_register.php">Register here</a></p>
+        <!-- Alert message placeholder for PHP -->
+        <div id="alert-placeholder" style="display: none;"></div>
+
+        <form method="POST" action="">
+            <div class="form-group">
+                <label for="username">Admin Username</label>
+                <input type="text" 
+                       id="username" 
+                       name="username" 
+                       required 
+                       placeholder="Enter your admin username">
+            </div>
+
+            <div class="form-group">
+                <label for="password">Password</label>
+                <div class="password-wrapper">
+                    <input type="password" 
+                           id="password" 
+                           name="password" 
+                           required 
+                           placeholder="Enter your password">
+                    <button type="button" 
+                            id="password-toggle"
+                            class="password-toggle">
+                        SHOW
+                    </button>
+                </div>
+            </div>
+
+            <button type="submit" name="login" class="login-btn">Access Admin Panel</button>
+        </form>
+
+        <div class="register-link">
+            <p>Don't have admin account? <a href="admin_register.php">Create one here.</a></p>
+        </div>
     </div>
-</div>
 
-<script>
-    document.getElementById('username').focus();
-
-    document.querySelector('form').addEventListener('submit', function () {
-        const btn = document.querySelector('.login-btn');
-        btn.textContent = 'Authenticating...';
-        btn.disabled = true;
-    });
-
-    window.addEventListener('load', function () {
-        const container = document.querySelector('.login-container');
-        container.style.opacity = '0';
-        container.style.transform = 'translateY(30px)';
-
-        setTimeout(() => {
-            container.style.transition = 'all 0.6s ease';
-            container.style.opacity = '1';
-            container.style.transform = 'translateY(0)';
-        }, 100);
-    });
-
-    let attempts = 0;
-    document.querySelector('form').addEventListener('submit', function (e) {
-        attempts++;
-        if (attempts > 3) {
-            const confirmation = confirm('Multiple login attempts detected. Are you an authorized administrator?');
-            if (!confirmation) {
-                e.preventDefault();
-                return false;
+    <script>
+        // Wait for DOM to be fully loaded
+        document.addEventListener('DOMContentLoaded', function() {
+            // Get elements
+            const passwordInput = document.getElementById('password');
+            const passwordToggle = document.getElementById('password-toggle');
+            
+            // Ensure elements exist
+            if (!passwordInput || !passwordToggle) {
+                console.error('Password input or toggle button not found');
+                return;
             }
+            
+            // Add click event listener to toggle button
+            passwordToggle.addEventListener('click', function(e) {
+                // Prevent form submission
+                e.preventDefault();
+                e.stopPropagation();
+                
+                // Toggle password visibility
+                if (passwordInput.type === 'password') {
+                    passwordInput.type = 'text';
+                    passwordToggle.textContent = 'HIDE';
+                    passwordToggle.setAttribute('aria-label', 'Hide password');
+                } else {
+                    passwordInput.type = 'password';
+                    passwordToggle.textContent = 'SHOW';
+                    passwordToggle.setAttribute('aria-label', 'Show password');
+                }
+                
+                // Keep focus on the password input
+                passwordInput.focus();
+            });
+            
+            // Add keyboard support (Enter/Space on toggle button)
+            passwordToggle.addEventListener('keydown', function(e) {
+                if (e.key === 'Enter' || e.key === ' ') {
+                    e.preventDefault();
+                    passwordToggle.click();
+                }
+            });
+            
+            // Auto-focus on username field when page loads
+            document.getElementById('username').focus();
+            
+            // Page load animation
+            const container = document.querySelector('.login-container');
+            container.style.opacity = '0';
+            container.style.transform = 'translateY(30px)';
+            
+            setTimeout(() => {
+                container.style.transition = 'all 0.6s ease';
+                container.style.opacity = '1';
+                container.style.transform = 'translateY(0)';
+            }, 100);
+        });
+
+        // Form submission handling
+        document.addEventListener('DOMContentLoaded', function() {
+            const form = document.querySelector('form');
+            const loginBtn = document.querySelector('.login-btn');
+            
+            if (form && loginBtn) {
+                form.addEventListener('submit', function(e) {
+                    // Show loading state
+                    loginBtn.textContent = 'Authenticating...';
+                    loginBtn.disabled = true;
+                    
+                    // Re-enable button after 3 seconds (in case of error)
+                    setTimeout(() => {
+                        loginBtn.textContent = 'Access Admin Panel';
+                        loginBtn.disabled = false;
+                    }, 3000);
+                });
+                
+                // Multiple login attempts warning
+                let attempts = parseInt(localStorage.getItem('loginAttempts') || '0');
+                
+                form.addEventListener('submit', function(e) {
+                    attempts++;
+                    localStorage.setItem('loginAttempts', attempts.toString());
+                    
+                    if (attempts > 3) {
+                        const confirmation = confirm('Multiple login attempts detected. Are you an authorized administrator?');
+                        if (!confirmation) {
+                            e.preventDefault();
+                            loginBtn.textContent = 'Access Admin Panel';
+                            loginBtn.disabled = false;
+                            return false;
+                        }
+                    }
+                });
+            }
+        });
+
+        // Clear login attempts on successful login (you can call this from PHP)
+        function clearLoginAttempts() {
+            localStorage.removeItem('loginAttempts');
         }
-    });
-</script>
+
+        // Function to show alerts (for PHP integration)
+        function showAlert(message, type) {
+            const alertPlaceholder = document.getElementById('alert-placeholder');
+            const alertClass = type === 'success' ? 'alert-success' : 'alert-error';
+            
+            alertPlaceholder.innerHTML = `
+                <div class="alert ${alertClass}">
+                    ${message}
+                </div>
+            `;
+            alertPlaceholder.style.display = 'block';
+        }
+    </script>
 </body>
 </html>
